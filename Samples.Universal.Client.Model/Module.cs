@@ -10,8 +10,8 @@ namespace Samples.Universal.Client.Model
     {
         public void RegisterModule(IIocContainer iocContainer)
         {            
-            //iocContainer.RegisterSingleton<IDataService, DataService>();
-            //iocContainer.RegisterSingleton<ILoginService, LoginService>();
+            iocContainer.RegisterSingleton<IDataService, DataService>();
+            iocContainer.RegisterSingleton<ILoginService, LoginService>();
         }
     }    
 }

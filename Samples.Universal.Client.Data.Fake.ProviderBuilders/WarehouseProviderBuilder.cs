@@ -1,17 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using LogoFX.Client.Data.Fake.ProviderBuilders;
+using System.Threading.Tasks;
+using Attest.Fake.Builders;
+using Attest.Fake.LightMock;
+using Attest.Fake.Setup;
+using LightMock;
 using Samples.Universal.Client.Data.Contracts.Dto;
 using Samples.Universal.Client.Data.Contracts.Providers;
 
 namespace Samples.Universal.Client.Data.Fake.ProviderBuilders
-{
+{    
+    class WarehouseProviderProxy : ProviderProxyBase<IWarehouseProvider>, IWarehouseProvider
+    {        
+        public WarehouseProviderProxy(IInvocationContext<IWarehouseProvider> context)
+            :base(context)
+        {     
+        }
+
+        public Task<IEnumerable<WarehouseItemDto>> GetWarehouseItems()
+        {
+            return Invoke(t => t.GetWarehouseItems());
+        }
+    }    
+
     [Serializable]
     public class WarehouseProviderBuilder : FakeBuilderBase<IWarehouseProvider>
     {
         private readonly List<WarehouseItemDto> _warehouseItemsStorage = new List<WarehouseItemDto>();
 
-        private WarehouseProviderBuilder()
+        private WarehouseProviderBuilder() :
+            base(FakeFactoryHelper.CreateFake<IWarehouseProvider>(c => new WarehouseProviderProxy(c)))
         {
             
         }
@@ -29,7 +47,7 @@ namespace Samples.Universal.Client.Data.Fake.ProviderBuilders
 
         protected override void SetupFake()
         {
-            var initialSetup = CreateInitialSetup();
+            var initialSetup = ServiceCallFactory.CreateServiceCall(FakeService);
 
             var setup = initialSetup
                 .AddMethodCallWithResultAsync(t => t.GetWarehouseItems(),

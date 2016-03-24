@@ -122,6 +122,14 @@
       <Project>{85A68491-5B0B-4832-8C0E-9492B4C51781}</Project>
       <Name>Samples.Universal.Client.Data.Contracts.Providers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Samples.Universal.Client.Data.Fake.Containers\Samples.Universal.Client.Data.Fake.Containers.csproj">
+      <Project>{1CBD252C-38C7-4600-8111-016C4E67A18D}</Project>
+      <Name>Samples.Universal.Client.Data.Fake.Containers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Universal.Client.Data.Fake.ProviderBuilders\Samples.Universal.Client.Data.Fake.ProviderBuilders.csproj">
+      <Project>{9832AB2D-B0A3-46F7-A4CF-AAC590F3F249}</Project>
+      <Name>Samples.Universal.Client.Data.Fake.ProviderBuilders</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

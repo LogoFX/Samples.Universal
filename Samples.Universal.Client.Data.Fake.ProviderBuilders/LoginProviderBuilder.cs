@@ -1,11 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using Attest.Fake.Moq;
-using LogoFX.Client.Data.Fake.ProviderBuilders;
+using System.Threading.Tasks;
+using Attest.Fake.Builders;
+using Attest.Fake.LightMock;
+using Attest.Fake.Setup;
+using LightMock;
 using Samples.Universal.Client.Data.Contracts.Providers;
 
 namespace Samples.Universal.Client.Data.Fake.ProviderBuilders
 {
+    class LoginProviderProxy : ProviderProxyBase<ILoginProvider>, ILoginProvider
+    {        
+        public LoginProviderProxy(IInvocationContext<ILoginProvider> context)
+            :base(context)
+        {            
+        }
+
+        public Task Login(string username, string password)
+        {
+            return Invoke(t => t.Login(username, password));
+        }
+    }
+       
     [Serializable]
     public class LoginProviderBuilder : FakeBuilderBase<ILoginProvider>
     {        
@@ -13,6 +29,7 @@ namespace Samples.Universal.Client.Data.Fake.ProviderBuilders
         private readonly Dictionary<string, bool> _isLoginAttemptSuccessfulCollection = new Dictionary<string, bool>();
         
         private LoginProviderBuilder()
+            :base(FakeFactoryHelper.CreateFake<ILoginProvider>(c => new LoginProviderProxy(c)))
         {
 
         }
@@ -29,10 +46,10 @@ namespace Samples.Universal.Client.Data.Fake.ProviderBuilders
 
         protected override void SetupFake()
         {            
-            var initialSetup = CreateInitialSetup();
+            var initialSetup = ServiceCallFactory.CreateServiceCall(FakeService);
 
             var setup = initialSetup
-               .AddMethodCallAsync<string, string>(t => t.Login(It.IsAny<string>(), It.IsAny<string>()),
+               .AddMethodCallAsync<string, string>(t => t.Login(The<string>.IsAnyValue, The<string>.IsAnyValue),
                     (r, login, password) =>
                            _isLoginAttemptSuccessfulCollection.ContainsKey(login)
                                ? _isLoginAttemptSuccessfulCollection[login]

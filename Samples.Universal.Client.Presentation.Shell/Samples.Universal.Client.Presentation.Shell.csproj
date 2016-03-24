@@ -131,6 +131,14 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Samples.Universal.Client.Data.Fake.Providers\Samples.Universal.Client.Data.Fake.Providers.csproj">
+      <Project>{107c7c68-c61a-46fa-8554-0d6d360188f7}</Project>
+      <Name>Samples.Universal.Client.Data.Fake.Providers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Universal.Client.Model.Contracts\Samples.Universal.Client.Model.Contracts.csproj">
+      <Project>{7401A3D3-1B93-4BDC-83D3-FCC2DA640971}</Project>
+      <Name>Samples.Universal.Client.Model.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Samples.Universal.Client.Model\Samples.Universal.Client.Model.csproj">
       <Project>{dede0a7c-c84b-44f0-b304-79f56379cdd5}</Project>
       <Name>Samples.Universal.Client.Model</Name>
