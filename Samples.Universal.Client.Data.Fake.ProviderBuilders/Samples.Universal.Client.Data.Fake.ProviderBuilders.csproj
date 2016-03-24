@@ -122,11 +122,6 @@
       <Name>Samples.Universal.Client.Data.Contracts.Providers</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Solid.Patterns.Visitor">
-      <HintPath>..\..\Solid\bin\Release\Patterns\Solid.Patterns.Visitor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

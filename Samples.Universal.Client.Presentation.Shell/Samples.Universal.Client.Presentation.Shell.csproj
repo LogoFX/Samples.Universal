@@ -99,8 +99,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppBootstrapper.cs" />
+    <Compile Include="Interactivity\Behaviors\PasswordHelper.cs" />
+    <Compile Include="Interactivity\Behaviors\SelectTextOnFocusBehavior.cs" />
+    <Compile Include="Interactivity\Behaviors\UpdateSourceOnChangeBehavior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="ViewModels\WarehouseItemsViewModel.cs" />
+    <Compile Include="ViewModels\WarehouseItemViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -125,9 +132,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\LoginView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WarehouseItemsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +157,10 @@
     <ProjectReference Include="..\Samples.Universal.Client.Model.Contracts\Samples.Universal.Client.Model.Contracts.csproj">
       <Project>{7401A3D3-1B93-4BDC-83D3-FCC2DA640971}</Project>
       <Name>Samples.Universal.Client.Model.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Universal.Client.Model.Shared\Samples.Universal.Client.Model.Shared.csproj">
+      <Project>{8790B61E-EF81-42F8-B2BC-D70D01092E71}</Project>
+      <Name>Samples.Universal.Client.Model.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Universal.Client.Model\Samples.Universal.Client.Model.csproj">
       <Project>{dede0a7c-c84b-44f0-b304-79f56379cdd5}</Project>
