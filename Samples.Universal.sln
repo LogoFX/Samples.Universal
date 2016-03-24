@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Universal.Client.Presentation.Shell", "Samples.Universal.Client.Presentation.Shell\Samples.Universal.Client.Presentation.Shell.csproj", "{FFB623FC-A887-47DD-B5EC-02891554A879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Universal.Client.Bootstrapping", "Samples.Universal.Client.Bootstrapping\Samples.Universal.Client.Bootstrapping.csproj", "{4F8BC9CC-D134-45D4-88A0-D180837C505B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Universal.Client.Data.Contracts.Dto", "Samples.Universal.Client.Data.Contracts.Dto\Samples.Universal.Client.Data.Contracts.Dto.csproj", "{75CB8F93-37F9-4868-BBFB-3A8C89A7FC05}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Universal.Client.Data.Contracts.Providers", "Samples.Universal.Client.Data.Contracts.Providers\Samples.Universal.Client.Data.Contracts.Providers.csproj", "{85A68491-5B0B-4832-8C0E-9492B4C51781}"
@@ -129,38 +127,6 @@ Global
 		{FFB623FC-A887-47DD-B5EC-02891554A879}.TestsWithReal|x86.ActiveCfg = Release|x86
 		{FFB623FC-A887-47DD-B5EC-02891554A879}.TestsWithReal|x86.Build.0 = Release|x86
 		{FFB623FC-A887-47DD-B5EC-02891554A879}.TestsWithReal|x86.Deploy.0 = Release|x86
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Debug|ARM.ActiveCfg = Debug|ARM
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Debug|ARM.Build.0 = Debug|ARM
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Debug|x64.ActiveCfg = Debug|x64
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Debug|x64.Build.0 = Debug|x64
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Debug|x86.ActiveCfg = Debug|x86
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Debug|x86.Build.0 = Debug|x86
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.DebugWithFake|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.DebugWithFake|ARM.ActiveCfg = Debug|ARM
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.DebugWithFake|x64.ActiveCfg = Debug|x64
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.DebugWithFake|x86.ActiveCfg = Debug|x86
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.DebugWithReal|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.DebugWithReal|ARM.ActiveCfg = Debug|ARM
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.DebugWithReal|x64.ActiveCfg = Debug|x64
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.DebugWithReal|x86.ActiveCfg = Debug|x86
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Release|ARM.ActiveCfg = Release|ARM
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Release|ARM.Build.0 = Release|ARM
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Release|x64.ActiveCfg = Release|x64
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Release|x64.Build.0 = Release|x64
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Release|x86.ActiveCfg = Release|x86
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.Release|x86.Build.0 = Release|x86
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.TestsWithFake|Any CPU.ActiveCfg = Release|Any CPU
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.TestsWithFake|ARM.ActiveCfg = Release|ARM
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.TestsWithFake|x64.ActiveCfg = Release|x64
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.TestsWithFake|x86.ActiveCfg = Release|x86
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.TestsWithReal|Any CPU.ActiveCfg = Release|Any CPU
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.TestsWithReal|ARM.ActiveCfg = Release|ARM
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.TestsWithReal|x64.ActiveCfg = Release|x64
-		{4F8BC9CC-D134-45D4-88A0-D180837C505B}.TestsWithReal|x86.ActiveCfg = Release|x86
 		{75CB8F93-37F9-4868-BBFB-3A8C89A7FC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75CB8F93-37F9-4868-BBFB-3A8C89A7FC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75CB8F93-37F9-4868-BBFB-3A8C89A7FC05}.Debug|ARM.ActiveCfg = Debug|ARM
