@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="using:Samples.Universal.Client.Presentation.Shell.ViewModels"
         xmlns:behaviors="using:Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors"
-        xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+        xmlns:interactivity="using:Microsoft.Xaml.Interactivity"        
         mc:Ignorable="d"       
         d:DataContext="{d:DesignInstance viewModels:LoginViewModel}"
         MaxWidth="600"

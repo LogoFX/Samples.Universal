@@ -3,8 +3,8 @@
     "JetBrains.Annotations": "10.0.0",
     "LightMock": "1.0.0.6",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Solid.Practices.IoC": "1.1.0",
-    "Solid.Practices.Modularity": "1.1.0",
+    "Solid.Practices.IoC": "1.1.1",
+    "Solid.Practices.Modularity": "1.1.1",
     "Solid.Practices.Scheduling": "1.0.7"
   },
   "frameworks": {

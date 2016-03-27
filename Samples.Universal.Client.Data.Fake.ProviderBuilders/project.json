@@ -6,7 +6,7 @@
     "LightMock": "1.0.0.6",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "shim": "1.0.2.50909",
-    "Solid.Practices.Modularity": "1.1.0"
+    "Solid.Practices.Modularity": "1.1.1"
   },
   "frameworks": {
     "uap10.0": {}

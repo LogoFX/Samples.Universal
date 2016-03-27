@@ -138,11 +138,6 @@
       <Name>Samples.Universal.Client.Model.Shared</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Solid.Practices.Modularity">
-      <HintPath>..\..\..\Users\Gena\.nuget\packages\Solid.Practices.Modularity\1.0.8\lib\portable-net45+wpa8+win8\Solid.Practices.Modularity.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
