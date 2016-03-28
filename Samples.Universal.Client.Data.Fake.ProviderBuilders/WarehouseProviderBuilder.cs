@@ -9,23 +9,23 @@ using Samples.Universal.Client.Data.Contracts.Dto;
 using Samples.Universal.Client.Data.Contracts.Providers;
 
 namespace Samples.Universal.Client.Data.Fake.ProviderBuilders
-{    
-    class WarehouseProviderProxy : ProviderProxyBase<IWarehouseProvider>, IWarehouseProvider
-    {        
-        public WarehouseProviderProxy(IInvocationContext<IWarehouseProvider> context)
-            :base(context)
-        {     
-        }
-
-        public Task<IEnumerable<WarehouseItemDto>> GetWarehouseItems()
-        {
-            return Invoke(t => t.GetWarehouseItems());
-        }
-    }    
-
+{        
     [Serializable]
     public class WarehouseProviderBuilder : FakeBuilderBase<IWarehouseProvider>
     {
+        class WarehouseProviderProxy : ProviderProxyBase<IWarehouseProvider>, IWarehouseProvider
+        {
+            public WarehouseProviderProxy(IInvocationContext<IWarehouseProvider> context)
+                : base(context)
+            {
+            }
+
+            public Task<IEnumerable<WarehouseItemDto>> GetWarehouseItems()
+            {
+                return Invoke(t => t.GetWarehouseItems());
+            }
+        }
+
         private readonly List<WarehouseItemDto> _warehouseItemsStorage = new List<WarehouseItemDto>();
 
         private WarehouseProviderBuilder() :

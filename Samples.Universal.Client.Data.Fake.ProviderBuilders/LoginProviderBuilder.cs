@@ -8,23 +8,23 @@ using LightMock;
 using Samples.Universal.Client.Data.Contracts.Providers;
 
 namespace Samples.Universal.Client.Data.Fake.ProviderBuilders
-{
-    class LoginProviderProxy : ProviderProxyBase<ILoginProvider>, ILoginProvider
-    {        
-        public LoginProviderProxy(IInvocationContext<ILoginProvider> context)
-            :base(context)
-        {            
-        }
-
-        public Task Login(string username, string password)
-        {
-            return Invoke(t => t.Login(username, password));
-        }
-    }
-       
+{           
     [Serializable]
     public class LoginProviderBuilder : FakeBuilderBase<ILoginProvider>
-    {        
+    {
+        class LoginProviderProxy : ProviderProxyBase<ILoginProvider>, ILoginProvider
+        {
+            public LoginProviderProxy(IInvocationContext<ILoginProvider> context)
+                : base(context)
+            {
+            }
+
+            public Task Login(string username, string password)
+            {
+                return Invoke(t => t.Login(username, password));
+            }
+        }
+
         private readonly List<Tuple<string, string>> _users = new List<Tuple<string, string>>();
         private readonly Dictionary<string, bool> _isLoginAttemptSuccessfulCollection = new Dictionary<string, bool>();
         

@@ -33,13 +33,5 @@ namespace Samples.Universal.Client.Data.Fake.Providers
             var warehouseItems = await service.GetWarehouseItems();
             return warehouseItems;
         }
-    }
-
-    //class FakeWarehouseProvider : IWarehouseProvider
-    //{
-    //    public Task<IEnumerable<WarehouseItemDto>> GetWarehouseItems()
-    //    {
-    //        return Task.FromResult((IEnumerable<WarehouseItemDto>) new WarehouseItemDto [] {});
-    //    }
-    //}
+    }    
 }

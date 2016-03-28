@@ -29,13 +29,5 @@ namespace Samples.Universal.Client.Data.Fake.Providers
             var service = GetService(() => _loginProviderBuilder, b => b);
             await service.Login(username, password);
         }
-    }
-
-    //class FakeLoginProvider : ILoginProvider
-    //{
-    //    public Task Login(string username, string password)
-    //    {
-    //        return Task.Run(() => { });
-    //    }
-    //}
+    }    
 }
