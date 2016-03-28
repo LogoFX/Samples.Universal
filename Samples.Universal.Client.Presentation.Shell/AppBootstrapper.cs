@@ -29,8 +29,6 @@ namespace Samples.Universal.Client.Presentation.Shell
         protected override void PrepareViewFirst(Frame rootFrame)
         {
             _iocContainer.RegisterNavigationService(rootFrame);
-        }
-
-        public override string[] Prefixes => new[] {"Samples"};
+        }        
     }    
 }
