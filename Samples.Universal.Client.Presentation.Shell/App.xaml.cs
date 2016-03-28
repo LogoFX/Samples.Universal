@@ -12,7 +12,8 @@ namespace Samples.Universal.Client.Presentation.Shell
         public App()
         {
             WindowsAppInitializer.InitializeAsync();
-            InitializeComponent();            
+            InitializeComponent();  
+            Initialize();          
         }                 
     }
 }

@@ -1,9 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
-using Windows.UI.Xaml.Controls;
 using Caliburn.Micro;
 using JetBrains.Annotations;
-using LogoFX.Client.Mvvm.ViewModel.Services;
 using LogoFX.Core;
 using Samples.Universal.Client.Model.Contracts;
 using Samples.Universal.Client.Model.Shared;

@@ -1,6 +1,5 @@
 using Caliburn.Micro;
 using JetBrains.Annotations;
-using LogoFX.Client.Mvvm.ViewModel.Services;
 using Samples.Universal.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels

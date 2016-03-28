@@ -7,11 +7,11 @@ using Samples.Universal.Client.Presentation.Shell.ViewModels;
 
 namespace Samples.Universal.Client.Presentation.Shell
 {
-    public class AppBootstrapper : BootstrapperContainerBase<ShellViewModel, WinRTContainerAdapter>
+    public class AppBootstrapper : BootstrapperContainerBase<ShellViewModel, WinRTContainerAdapter, WinRTContainer>
     {
-        private static readonly WinRTContainerAdapter _iocContainerAdapter = new WinRTContainerAdapter(new WinRTContainer());
+        private static readonly WinRTContainer _iocContainer = new WinRTContainer();
 
-        public AppBootstrapper() : base(_iocContainerAdapter)
+        public AppBootstrapper() : base(_iocContainer, c => new WinRTContainerAdapter(c))
         {
         }
 
@@ -28,7 +28,7 @@ namespace Samples.Universal.Client.Presentation.Shell
 
         protected override void PrepareViewFirst(Frame rootFrame)
         {
-            _iocContainerAdapter.RegisterNavigationService(rootFrame);
+            _iocContainer.RegisterNavigationService(rootFrame);
         }
 
         public override string[] Prefixes => new[] {"Samples"};
