@@ -2,7 +2,7 @@
   "dependencies": {
     "AutoMapper": "4.2.1",
     "JetBrains.Annotations": "10.0.0",
-    "LogoFX.Client.Mvvm.Model": "1.0.8",
+    "LogoFX.Client.Mvvm.Model": "1.0.9",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "Solid.Practices.IoC": "1.1.1",
     "Solid.Practices.Modularity": "1.1.1",

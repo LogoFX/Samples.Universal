@@ -1,7 +1,7 @@
 ﻿{
   "dependencies": {
     "Attest.Fake.Builders": "1.1.1",
-    "Attest.Fake.LightMock": "1.1.0",
+    "Attest.Fake.LightMock": "1.1.1",
     "Attest.Fake.Setup": "1.1.3",
     "LightMock": "1.0.0.6",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",

@@ -1,6 +1,6 @@
 ﻿{
   "dependencies": {
-    "LogoFX.Client.Mvvm.Model": "1.0.8",
+    "LogoFX.Client.Mvvm.Model": "1.0.9",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {
