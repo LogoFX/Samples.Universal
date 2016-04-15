@@ -1,6 +1,6 @@
 using Caliburn.Micro;
 using JetBrains.Annotations;
-using Samples.Universal.Client.Model.Contracts;
+using Samples.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {

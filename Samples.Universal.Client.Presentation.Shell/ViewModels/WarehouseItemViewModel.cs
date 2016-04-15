@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel;
-using Samples.Universal.Client.Model.Contracts;
+using Samples.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {

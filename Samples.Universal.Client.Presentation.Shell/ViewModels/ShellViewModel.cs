@@ -3,8 +3,8 @@ using System.ComponentModel;
 using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Core;
-using Samples.Universal.Client.Model.Contracts;
-using Samples.Universal.Client.Model.Shared;
+using Samples.Client.Model.Contracts;
+using Samples.Client.Model.Shared;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {
