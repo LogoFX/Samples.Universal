@@ -1,26 +1,11 @@
 ﻿{
   "dependencies": {
     "Caliburn.Micro": "3.0.0",
-    "Caliburn.Micro.Core": "3.0.0",
     "JetBrains.Annotations": "10.1.4",
-    "LogoFX.Client.Bootstrapping": "1.5.0",
-    "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-    "LogoFX.Client.Bootstrapping.Adapters.WinRTContainer": "1.1.0",
-    "LogoFX.Client.Bootstrapping.Core": "1.5.0",
-    "LogoFX.Client.Core": "1.0.8",
-    "LogoFX.Client.Mvvm.Commanding": "1.0.5",
+    "LogoFX.Client.Mvvm.Commanding": "1.0.5",    
     "LogoFX.Client.Mvvm.ViewModel": "1.0.5",
     "LogoFX.Client.Mvvm.ViewModel.Extensions.Core": "1.0.6",
-    "LogoFX.Client.Mvvm.ViewModel.Services.Core": "1.1.0",
-    "Microsoft.ApplicationInsights": "2.0.1",
-    "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
-    "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Solid.Practices.Composition": "1.1.4",
-    "Solid.Practices.Composition.Client": "1.1.4",
-    "Solid.Practices.Composition.Core": "1.1.4",
-    "Solid.Practices.Modularity": "1.1.1",
-    "WinRTTriggers": "1.6.0"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {
     "uap10.0": {}

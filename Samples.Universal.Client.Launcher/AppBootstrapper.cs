@@ -4,7 +4,7 @@ using LogoFX.Client.Bootstrapping;
 using LogoFX.Client.Bootstrapping.Adapters.WinRTContainer;
 using Samples.Universal.Client.Presentation.Shell.ViewModels;
 
-namespace Samples.Universal.Client.Presentation.Shell
+namespace Samples.Universal.Client.Launcher
 {
     public class AppBootstrapper : BootstrapperContainerBase<WinRTContainerAdapter, WinRTContainer>.WithRootObject<ShellViewModel>
     {

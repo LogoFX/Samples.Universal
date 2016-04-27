@@ -1,6 +1,6 @@
 ﻿using Microsoft.ApplicationInsights;
 
-namespace Samples.Universal.Client.Presentation.Shell
+namespace Samples.Universal.Client.Launcher
 {    
     sealed partial class App
     {              
