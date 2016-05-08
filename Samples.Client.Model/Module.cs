@@ -6,9 +6,9 @@ using Solid.Practices.Modularity;
 namespace Samples.Client.Model
 {
     [UsedImplicitly]
-    class Module : ICompositionModule<IIocContainer>
+    class Module : ICompositionModule<IIocContainerRegistrator>
     {
-        public void RegisterModule(IIocContainer iocContainer)
+        public void RegisterModule(IIocContainerRegistrator iocContainer)
         {            
             iocContainer.RegisterSingleton<IDataService, DataService>();
             iocContainer.RegisterSingleton<ILoginService, LoginService>();

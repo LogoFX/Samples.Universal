@@ -11,9 +11,9 @@ using Solid.Practices.Modularity;
 namespace Samples.Client.Data.Fake.Providers
 {
     [UsedImplicitly]
-    class Module : ICompositionModule<IIocContainer>
+    class Module : ICompositionModule<IIocContainerRegistrator>
     {
-        public void RegisterModule(IIocContainer iocContainer)
+        public void RegisterModule(IIocContainerRegistrator iocContainer)
         {
             RegisterDataContainers(iocContainer);
             RegisterBuilders(iocContainer);
