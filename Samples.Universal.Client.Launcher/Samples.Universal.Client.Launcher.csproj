@@ -105,6 +105,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="project.lock.json" />
     <None Include="Samples.Universal_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +128,10 @@
     <ProjectReference Include="..\Samples.Client.Model.Contracts\Samples.Client.Model.Contracts.csproj">
       <Project>{536d34e4-a409-4567-b7c6-58f50206740e}</Project>
       <Name>Samples.Client.Model.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Client.Model\Samples.Client.Model.csproj">
+      <Project>{33766857-5fce-4c2c-b167-e76a9f521ff0}</Project>
+      <Name>Samples.Client.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Universal.Client.Presentation.Shell\Samples.Universal.Client.Presentation.Shell.csproj">
       <Project>{693D6459-4ABC-4BE9-98C4-BA4A84BB56BF}</Project>

@@ -8,6 +8,7 @@
     "LogoFX.Client.Tests.Integration": "1.0.5",
     "LogoFX.Client.Tests.Shared.Caliburn.Micro": "1.0.9",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+    "Solid.Practices.Composition.Client": "1.1.5",
     "Solid.Practices.Composition.Core": "1.1.5"
   },
   "frameworks": {

@@ -105,6 +105,7 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="project.json" />
+    <None Include="project.lock.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interactivity\Behaviors\PasswordHelper.cs" />
@@ -148,10 +149,6 @@
     <ProjectReference Include="..\Samples.Client.Model.Shared\Samples.Client.Model.Shared.csproj">
       <Project>{49724A56-9FA9-44C4-B731-1E414EE598BC}</Project>
       <Name>Samples.Client.Model.Shared</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Samples.Client.Model\Samples.Client.Model.csproj">
-      <Project>{33766857-5fce-4c2c-b167-e76a9f521ff0}</Project>
-      <Name>Samples.Client.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
