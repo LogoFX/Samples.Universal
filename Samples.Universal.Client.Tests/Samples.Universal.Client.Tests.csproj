@@ -156,6 +156,9 @@
     <Reference Include="LogoFX.Client.Bootstrapping.Testing">
       <HintPath>..\..\logofx-project\cl-bs\src\Bin\uwp\Release\LogoFX.Client.Bootstrapping.Testing.dll</HintPath>
     </Reference>
+    <Reference Include="LogoFX.Client.Testing.Integration.xUnit.Platform">
+      <HintPath>..\..\logofx-project\cl-ts-in-xunit\src\bin\uwp\Release\LogoFX.Client.Testing.Integration.xUnit.Platform.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -108,7 +108,6 @@
     <None Include="project.lock.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuilderRegistrationService.cs" />
     <Compile Include="IntegrationTestsBaseWithActivation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Samples.Universal.Client.Tests.Integration.Infra.rd.xml" />
@@ -126,6 +125,12 @@
   <ItemGroup>
     <Reference Include="LogoFX.Client.Bootstrapping.Testing">
       <HintPath>..\..\logofx-project\cl-bs\src\Bin\uwp\Release\LogoFX.Client.Bootstrapping.Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="LogoFX.Client.Testing.Integration.xUnit">
+      <HintPath>..\..\logofx-project\cl-ts-in-xunit\src\bin\portable\Release\LogoFX.Client.Testing.Integration.xUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="LogoFX.Client.Testing.Integration.xUnit.Platform">
+      <HintPath>..\..\logofx-project\cl-ts-in-xunit\src\bin\uwp\Release\LogoFX.Client.Testing.Integration.xUnit.Platform.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

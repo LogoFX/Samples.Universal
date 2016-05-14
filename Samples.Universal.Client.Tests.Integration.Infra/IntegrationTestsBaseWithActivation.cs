@@ -1,7 +1,7 @@
 using Attest.Testing.Core;
-using Attest.Testing.xUnit;
 using Caliburn.Micro;
 using LogoFX.Client.Testing.Contracts;
+using LogoFX.Client.Testing.Integration.xUnit;
 using Samples.Universal.Client.Presentation.Shell.ViewModels;
 using Samples.Universal.Client.Tests.Integration.Infra.Shared;
 
@@ -18,7 +18,7 @@ namespace Samples.Universal.Client.Tests.Integration.Infra
 
         protected override void SetupOverride()
         {            
-            LogoFX.Client.Testing.Shared.TestHelper.Setup();           
+            base.SetupOverride();            
             ServiceRegistrationHelper.RegisterIntegrationObjects();
             ScenarioHelper.Add(new BuilderRegistrationService(), typeof(IBuilderRegistrationService));
         }
