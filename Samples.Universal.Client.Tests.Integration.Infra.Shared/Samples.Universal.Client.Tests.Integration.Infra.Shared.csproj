@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0571C1AB-6FBC-4FDD-B67B-ABC6E8C86CEF}</ProjectGuid>
+    <ProjectGuid>{57854641-DFF8-4B25-B32E-CB0A4A39A2A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Samples.Universal.Client.Tests.Integration.Infra.Shared</RootNamespace>
@@ -105,7 +105,6 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="project.json" />
-    <None Include="project.lock.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,7 +112,7 @@
     <Compile Include="StartApplicationService.cs" />
     <Compile Include="TestBootstrapper.cs" />
     <Compile Include="TestHelper.cs" />
-    <EmbeddedResource Include="Properties\Samples.Universal.Client.Tests.Integration.Infra.Shared.rd.xml" />
+    <EmbeddedResource Include="Properties\ClassLibrary2.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples.Client.Data.Contracts.Providers\Samples.Client.Data.Contracts.Providers.csproj">
@@ -125,7 +124,7 @@
       <Name>Samples.Client.Data.Fake.ProviderBuilders</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Client.Model.Contracts\Samples.Client.Model.Contracts.csproj">
-      <Project>{536D34E4-A409-4567-B7C6-58F50206740E}</Project>
+      <Project>{536d34e4-a409-4567-b7c6-58f50206740e}</Project>
       <Name>Samples.Client.Model.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Client.Model.Shared\Samples.Client.Model.Shared.csproj">

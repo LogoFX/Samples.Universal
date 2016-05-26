@@ -125,6 +125,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Samples.Client.Data.Fake.Providers\Samples.Client.Data.Fake.Providers.csproj">
+      <Project>{457f2d20-5977-4c06-8101-f1b3be831a32}</Project>
+      <Name>Samples.Client.Data.Fake.Providers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Samples.Client.Model.Contracts\Samples.Client.Model.Contracts.csproj">
       <Project>{536d34e4-a409-4567-b7c6-58f50206740e}</Project>
       <Name>Samples.Client.Model.Contracts</Name>

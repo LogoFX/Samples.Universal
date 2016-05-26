@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{2C0935A5-209F-4EA3-AC0F-991F15F4C16C}</ProjectGuid>
+    <ProjectGuid>{9BEEE462-8347-4F87-A233-5D83A7FF0C80}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Samples.Universal.Client.Tests</RootNamespace>
@@ -16,7 +16,7 @@
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Samples.Universal.Client.Tests_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>UnitTestProject1_TemporaryKey.pfx</PackageCertificateKeyFile>
     <UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">14.0</UnitTestPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
@@ -110,8 +110,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="project.lock.json" />
-    <None Include="Samples.Universal.Client.Tests_TemporaryKey.pfx" />
+    <None Include="UnitTestProject1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\UnitTestApp.rd.xml" />
@@ -122,9 +121,6 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples.Client.Model.Contracts\Samples.Client.Model.Contracts.csproj">
@@ -144,11 +140,11 @@
       <Name>Samples.Universal.Client.Presentation.Shell</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Universal.Client.Tests.Integration.Infra.Shared\Samples.Universal.Client.Tests.Integration.Infra.Shared.csproj">
-      <Project>{0571c1ab-6fbc-4fdd-b67b-abc6e8c86cef}</Project>
+      <Project>{57854641-dff8-4b25-b32e-cb0a4a39a2a2}</Project>
       <Name>Samples.Universal.Client.Tests.Integration.Infra.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Universal.Client.Tests.Integration.Infra\Samples.Universal.Client.Tests.Integration.Infra.csproj">
-      <Project>{E8E481CF-1042-4AC8-BDC5-CB0D4AE20FCC}</Project>
+      <Project>{625A9D65-DC7A-443D-96E6-4CA9EF763810}</Project>
       <Name>Samples.Universal.Client.Tests.Integration.Infra</Name>
     </ProjectReference>
   </ItemGroup>
@@ -156,9 +152,9 @@
     <Reference Include="LogoFX.Client.Bootstrapping.Testing">
       <HintPath>..\..\logofx-project\cl-bs\src\Bin\uwp\Release\LogoFX.Client.Bootstrapping.Testing.dll</HintPath>
     </Reference>
-    <Reference Include="LogoFX.Client.Testing.Integration.xUnit.Platform">
-      <HintPath>..\..\logofx-project\cl-ts-in-xunit\src\bin\uwp\Release\LogoFX.Client.Testing.Integration.xUnit.Platform.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

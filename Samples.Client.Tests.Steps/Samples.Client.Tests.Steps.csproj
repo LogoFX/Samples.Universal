@@ -59,7 +59,7 @@
       <Name>Samples.Client.Data.Contracts.Providers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Client.Data.Fake.ProviderBuilders\Samples.Client.Data.Fake.ProviderBuilders.csproj">
-      <Project>{B9B61E48-888E-4347-8DFE-F41DAC4A1F2F}</Project>
+      <Project>{6C0049C1-2EA3-47FB-A223-A92B4CE9A4E9}</Project>
       <Name>Samples.Client.Data.Fake.ProviderBuilders</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Client.Tests.Contracts.ScreenObjects\Samples.Client.Tests.Contracts.ScreenObjects.csproj">
@@ -88,8 +88,8 @@
       <HintPath>..\packages\LogoFX.Client.Tests.Contracts.1.0.5\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\LogoFX.Client.Testing.Contracts.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Shim, Version=1.0.2.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
-      <HintPath>..\packages\shim.1.0.2.50909\lib\portable-net45+netcore45+wpa81\Shim.dll</HintPath>
+    <Reference Include="Shim, Version=2.1.0.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
+      <HintPath>..\packages\shim.2.1.0-pre\lib\portable-net45+netcore45+wpa81\Shim.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Shouldly, Version=2.7.0.0, Culture=neutral, PublicKeyToken=6042cbcb05cbc941, processorArchitecture=MSIL">

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8E481CF-1042-4AC8-BDC5-CB0D4AE20FCC}</ProjectGuid>
+    <ProjectGuid>{625A9D65-DC7A-443D-96E6-4CA9EF763810}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Samples.Universal.Client.Tests.Integration.Infra</RootNamespace>
@@ -105,33 +105,26 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="project.json" />
-    <None Include="project.lock.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IntegrationTestsBaseWithActivation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Samples.Universal.Client.Tests.Integration.Infra.rd.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Samples.Universal.Client.Presentation.Shell\Samples.Universal.Client.Presentation.Shell.csproj">
-      <Project>{693D6459-4ABC-4BE9-98C4-BA4A84BB56BF}</Project>
-      <Name>Samples.Universal.Client.Presentation.Shell</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Samples.Universal.Client.Tests.Integration.Infra.Shared\Samples.Universal.Client.Tests.Integration.Infra.Shared.csproj">
-      <Project>{0571C1AB-6FBC-4FDD-B67B-ABC6E8C86CEF}</Project>
-      <Name>Samples.Universal.Client.Tests.Integration.Infra.Shared</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="Properties\ClassLibrary1.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="LogoFX.Client.Bootstrapping.Testing">
       <HintPath>..\..\logofx-project\cl-bs\src\Bin\uwp\Release\LogoFX.Client.Bootstrapping.Testing.dll</HintPath>
     </Reference>
-    <Reference Include="LogoFX.Client.Testing.Integration.xUnit">
-      <HintPath>..\..\logofx-project\cl-ts-in-xunit\src\bin\portable\Release\LogoFX.Client.Testing.Integration.xUnit.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Client.Testing.Integration.xUnit.Platform">
-      <HintPath>..\..\logofx-project\cl-ts-in-xunit\src\bin\uwp\Release\LogoFX.Client.Testing.Integration.xUnit.Platform.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Samples.Universal.Client.Tests.Integration.Infra.Shared\Samples.Universal.Client.Tests.Integration.Infra.Shared.csproj">
+      <Project>{57854641-DFF8-4B25-B32E-CB0A4A39A2A2}</Project>
+      <Name>Samples.Universal.Client.Tests.Integration.Infra.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Universal.Client.Presentation.Shell\Samples.Universal.Client.Presentation.Shell.csproj">
+      <Project>{693D6459-4ABC-4BE9-98C4-BA4A84BB56BF}</Project>
+      <Name>Samples.Universal.Client.Presentation.Shell</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
