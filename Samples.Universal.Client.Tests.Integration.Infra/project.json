@@ -1,6 +1,7 @@
 ﻿{
   "dependencies": {
-    "LogoFX.Client.Bootstrapping": "1.6.2",
+    "LogoFX.Client.Bootstrapping": "1.6.3-alpha",
+    "LogoFX.Client.Bootstrapping.Testing": "1.6.3-alpha",
     "LogoFX.Client.Testing.Integration.xUnit": "1.2.0",
     "LogoFX.Client.Testing.Integration.xUnit.Core": "1.2.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",

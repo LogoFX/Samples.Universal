@@ -1,9 +1,9 @@
 ﻿{
   "dependencies": {
-    "Caliburn.Micro": "3.0.0",
+    "Caliburn.Micro": "3.0.1",
     "Caliburn.Micro.Core": "3.0.1",
     "JetBrains.Annotations": "10.1.4",
-    "LogoFX.Client.Bootstrapping": "1.6.2",
+    "LogoFX.Client.Bootstrapping": "1.6.3-alpha",
     "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
     "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer": "1.1.1",
     "LogoFX.Client.Bootstrapping.Core": "1.6.2",

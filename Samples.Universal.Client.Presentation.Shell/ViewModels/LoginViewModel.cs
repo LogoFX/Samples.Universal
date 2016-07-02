@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Windows.Input;
+using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.Commanding;
-using LogoFX.Client.Mvvm.ViewModel.Extensions;
 using Samples.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {   
     [UsedImplicitly]
-    public sealed class LoginViewModel : BusyScreen
+    public sealed class LoginViewModel : Screen
     {
         private readonly ILoginService _loginService;
 
@@ -36,7 +36,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
                                try
                                {
-                                   IsBusy = true;
+                                   //IsBusy = true;
                                    await _loginService.LoginAsync(UserName, Password);
                                    OnLoginSuccess();
                                }
@@ -49,7 +49,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                                finally
                                {
                                    Password = string.Empty;
-                                   IsBusy = false;
+                                   //IsBusy = false;
                                }
                            })                           
                            .RequeryOnPropertyChanged(this, () => Password));

@@ -112,11 +112,6 @@
     <EmbeddedResource Include="Properties\ClassLibrary1.rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="LogoFX.Client.Bootstrapping.Testing">
-      <HintPath>..\..\logofx-project\cl-bs\src\Bin\uwp\Release\LogoFX.Client.Bootstrapping.Testing.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Samples.Universal.Client.Tests.Integration.Infra.Shared\Samples.Universal.Client.Tests.Integration.Infra.Shared.csproj">
       <Project>{57854641-DFF8-4B25-B32E-CB0A4A39A2A2}</Project>
       <Name>Samples.Universal.Client.Tests.Integration.Infra.Shared</Name>

@@ -66,9 +66,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.xUnit.dll": {}
         }
       },
-      "Caliburn.Micro/3.0.0": {
+      "Caliburn.Micro/3.0.1": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0]",
+          "Caliburn.Micro.Core": "[3.0.1]",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0"
         },
         "compile": {
@@ -80,7 +80,7 @@
           "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0": {
+      "Caliburn.Micro.Core/3.0.1": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -116,9 +116,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.2": {
+      "LogoFX.Client.Bootstrapping/1.6.3-alpha": {
         "dependencies": {
-          "Caliburn.Micro": "3.0.0",
+          "Caliburn.Micro": "3.0.1",
           "LogoFX.Bootstrapping": "1.5.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
           "LogoFX.Client.Bootstrapping.Core": "1.6.2",
@@ -145,6 +145,20 @@
           "lib/portable-net45+wpa8+win8/LogoFX.Client.Bootstrapping.Adapters.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer/1.1.1": {
+        "dependencies": {
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Core": "1.0.7",
+          "LogoFX.Practices.IoC": "1.0.9",
+          "Solid.Practices.IoC": "1.1.1"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        }
+      },
       "LogoFX.Client.Bootstrapping.Core/1.6.2": {
         "dependencies": {
           "LogoFX.Bootstrapping": "1.5.0",
@@ -156,6 +170,27 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
+        }
+      },
+      "LogoFX.Client.Bootstrapping.Testing/1.6.3-alpha": {
+        "dependencies": {
+          "Caliburn.Micro": "3.0.1",
+          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.2",
+          "LogoFX.Client.Core": "1.0.8",
+          "Solid.Bootstrapping": "1.1.1",
+          "Solid.Practices.Composition": "1.1.5",
+          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Middleware": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
         }
       },
       "LogoFX.Client.Core/1.0.8": {
@@ -241,20 +276,6 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.ViewModel.Extensions.Core/1.0.6": {
-        "dependencies": {
-          "Caliburn.Micro.Core": "3.0.0",
-          "LogoFX.Client.Core.Core": "1.0.7",
-          "LogoFX.Client.Mvvm.ViewModel.Core": "1.0.4",
-          "LogoFX.Core": "1.0.7"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        }
-      },
       "LogoFX.Client.Testing.Integration.xUnit/1.2.0": {
         "dependencies": {
           "Attest.Tests.Core": "1.3.0",
@@ -295,6 +316,18 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Tests.Integration/1.0.5": {
+        "dependencies": {
+          "Attest.Tests.Core": "1.1.2",
+          "LogoFX.Client.Tests.Contracts": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        }
+      },
       "LogoFX.Client.Tests.Shared/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -315,6 +348,21 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.dll": {}
+        }
+      },
+      "LogoFX.Practices.IoC/1.0.9": {
+        "dependencies": {
+          "LogoFX.Core": "1.0.7",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.2"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.0": {
@@ -2325,9 +2373,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.xUnit.dll": {}
         }
       },
-      "Caliburn.Micro/3.0.0": {
+      "Caliburn.Micro/3.0.1": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0]",
+          "Caliburn.Micro.Core": "[3.0.1]",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0"
         },
         "compile": {
@@ -2339,7 +2387,7 @@
           "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0": {
+      "Caliburn.Micro.Core/3.0.1": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -2375,9 +2423,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.2": {
+      "LogoFX.Client.Bootstrapping/1.6.3-alpha": {
         "dependencies": {
-          "Caliburn.Micro": "3.0.0",
+          "Caliburn.Micro": "3.0.1",
           "LogoFX.Bootstrapping": "1.5.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
           "LogoFX.Client.Bootstrapping.Core": "1.6.2",
@@ -2404,6 +2452,20 @@
           "lib/portable-net45+wpa8+win8/LogoFX.Client.Bootstrapping.Adapters.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer/1.1.1": {
+        "dependencies": {
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Core": "1.0.7",
+          "LogoFX.Practices.IoC": "1.0.9",
+          "Solid.Practices.IoC": "1.1.1"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        }
+      },
       "LogoFX.Client.Bootstrapping.Core/1.6.2": {
         "dependencies": {
           "LogoFX.Bootstrapping": "1.5.0",
@@ -2415,6 +2477,27 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
+        }
+      },
+      "LogoFX.Client.Bootstrapping.Testing/1.6.3-alpha": {
+        "dependencies": {
+          "Caliburn.Micro": "3.0.1",
+          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.2",
+          "LogoFX.Client.Core": "1.0.8",
+          "Solid.Bootstrapping": "1.1.1",
+          "Solid.Practices.Composition": "1.1.5",
+          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Middleware": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
         }
       },
       "LogoFX.Client.Core/1.0.8": {
@@ -2500,20 +2583,6 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.ViewModel.Extensions.Core/1.0.6": {
-        "dependencies": {
-          "Caliburn.Micro.Core": "3.0.0",
-          "LogoFX.Client.Core.Core": "1.0.7",
-          "LogoFX.Client.Mvvm.ViewModel.Core": "1.0.4",
-          "LogoFX.Core": "1.0.7"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        }
-      },
       "LogoFX.Client.Testing.Integration.xUnit/1.2.0": {
         "dependencies": {
           "Attest.Tests.Core": "1.3.0",
@@ -2554,6 +2623,18 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Tests.Integration/1.0.5": {
+        "dependencies": {
+          "Attest.Tests.Core": "1.1.2",
+          "LogoFX.Client.Tests.Contracts": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        }
+      },
       "LogoFX.Client.Tests.Shared/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -2574,6 +2655,21 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.dll": {}
+        }
+      },
+      "LogoFX.Practices.IoC/1.0.9": {
+        "dependencies": {
+          "LogoFX.Core": "1.0.7",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.2"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.0": {
@@ -4437,9 +4533,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.xUnit.dll": {}
         }
       },
-      "Caliburn.Micro/3.0.0": {
+      "Caliburn.Micro/3.0.1": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0]",
+          "Caliburn.Micro.Core": "[3.0.1]",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0"
         },
         "compile": {
@@ -4451,7 +4547,7 @@
           "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0": {
+      "Caliburn.Micro.Core/3.0.1": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -4487,9 +4583,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.2": {
+      "LogoFX.Client.Bootstrapping/1.6.3-alpha": {
         "dependencies": {
-          "Caliburn.Micro": "3.0.0",
+          "Caliburn.Micro": "3.0.1",
           "LogoFX.Bootstrapping": "1.5.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
           "LogoFX.Client.Bootstrapping.Core": "1.6.2",
@@ -4516,6 +4612,20 @@
           "lib/portable-net45+wpa8+win8/LogoFX.Client.Bootstrapping.Adapters.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer/1.1.1": {
+        "dependencies": {
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Core": "1.0.7",
+          "LogoFX.Practices.IoC": "1.0.9",
+          "Solid.Practices.IoC": "1.1.1"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        }
+      },
       "LogoFX.Client.Bootstrapping.Core/1.6.2": {
         "dependencies": {
           "LogoFX.Bootstrapping": "1.5.0",
@@ -4527,6 +4637,27 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
+        }
+      },
+      "LogoFX.Client.Bootstrapping.Testing/1.6.3-alpha": {
+        "dependencies": {
+          "Caliburn.Micro": "3.0.1",
+          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.2",
+          "LogoFX.Client.Core": "1.0.8",
+          "Solid.Bootstrapping": "1.1.1",
+          "Solid.Practices.Composition": "1.1.5",
+          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Middleware": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
         }
       },
       "LogoFX.Client.Core/1.0.8": {
@@ -4612,20 +4743,6 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.ViewModel.Extensions.Core/1.0.6": {
-        "dependencies": {
-          "Caliburn.Micro.Core": "3.0.0",
-          "LogoFX.Client.Core.Core": "1.0.7",
-          "LogoFX.Client.Mvvm.ViewModel.Core": "1.0.4",
-          "LogoFX.Core": "1.0.7"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        }
-      },
       "LogoFX.Client.Testing.Integration.xUnit/1.2.0": {
         "dependencies": {
           "Attest.Tests.Core": "1.3.0",
@@ -4666,6 +4783,18 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Tests.Integration/1.0.5": {
+        "dependencies": {
+          "Attest.Tests.Core": "1.1.2",
+          "LogoFX.Client.Tests.Contracts": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        }
+      },
       "LogoFX.Client.Tests.Shared/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -4686,6 +4815,21 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.dll": {}
+        }
+      },
+      "LogoFX.Practices.IoC/1.0.9": {
+        "dependencies": {
+          "LogoFX.Core": "1.0.7",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.2"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.0": {
@@ -6513,9 +6657,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.xUnit.dll": {}
         }
       },
-      "Caliburn.Micro/3.0.0": {
+      "Caliburn.Micro/3.0.1": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0]",
+          "Caliburn.Micro.Core": "[3.0.1]",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0"
         },
         "compile": {
@@ -6527,7 +6671,7 @@
           "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0": {
+      "Caliburn.Micro.Core/3.0.1": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -6563,9 +6707,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.2": {
+      "LogoFX.Client.Bootstrapping/1.6.3-alpha": {
         "dependencies": {
-          "Caliburn.Micro": "3.0.0",
+          "Caliburn.Micro": "3.0.1",
           "LogoFX.Bootstrapping": "1.5.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
           "LogoFX.Client.Bootstrapping.Core": "1.6.2",
@@ -6592,6 +6736,20 @@
           "lib/portable-net45+wpa8+win8/LogoFX.Client.Bootstrapping.Adapters.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer/1.1.1": {
+        "dependencies": {
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Core": "1.0.7",
+          "LogoFX.Practices.IoC": "1.0.9",
+          "Solid.Practices.IoC": "1.1.1"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        }
+      },
       "LogoFX.Client.Bootstrapping.Core/1.6.2": {
         "dependencies": {
           "LogoFX.Bootstrapping": "1.5.0",
@@ -6603,6 +6761,27 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
+        }
+      },
+      "LogoFX.Client.Bootstrapping.Testing/1.6.3-alpha": {
+        "dependencies": {
+          "Caliburn.Micro": "3.0.1",
+          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.2",
+          "LogoFX.Client.Core": "1.0.8",
+          "Solid.Bootstrapping": "1.1.1",
+          "Solid.Practices.Composition": "1.1.5",
+          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Middleware": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
         }
       },
       "LogoFX.Client.Core/1.0.8": {
@@ -6688,20 +6867,6 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.ViewModel.Extensions.Core/1.0.6": {
-        "dependencies": {
-          "Caliburn.Micro.Core": "3.0.0",
-          "LogoFX.Client.Core.Core": "1.0.7",
-          "LogoFX.Client.Mvvm.ViewModel.Core": "1.0.4",
-          "LogoFX.Core": "1.0.7"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        }
-      },
       "LogoFX.Client.Testing.Integration.xUnit/1.2.0": {
         "dependencies": {
           "Attest.Tests.Core": "1.3.0",
@@ -6742,6 +6907,18 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Tests.Integration/1.0.5": {
+        "dependencies": {
+          "Attest.Tests.Core": "1.1.2",
+          "LogoFX.Client.Tests.Contracts": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        }
+      },
       "LogoFX.Client.Tests.Shared/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -6762,6 +6939,21 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.dll": {}
+        }
+      },
+      "LogoFX.Practices.IoC/1.0.9": {
+        "dependencies": {
+          "LogoFX.Core": "1.0.7",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.2"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.0": {
@@ -8631,9 +8823,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.xUnit.dll": {}
         }
       },
-      "Caliburn.Micro/3.0.0": {
+      "Caliburn.Micro/3.0.1": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0]",
+          "Caliburn.Micro.Core": "[3.0.1]",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0"
         },
         "compile": {
@@ -8645,7 +8837,7 @@
           "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0": {
+      "Caliburn.Micro.Core/3.0.1": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -8681,9 +8873,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.2": {
+      "LogoFX.Client.Bootstrapping/1.6.3-alpha": {
         "dependencies": {
-          "Caliburn.Micro": "3.0.0",
+          "Caliburn.Micro": "3.0.1",
           "LogoFX.Bootstrapping": "1.5.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
           "LogoFX.Client.Bootstrapping.Core": "1.6.2",
@@ -8710,6 +8902,20 @@
           "lib/portable-net45+wpa8+win8/LogoFX.Client.Bootstrapping.Adapters.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer/1.1.1": {
+        "dependencies": {
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Core": "1.0.7",
+          "LogoFX.Practices.IoC": "1.0.9",
+          "Solid.Practices.IoC": "1.1.1"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        }
+      },
       "LogoFX.Client.Bootstrapping.Core/1.6.2": {
         "dependencies": {
           "LogoFX.Bootstrapping": "1.5.0",
@@ -8721,6 +8927,27 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
+        }
+      },
+      "LogoFX.Client.Bootstrapping.Testing/1.6.3-alpha": {
+        "dependencies": {
+          "Caliburn.Micro": "3.0.1",
+          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.2",
+          "LogoFX.Client.Core": "1.0.8",
+          "Solid.Bootstrapping": "1.1.1",
+          "Solid.Practices.Composition": "1.1.5",
+          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Middleware": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
         }
       },
       "LogoFX.Client.Core/1.0.8": {
@@ -8806,20 +9033,6 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.ViewModel.Extensions.Core/1.0.6": {
-        "dependencies": {
-          "Caliburn.Micro.Core": "3.0.0",
-          "LogoFX.Client.Core.Core": "1.0.7",
-          "LogoFX.Client.Mvvm.ViewModel.Core": "1.0.4",
-          "LogoFX.Core": "1.0.7"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        }
-      },
       "LogoFX.Client.Testing.Integration.xUnit/1.2.0": {
         "dependencies": {
           "Attest.Tests.Core": "1.3.0",
@@ -8860,6 +9073,18 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Tests.Integration/1.0.5": {
+        "dependencies": {
+          "Attest.Tests.Core": "1.1.2",
+          "LogoFX.Client.Tests.Contracts": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        }
+      },
       "LogoFX.Client.Tests.Shared/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -8880,6 +9105,21 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.dll": {}
+        }
+      },
+      "LogoFX.Practices.IoC/1.0.9": {
+        "dependencies": {
+          "LogoFX.Core": "1.0.7",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.2"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.0": {
@@ -10707,9 +10947,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.xUnit.dll": {}
         }
       },
-      "Caliburn.Micro/3.0.0": {
+      "Caliburn.Micro/3.0.1": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0]",
+          "Caliburn.Micro.Core": "[3.0.1]",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0"
         },
         "compile": {
@@ -10721,7 +10961,7 @@
           "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0": {
+      "Caliburn.Micro.Core/3.0.1": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -10757,9 +10997,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.2": {
+      "LogoFX.Client.Bootstrapping/1.6.3-alpha": {
         "dependencies": {
-          "Caliburn.Micro": "3.0.0",
+          "Caliburn.Micro": "3.0.1",
           "LogoFX.Bootstrapping": "1.5.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
           "LogoFX.Client.Bootstrapping.Core": "1.6.2",
@@ -10786,6 +11026,20 @@
           "lib/portable-net45+wpa8+win8/LogoFX.Client.Bootstrapping.Adapters.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer/1.1.1": {
+        "dependencies": {
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Core": "1.0.7",
+          "LogoFX.Practices.IoC": "1.0.9",
+          "Solid.Practices.IoC": "1.1.1"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        }
+      },
       "LogoFX.Client.Bootstrapping.Core/1.6.2": {
         "dependencies": {
           "LogoFX.Bootstrapping": "1.5.0",
@@ -10797,6 +11051,27 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
+        }
+      },
+      "LogoFX.Client.Bootstrapping.Testing/1.6.3-alpha": {
+        "dependencies": {
+          "Caliburn.Micro": "3.0.1",
+          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.2",
+          "LogoFX.Client.Core": "1.0.8",
+          "Solid.Bootstrapping": "1.1.1",
+          "Solid.Practices.Composition": "1.1.5",
+          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Middleware": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
         }
       },
       "LogoFX.Client.Core/1.0.8": {
@@ -10882,20 +11157,6 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.ViewModel.Extensions.Core/1.0.6": {
-        "dependencies": {
-          "Caliburn.Micro.Core": "3.0.0",
-          "LogoFX.Client.Core.Core": "1.0.7",
-          "LogoFX.Client.Mvvm.ViewModel.Core": "1.0.4",
-          "LogoFX.Core": "1.0.7"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        }
-      },
       "LogoFX.Client.Testing.Integration.xUnit/1.2.0": {
         "dependencies": {
           "Attest.Tests.Core": "1.3.0",
@@ -10936,6 +11197,18 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Tests.Integration/1.0.5": {
+        "dependencies": {
+          "Attest.Tests.Core": "1.1.2",
+          "LogoFX.Client.Tests.Contracts": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        }
+      },
       "LogoFX.Client.Tests.Shared/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -10956,6 +11229,21 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.dll": {}
+        }
+      },
+      "LogoFX.Practices.IoC/1.0.9": {
+        "dependencies": {
+          "LogoFX.Core": "1.0.7",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.2"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.0": {
@@ -12825,9 +13113,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.xUnit.dll": {}
         }
       },
-      "Caliburn.Micro/3.0.0": {
+      "Caliburn.Micro/3.0.1": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0]",
+          "Caliburn.Micro.Core": "[3.0.1]",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0"
         },
         "compile": {
@@ -12839,7 +13127,7 @@
           "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0": {
+      "Caliburn.Micro.Core/3.0.1": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -12875,9 +13163,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.2": {
+      "LogoFX.Client.Bootstrapping/1.6.3-alpha": {
         "dependencies": {
-          "Caliburn.Micro": "3.0.0",
+          "Caliburn.Micro": "3.0.1",
           "LogoFX.Bootstrapping": "1.5.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
           "LogoFX.Client.Bootstrapping.Core": "1.6.2",
@@ -12904,6 +13192,20 @@
           "lib/portable-net45+wpa8+win8/LogoFX.Client.Bootstrapping.Adapters.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer/1.1.1": {
+        "dependencies": {
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Core": "1.0.7",
+          "LogoFX.Practices.IoC": "1.0.9",
+          "Solid.Practices.IoC": "1.1.1"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
+        }
+      },
       "LogoFX.Client.Bootstrapping.Core/1.6.2": {
         "dependencies": {
           "LogoFX.Bootstrapping": "1.5.0",
@@ -12915,6 +13217,27 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
+        }
+      },
+      "LogoFX.Client.Bootstrapping.Testing/1.6.3-alpha": {
+        "dependencies": {
+          "Caliburn.Micro": "3.0.1",
+          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.2",
+          "LogoFX.Client.Core": "1.0.8",
+          "Solid.Bootstrapping": "1.1.1",
+          "Solid.Practices.Composition": "1.1.5",
+          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Middleware": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll": {}
         }
       },
       "LogoFX.Client.Core/1.0.8": {
@@ -13000,20 +13323,6 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.ViewModel.Extensions.Core/1.0.6": {
-        "dependencies": {
-          "Caliburn.Micro.Core": "3.0.0",
-          "LogoFX.Client.Core.Core": "1.0.7",
-          "LogoFX.Client.Mvvm.ViewModel.Core": "1.0.4",
-          "LogoFX.Core": "1.0.7"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll": {}
-        }
-      },
       "LogoFX.Client.Testing.Integration.xUnit/1.2.0": {
         "dependencies": {
           "Attest.Tests.Core": "1.3.0",
@@ -13054,6 +13363,18 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.dll": {}
         }
       },
+      "LogoFX.Client.Tests.Integration/1.0.5": {
+        "dependencies": {
+          "Attest.Tests.Core": "1.1.2",
+          "LogoFX.Client.Tests.Contracts": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll": {}
+        }
+      },
       "LogoFX.Client.Tests.Shared/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -13074,6 +13395,21 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.dll": {}
+        }
+      },
+      "LogoFX.Practices.IoC/1.0.9": {
+        "dependencies": {
+          "LogoFX.Core": "1.0.7",
+          "Solid.Practices.IoC": "1.1.1",
+          "Solid.Practices.Modularity": "1.1.2"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll": {},
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.0": {
@@ -14893,11 +15229,11 @@
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.xUnit.dll"
       ]
     },
-    "Caliburn.Micro/3.0.0": {
-      "sha512": "T1zB9MKeK6T1cEsWk6eZOn/gUbPXREN77naMw0kersIIssSQVhxnic6CxtAd65G2mUDq8rdKpMfPbwxNWYYwxQ==",
+    "Caliburn.Micro/3.0.1": {
+      "sha512": "6RaRnvbHnwm2kx9N+xyI6+qCLDJaAGsV1JgKlQ2QWApYNinpqO1GglwZdCWQ6eWj0var+XjbM8V7NYqB/C1elg==",
       "type": "package",
       "files": [
-        "Caliburn.Micro.3.0.0.nupkg.sha512",
+        "Caliburn.Micro.3.0.1.nupkg.sha512",
         "Caliburn.Micro.nuspec",
         "lib/MonoAndroid10/Caliburn.Micro.Platform.Core.dll",
         "lib/MonoAndroid10/Caliburn.Micro.Platform.Core.xml",
@@ -14954,11 +15290,11 @@
         "lib/wpa81/Microsoft.Xaml.Interactivity.dll"
       ]
     },
-    "Caliburn.Micro.Core/3.0.0": {
-      "sha512": "HEbJwHbK9ExB1tHgFijKlij7yAyIFqMSsDlhQwp2nssOUhUE9iOBMLXTYhO9wsTu2+yvkvjkca77BUXKsmoR+w==",
+    "Caliburn.Micro.Core/3.0.1": {
+      "sha512": "CZPp0HVaHiW/N6JGsXpyJXnoyVRhFMY+H2uZcD24oNPczLOX1WuWsyVrSdagqUhjZnP1wV42Y6PkIUXEWWgOCg==",
       "type": "package",
       "files": [
-        "Caliburn.Micro.Core.3.0.0.nupkg.sha512",
+        "Caliburn.Micro.Core.3.0.1.nupkg.sha512",
         "Caliburn.Micro.Core.nuspec",
         "lib/net40/Caliburn.Micro.XML",
         "lib/net40/Caliburn.Micro.dll",
@@ -14999,11 +15335,11 @@
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll"
       ]
     },
-    "LogoFX.Client.Bootstrapping/1.6.2": {
-      "sha512": "jsv2CMja1Fsao95fq0Bm9+sK13TLGIP9MOVMJKwnkqIxEIawn/cFMlTNq6rFzDH2s6E2dLE274Vw2ntMjT8FQg==",
+    "LogoFX.Client.Bootstrapping/1.6.3-alpha": {
+      "sha512": "w5T1VhV5xeagM7femOd7mYc98D7Y0GwR9caMoWALJGORrxydge9MwYpBvL9lkQ9r4K7/42ve4CUCOch6q8AwfA==",
       "type": "package",
       "files": [
-        "LogoFX.Client.Bootstrapping.1.6.2.nupkg.sha512",
+        "LogoFX.Client.Bootstrapping.1.6.3-alpha.nupkg.sha512",
         "LogoFX.Client.Bootstrapping.nuspec",
         "lib/net45/LogoFX.Client.Bootstrapping.Platform.XML",
         "lib/net45/LogoFX.Client.Bootstrapping.Platform.dll",
@@ -15033,6 +15369,16 @@
         "lib/portable-net45+wpa8+win8/LogoFX.Client.Bootstrapping.Adapters.Contracts.dll"
       ]
     },
+    "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer/1.1.1": {
+      "sha512": "zeVyGeVqHmC0vSCqNLnEXQdq0PyxR0/92e2MbNMc3HHPdCxI1EI5rUuIE6jLGYDf3NkZ7bVF+dwmmHpnm+QHNg==",
+      "type": "package",
+      "files": [
+        "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.1.1.1.nupkg.sha512",
+        "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.nuspec",
+        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.XML",
+        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll"
+      ]
+    },
     "LogoFX.Client.Bootstrapping.Core/1.6.2": {
       "sha512": "uJVmPZh504gmNFMT8w4ER0IYvS8JEnNF2/RpEDsSmHWDmmxClejPTGfFoFrcvgtG+u7wfJ/qhvHl5JOZNhGWLg==",
       "type": "package",
@@ -15041,6 +15387,25 @@
         "LogoFX.Client.Bootstrapping.Core.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.XML",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll"
+      ]
+    },
+    "LogoFX.Client.Bootstrapping.Testing/1.6.3-alpha": {
+      "sha512": "GSUxnaXWgVOYNlKwo8ceKYPwb7xn/h7TcUb8LlEP4icFWVyAbITSK9qN4oYVfhVjhKOk0hIEoAtHIpTe2EPxUQ==",
+      "type": "package",
+      "files": [
+        "LogoFX.Client.Bootstrapping.Testing.1.6.3-alpha.nupkg.sha512",
+        "LogoFX.Client.Bootstrapping.Testing.nuspec",
+        "lib/net45/LogoFX.Client.Bootstrapping.Testing.XML",
+        "lib/net45/LogoFX.Client.Bootstrapping.Testing.dll",
+        "lib/netcore451/LogoFX.Client.Bootstrapping.Testing.XML",
+        "lib/netcore451/LogoFX.Client.Bootstrapping.Testing.dll",
+        "lib/netcore451/LogoFX.Client.Bootstrapping.Testing.pri",
+        "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.XML",
+        "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.dll",
+        "lib/uap10.0/LogoFX.Client.Bootstrapping.Testing.pri",
+        "lib/win81/LogoFX.Client.Bootstrapping.Testing.XML",
+        "lib/win81/LogoFX.Client.Bootstrapping.Testing.dll",
+        "lib/win81/LogoFX.Client.Bootstrapping.Testing.pri"
       ]
     },
     "LogoFX.Client.Core/1.0.8": {
@@ -15167,16 +15532,6 @@
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.dll"
       ]
     },
-    "LogoFX.Client.Mvvm.ViewModel.Extensions.Core/1.0.6": {
-      "sha512": "+GuL9+iVBTtusswecuohBmhYuQY55o+6+/0qzh4U8FDYTKUVA2Q5FObF+MqZ4+9L4kHVK9aBPhdsr10sDu+uEA==",
-      "type": "package",
-      "files": [
-        "LogoFX.Client.Mvvm.ViewModel.Extensions.Core.1.0.6.nupkg.sha512",
-        "LogoFX.Client.Mvvm.ViewModel.Extensions.Core.nuspec",
-        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.XML",
-        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.ViewModel.Extensions.dll"
-      ]
-    },
     "LogoFX.Client.Testing.Integration.xUnit/1.2.0": {
       "sha512": "i5OrXWuYHAoDi0QbiPs9ht7plWOG/ytgyHl36a6LnNjmYbqN3x8WT7az63rJowcTabL1mjLb4ez+iAHUwM7T/g==",
       "type": "package",
@@ -15214,6 +15569,16 @@
         "LogoFX.Client.Tests.Contracts.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.XML",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Contracts.dll"
+      ]
+    },
+    "LogoFX.Client.Tests.Integration/1.0.5": {
+      "sha512": "+AsB4qSIKO/DMiwqx61Zq+dqloycRsbNynZ/3E3+s5He9Juf+KRHLRcXYUiETkOAWz8Ht6+5P8iglEREwmoCMg==",
+      "type": "package",
+      "files": [
+        "LogoFX.Client.Tests.Integration.1.0.5.nupkg.sha512",
+        "LogoFX.Client.Tests.Integration.nuspec",
+        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.XML",
+        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Testing.Integration.dll"
       ]
     },
     "LogoFX.Client.Tests.Shared/1.0.6": {
@@ -15256,6 +15621,18 @@
         "LogoFX.Core.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.XML",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Core.dll"
+      ]
+    },
+    "LogoFX.Practices.IoC/1.0.9": {
+      "sha512": "krdai+uC0G9PnaETJ8W4drSd7e3d2+5JOn8FlwsHCkq73dG7ytqin1TCraT1L9p8D97iVUFWCe6Cf4l7hlxQwQ==",
+      "type": "package",
+      "files": [
+        "LogoFX.Practices.IoC.1.0.9.nupkg.sha512",
+        "LogoFX.Practices.IoC.nuspec",
+        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.XML",
+        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.Modularity.dll",
+        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.XML",
+        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Practices.IoC.dll"
       ]
     },
     "Microsoft.CSharp/4.0.0": {
@@ -18700,7 +19077,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "LogoFX.Client.Bootstrapping >= 1.6.2",
+      "LogoFX.Client.Bootstrapping >= 1.6.3-alpha",
+      "LogoFX.Client.Bootstrapping.Testing >= 1.6.3-alpha",
       "LogoFX.Client.Testing.Integration.xUnit >= 1.2.0",
       "LogoFX.Client.Testing.Integration.xUnit.Core >= 1.2.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",

@@ -14,7 +14,7 @@ namespace Samples.Universal.Client.Tests.Integration.Infra.Shared
         {
             UserContext.Current = null;            
             ScenarioContext.Current.Clear();
-            LogoFX.Client.Testing.Shared.Caliburn.Micro.TestHelper.Teardown();
+            //LogoFX.Client.Testing.Shared.Caliburn.Micro.TestHelper.Teardown();
         }
     }
 }
