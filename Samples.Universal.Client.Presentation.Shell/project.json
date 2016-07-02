@@ -4,6 +4,7 @@
     "JetBrains.Annotations": "10.1.4",
     "LogoFX.Client.Mvvm.Commanding": "1.0.5",
     "LogoFX.Client.Mvvm.ViewModel": "1.0.5",
+    "LogoFX.Client.Mvvm.ViewModel.Extensions.Core": "1.0.7-alpha",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "Solid.Practices.Composition.Client": "1.1.5"
   },

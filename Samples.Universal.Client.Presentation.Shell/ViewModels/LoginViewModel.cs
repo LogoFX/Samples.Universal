@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Windows.Input;
-using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.Commanding;
+using LogoFX.Client.Mvvm.ViewModel.Extensions;
 using Samples.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {   
     [UsedImplicitly]
-    public sealed class LoginViewModel : Screen
+    public sealed class LoginViewModel : BusyScreen
     {
         private readonly ILoginService _loginService;
 

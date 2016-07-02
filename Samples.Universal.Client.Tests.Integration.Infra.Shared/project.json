@@ -6,6 +6,7 @@
     "LogoFX.Client.Bootstrapping.Testing": "1.6.3-alpha",
     "LogoFX.Client.Tests.Contracts": "1.0.5",
     "LogoFX.Client.Tests.Integration": "1.0.5",
+    "LogoFX.Client.Tests.Shared.Caliburn.Micro": "1.0.10-alpha",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "shim": "2.1.0-pre"
   },
