@@ -8,8 +8,7 @@ using LightMock;
 using Samples.Client.Data.Contracts.Providers;
 
 namespace Samples.Client.Data.Fake.ProviderBuilders
-{           
-    [Serializable]
+{               
     public class LoginProviderBuilder : FakeBuilderBase<ILoginProvider>
     {
         class LoginProviderProxy : ProviderProxyBase<ILoginProvider>, ILoginProvider

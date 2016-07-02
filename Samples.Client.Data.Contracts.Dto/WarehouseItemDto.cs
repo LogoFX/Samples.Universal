@@ -1,8 +1,5 @@
-﻿using System;
-
-namespace Samples.Client.Data.Contracts.Dto
-{
-    [Serializable]
+﻿namespace Samples.Client.Data.Contracts.Dto
+{    
     public sealed class WarehouseItemDto
     {
         public string Kind { get; set; }

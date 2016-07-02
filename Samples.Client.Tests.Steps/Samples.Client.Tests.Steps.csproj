@@ -42,6 +42,15 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugWithFake|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\DebugWithFake\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FAKE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
     <None Include="packages.config" />
@@ -68,12 +77,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Attest.Fake.Builders, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Builders.1.1.1\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Fake.Builders.dll</HintPath>
+    <Reference Include="Attest.Fake.Builders, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Attest.Fake.Builders.1.1.2\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Fake.Builders.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Attest.Fake.Core, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Core.1.0.8\lib\portable-net45+wpa8+win8\Attest.Fake.Core.dll</HintPath>
+    <Reference Include="Attest.Fake.Core, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Attest.Fake.Core.1.0.9\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Fake.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Attest.Fake.Registration, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">

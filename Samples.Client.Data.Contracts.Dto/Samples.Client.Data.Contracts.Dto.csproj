@@ -37,15 +37,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WarehouseItemDto.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Shim, Version=2.1.0.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
-      <HintPath>..\packages\shim.2.1.0-pre\lib\portable-net45+netcore45+wpa81\Shim.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

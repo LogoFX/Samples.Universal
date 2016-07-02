@@ -40,20 +40,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Attest.Fake.Builders, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Builders.1.1.1\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Fake.Builders.dll</HintPath>
+    <Reference Include="Attest.Fake.Builders, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Attest.Fake.Builders.1.1.2\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Fake.Builders.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Attest.Fake.Core, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Core.1.0.8\lib\portable-net45+wpa8+win8\Attest.Fake.Core.dll</HintPath>
+    <Reference Include="Attest.Fake.Core, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Attest.Fake.Core.1.0.9\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Fake.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="JetBrains.Annotations.PCL328, Version=10.1.4.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>..\packages\JetBrains.Annotations.10.1.4\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\JetBrains.Annotations.PCL328.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Shim, Version=2.1.0.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
-      <HintPath>..\packages\shim.2.1.0-pre\lib\portable-net45+netcore45+wpa81\Shim.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Solid.Practices.IoC, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">

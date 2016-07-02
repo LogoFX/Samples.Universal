@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Attest.Fake.Builders;
 using Attest.Fake.LightMock;
@@ -9,8 +8,7 @@ using Samples.Client.Data.Contracts.Dto;
 using Samples.Client.Data.Contracts.Providers;
 
 namespace Samples.Client.Data.Fake.ProviderBuilders
-{        
-    [Serializable]
+{            
     public class WarehouseProviderBuilder : FakeBuilderBase<IWarehouseProvider>
     {
         class WarehouseProviderProxy : ProviderProxyBase<IWarehouseProvider>, IWarehouseProvider
