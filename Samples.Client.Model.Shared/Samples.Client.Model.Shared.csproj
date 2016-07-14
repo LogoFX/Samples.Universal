@@ -49,12 +49,12 @@
       <HintPath>..\packages\LogoFX.Client.Core.Core.1.0.7\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch\LogoFX.Client.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.Client.Mvvm.Model, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LogoFX.Client.Mvvm.Model.1.0.9\lib\portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch\LogoFX.Client.Mvvm.Model.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.Model, Version=1.0.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.Model.1.0.10\lib\portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch\LogoFX.Client.Mvvm.Model.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.Client.Mvvm.Model.Contracts, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LogoFX.Client.Mvvm.Model.1.0.9\lib\portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch\LogoFX.Client.Mvvm.Model.Contracts.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.Model.Contracts, Version=1.0.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.Model.1.0.10\lib\portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch\LogoFX.Client.Mvvm.Model.Contracts.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="LogoFX.Core, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">

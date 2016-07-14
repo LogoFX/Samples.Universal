@@ -212,10 +212,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Client.Core.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
-          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.5",
+          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.6",
           "LogoFX.Client.Mvvm.Core": "1.0.6",
           "LogoFX.Core": "1.0.7",
           "Rx-Core": "2.2.5",
@@ -230,7 +230,7 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Commanding.Platform.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding.Core/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding.Core/1.0.6": {
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.dll": {}
         },
@@ -2596,10 +2596,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Client.Core.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
-          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.5",
+          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.6",
           "LogoFX.Client.Mvvm.Core": "1.0.6",
           "LogoFX.Core": "1.0.7",
           "Rx-Core": "2.2.5",
@@ -2614,7 +2614,7 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Commanding.Platform.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding.Core/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding.Core/1.0.6": {
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.dll": {}
         },
@@ -4833,10 +4833,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Client.Core.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
-          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.5",
+          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.6",
           "LogoFX.Client.Mvvm.Core": "1.0.6",
           "LogoFX.Core": "1.0.7",
           "Rx-Core": "2.2.5",
@@ -4851,7 +4851,7 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Commanding.Platform.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding.Core/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding.Core/1.0.6": {
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.dll": {}
         },
@@ -7034,10 +7034,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Client.Core.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
-          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.5",
+          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.6",
           "LogoFX.Client.Mvvm.Core": "1.0.6",
           "LogoFX.Core": "1.0.7",
           "Rx-Core": "2.2.5",
@@ -7052,7 +7052,7 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Commanding.Platform.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding.Core/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding.Core/1.0.6": {
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.dll": {}
         },
@@ -9277,10 +9277,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Client.Core.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
-          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.5",
+          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.6",
           "LogoFX.Client.Mvvm.Core": "1.0.6",
           "LogoFX.Core": "1.0.7",
           "Rx-Core": "2.2.5",
@@ -9295,7 +9295,7 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Commanding.Platform.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding.Core/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding.Core/1.0.6": {
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.dll": {}
         },
@@ -11478,10 +11478,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Client.Core.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
-          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.5",
+          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.6",
           "LogoFX.Client.Mvvm.Core": "1.0.6",
           "LogoFX.Core": "1.0.7",
           "Rx-Core": "2.2.5",
@@ -11496,7 +11496,7 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Commanding.Platform.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding.Core/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding.Core/1.0.6": {
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.dll": {}
         },
@@ -13721,10 +13721,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Client.Core.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding/1.0.6": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
-          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.5",
+          "LogoFX.Client.Mvvm.Commanding.Core": "1.0.6",
           "LogoFX.Client.Mvvm.Core": "1.0.6",
           "LogoFX.Core": "1.0.7",
           "Rx-Core": "2.2.5",
@@ -13739,7 +13739,7 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Commanding.Platform.dll": {}
         }
       },
-      "LogoFX.Client.Mvvm.Commanding.Core/1.0.5": {
+      "LogoFX.Client.Mvvm.Commanding.Core/1.0.6": {
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.dll": {}
         },
@@ -15980,14 +15980,16 @@
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch/LogoFX.Client.Core.xml"
       ]
     },
-    "LogoFX.Client.Mvvm.Commanding/1.0.5": {
-      "sha512": "tQ5QCT+YAi4HLYkCOB6oV1/t5cjemoKzNjW5JYGUJDOJQl6wbb6gU81b43yK6BKn37ilPs7VUi6WrCd3w4dqOA==",
+    "LogoFX.Client.Mvvm.Commanding/1.0.6": {
+      "sha512": "ru+DiCg0Ebl3SPWEsuzYbJr5KgSzT/YrJrDLHr8dR5xwXdMyy4Ik5+w0oCW+xYX8psJ4wjAL9DT2gFeOnmlF7A==",
       "type": "package",
+      "path": "LogoFX.Client.Mvvm.Commanding/1.0.6",
       "files": [
-        "LogoFX.Client.Mvvm.Commanding.1.0.5.nupkg.sha512",
+        "LogoFX.Client.Mvvm.Commanding.1.0.6.nupkg.sha512",
         "LogoFX.Client.Mvvm.Commanding.nuspec",
         "lib/net45/LogoFX.Client.Mvvm.Commanding.Platform.XML",
         "lib/net45/LogoFX.Client.Mvvm.Commanding.Platform.dll",
+        "lib/net45/System.Windows.Interactivity.dll",
         "lib/netcore451/LogoFX.Client.Mvvm.Commanding.Platform.XML",
         "lib/netcore451/LogoFX.Client.Mvvm.Commanding.Platform.dll",
         "lib/netcore451/LogoFX.Client.Mvvm.Commanding.Platform.pri",
@@ -16000,14 +16002,16 @@
         "lib/win81/LogoFX.Client.Mvvm.Commanding.Platform.pri",
         "lib/wpa81/LogoFX.Client.Mvvm.Commanding.Platform.XML",
         "lib/wpa81/LogoFX.Client.Mvvm.Commanding.Platform.dll",
-        "lib/wpa81/LogoFX.Client.Mvvm.Commanding.Platform.pri"
+        "lib/wpa81/LogoFX.Client.Mvvm.Commanding.Platform.pri",
+        "lib/wpa81/System.Windows.Interactivity.dll"
       ]
     },
-    "LogoFX.Client.Mvvm.Commanding.Core/1.0.5": {
-      "sha512": "FhDmda1TduM4KDACpuZ9i4TovlZFZuHojuE+0uThXDioXXA6B7qpmZk0MpnmVJRMshcAAbIBtgbvaJ4MIKIPNQ==",
+    "LogoFX.Client.Mvvm.Commanding.Core/1.0.6": {
+      "sha512": "Fgnoj2KIcAK2GKOoE0b9rCUgrTP7Zjngpa0lbHmFFgQvNNCDcf+gT+GtNMHVTiQZhzwdpxE9dAv3dc7+T46X4Q==",
       "type": "package",
+      "path": "LogoFX.Client.Mvvm.Commanding.Core/1.0.6",
       "files": [
-        "LogoFX.Client.Mvvm.Commanding.Core.1.0.5.nupkg.sha512",
+        "LogoFX.Client.Mvvm.Commanding.Core.1.0.6.nupkg.sha512",
         "LogoFX.Client.Mvvm.Commanding.Core.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.dll",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Mvvm.Commanding.xml"
