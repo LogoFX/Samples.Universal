@@ -2,8 +2,8 @@
   "dependencies": {
     "LogoFX.Client.Bootstrapping": "1.6.3",
     "LogoFX.Client.Bootstrapping.Testing": "1.6.3",
-    "LogoFX.Client.Testing.Integration.xUnit": "1.2.0",
-    "LogoFX.Client.Testing.Integration.xUnit.Core": "1.2.0",
+    "LogoFX.Client.Testing.Integration.xUnit": "1.2.1",
+    "LogoFX.Client.Testing.Integration.xUnit.Core": "1.2.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "shim": "2.1.0-pre"
   },

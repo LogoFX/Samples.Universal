@@ -1,6 +1,6 @@
 ﻿using Attest.Testing.Core;
+using FluentAssertions;
 using Samples.Client.Tests.Contracts.ScreenObjects;
-using Shouldly;
 
 namespace Samples.Client.Tests.Steps
 {
@@ -11,7 +11,7 @@ namespace Samples.Client.Tests.Steps
         public static void ThenApplicationNavigatesToTheMainScreen()
         {
             var isActive = _mainScreenObject.IsActive();
-            isActive.ShouldBeTrue();
+            isActive.Should().BeTrue();
         }
     }
 }
