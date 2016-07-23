@@ -1,11 +1,10 @@
 ﻿{
   "dependencies": {
-    "LogoFX.Client.Bootstrapping": "1.6.3",
-    "LogoFX.Client.Bootstrapping.Testing": "1.6.3",
+    "LogoFX.Client.Bootstrapping": "1.6.4",
+    "LogoFX.Client.Bootstrapping.Testing": "1.6.4",
     "LogoFX.Client.Testing.Integration.xUnit": "1.2.1",
     "LogoFX.Client.Testing.Integration.xUnit.Core": "1.2.1",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "shim": "2.1.0-pre"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {
     "uap10.0": {}

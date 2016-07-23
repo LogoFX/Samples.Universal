@@ -1,12 +1,12 @@
 ﻿{
   "dependencies": {
     "Caliburn.Micro": "3.0.1",
-    "JetBrains.Annotations": "10.1.4",
+    "JetBrains.Annotations": "10.1.5",
     "LogoFX.Client.Mvvm.Commanding": "1.0.6",
     "LogoFX.Client.Mvvm.ViewModel": "1.0.5",
     "LogoFX.Client.Mvvm.ViewModel.Extensions.Core": "1.0.7",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Solid.Practices.Composition.Client": "1.1.5"
+    "Solid.Practices.Composition.Client": "1.1.6"
   },
   "frameworks": {
     "uap10.0": {}

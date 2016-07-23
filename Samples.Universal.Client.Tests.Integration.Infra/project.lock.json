@@ -87,7 +87,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "JetBrains.Annotations/10.1.4": {
+      "JetBrains.Annotations/10.1.5": {
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
@@ -98,10 +98,11 @@
           "lib/dotnet/JetBrains.Annotations.Dotnet.dll": {}
         }
       },
-      "LogoFX.Bootstrapping/1.5.0": {
+      "LogoFX.Bootstrapping/1.6.0": {
         "dependencies": {
           "Solid.Bootstrapping": "1.1.1",
           "Solid.Extensibility": "1.1.0",
+          "Solid.Practices.Composition.Core": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -115,16 +116,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.3": {
+      "LogoFX.Client.Bootstrapping/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -158,9 +159,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Core/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Core/1.6.4": {
         "dependencies": {
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1"
         },
@@ -171,16 +172,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Testing/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Testing/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -695,14 +696,6 @@
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
         }
       },
-      "shim/2.1.0-pre": {
-        "compile": {
-          "lib/uap/Shim.dll": {}
-        },
-        "runtime": {
-          "lib/uap/Shim.dll": {}
-        }
-      },
       "Solid.Bootstrapping/1.1.1": {
         "dependencies": {
           "Solid.Practices.IoC": "1.1.1"
@@ -725,10 +718,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
         }
       },
-      "Solid.Practices.Composition/1.1.5": {
+      "Solid.Practices.Composition/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition.Core": "1.1.5",
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Composition.Core": "1.1.6",
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
@@ -737,10 +730,10 @@
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Client/1.1.5": {
+      "Solid.Practices.Composition.Client/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Core": "1.1.5"
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Core": "1.1.6"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
@@ -749,9 +742,9 @@
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Core/1.1.5": {
+      "Solid.Practices.Composition.Core/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.dll": {},
@@ -2419,7 +2412,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "JetBrains.Annotations/10.1.4": {
+      "JetBrains.Annotations/10.1.5": {
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
@@ -2430,10 +2423,11 @@
           "lib/dotnet/JetBrains.Annotations.Dotnet.dll": {}
         }
       },
-      "LogoFX.Bootstrapping/1.5.0": {
+      "LogoFX.Bootstrapping/1.6.0": {
         "dependencies": {
           "Solid.Bootstrapping": "1.1.1",
           "Solid.Extensibility": "1.1.0",
+          "Solid.Practices.Composition.Core": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -2447,16 +2441,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.3": {
+      "LogoFX.Client.Bootstrapping/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -2490,9 +2484,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Core/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Core/1.6.4": {
         "dependencies": {
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1"
         },
@@ -2503,16 +2497,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Testing/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Testing/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -3020,14 +3014,6 @@
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
         }
       },
-      "shim/2.1.0-pre": {
-        "compile": {
-          "lib/uap/Shim.dll": {}
-        },
-        "runtime": {
-          "lib/uap/Shim.dll": {}
-        }
-      },
       "Solid.Bootstrapping/1.1.1": {
         "dependencies": {
           "Solid.Practices.IoC": "1.1.1"
@@ -3050,10 +3036,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
         }
       },
-      "Solid.Practices.Composition/1.1.5": {
+      "Solid.Practices.Composition/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition.Core": "1.1.5",
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Composition.Core": "1.1.6",
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
@@ -3062,10 +3048,10 @@
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Client/1.1.5": {
+      "Solid.Practices.Composition.Client/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Core": "1.1.5"
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Core": "1.1.6"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
@@ -3074,9 +3060,9 @@
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Core/1.1.5": {
+      "Solid.Practices.Composition.Core/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.dll": {},
@@ -4604,7 +4590,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "JetBrains.Annotations/10.1.4": {
+      "JetBrains.Annotations/10.1.5": {
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
@@ -4615,10 +4601,11 @@
           "lib/dotnet/JetBrains.Annotations.Dotnet.dll": {}
         }
       },
-      "LogoFX.Bootstrapping/1.5.0": {
+      "LogoFX.Bootstrapping/1.6.0": {
         "dependencies": {
           "Solid.Bootstrapping": "1.1.1",
           "Solid.Extensibility": "1.1.0",
+          "Solid.Practices.Composition.Core": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -4632,16 +4619,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.3": {
+      "LogoFX.Client.Bootstrapping/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -4675,9 +4662,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Core/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Core/1.6.4": {
         "dependencies": {
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1"
         },
@@ -4688,16 +4675,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Testing/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Testing/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -5191,14 +5178,6 @@
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
         }
       },
-      "shim/2.1.0-pre": {
-        "compile": {
-          "lib/uap/Shim.dll": {}
-        },
-        "runtime": {
-          "lib/uap/Shim.dll": {}
-        }
-      },
       "Solid.Bootstrapping/1.1.1": {
         "dependencies": {
           "Solid.Practices.IoC": "1.1.1"
@@ -5221,10 +5200,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
         }
       },
-      "Solid.Practices.Composition/1.1.5": {
+      "Solid.Practices.Composition/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition.Core": "1.1.5",
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Composition.Core": "1.1.6",
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
@@ -5233,10 +5212,10 @@
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Client/1.1.5": {
+      "Solid.Practices.Composition.Client/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Core": "1.1.5"
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Core": "1.1.6"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
@@ -5245,9 +5224,9 @@
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Core/1.1.5": {
+      "Solid.Practices.Composition.Core/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.dll": {},
@@ -6753,7 +6732,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "JetBrains.Annotations/10.1.4": {
+      "JetBrains.Annotations/10.1.5": {
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
@@ -6764,10 +6743,11 @@
           "lib/dotnet/JetBrains.Annotations.Dotnet.dll": {}
         }
       },
-      "LogoFX.Bootstrapping/1.5.0": {
+      "LogoFX.Bootstrapping/1.6.0": {
         "dependencies": {
           "Solid.Bootstrapping": "1.1.1",
           "Solid.Extensibility": "1.1.0",
+          "Solid.Practices.Composition.Core": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -6781,16 +6761,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.3": {
+      "LogoFX.Client.Bootstrapping/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -6824,9 +6804,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Core/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Core/1.6.4": {
         "dependencies": {
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1"
         },
@@ -6837,16 +6817,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Testing/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Testing/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -7360,14 +7340,6 @@
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
         }
       },
-      "shim/2.1.0-pre": {
-        "compile": {
-          "lib/uap/Shim.dll": {}
-        },
-        "runtime": {
-          "lib/uap/Shim.dll": {}
-        }
-      },
       "Solid.Bootstrapping/1.1.1": {
         "dependencies": {
           "Solid.Practices.IoC": "1.1.1"
@@ -7390,10 +7362,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
         }
       },
-      "Solid.Practices.Composition/1.1.5": {
+      "Solid.Practices.Composition/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition.Core": "1.1.5",
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Composition.Core": "1.1.6",
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
@@ -7402,10 +7374,10 @@
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Client/1.1.5": {
+      "Solid.Practices.Composition.Client/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Core": "1.1.5"
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Core": "1.1.6"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
@@ -7414,9 +7386,9 @@
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Core/1.1.5": {
+      "Solid.Practices.Composition.Core/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.dll": {},
@@ -8944,7 +8916,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "JetBrains.Annotations/10.1.4": {
+      "JetBrains.Annotations/10.1.5": {
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
@@ -8955,10 +8927,11 @@
           "lib/dotnet/JetBrains.Annotations.Dotnet.dll": {}
         }
       },
-      "LogoFX.Bootstrapping/1.5.0": {
+      "LogoFX.Bootstrapping/1.6.0": {
         "dependencies": {
           "Solid.Bootstrapping": "1.1.1",
           "Solid.Extensibility": "1.1.0",
+          "Solid.Practices.Composition.Core": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -8972,16 +8945,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.3": {
+      "LogoFX.Client.Bootstrapping/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -9015,9 +8988,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Core/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Core/1.6.4": {
         "dependencies": {
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1"
         },
@@ -9028,16 +9001,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Testing/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Testing/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -9531,14 +9504,6 @@
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
         }
       },
-      "shim/2.1.0-pre": {
-        "compile": {
-          "lib/uap/Shim.dll": {}
-        },
-        "runtime": {
-          "lib/uap/Shim.dll": {}
-        }
-      },
       "Solid.Bootstrapping/1.1.1": {
         "dependencies": {
           "Solid.Practices.IoC": "1.1.1"
@@ -9561,10 +9526,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
         }
       },
-      "Solid.Practices.Composition/1.1.5": {
+      "Solid.Practices.Composition/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition.Core": "1.1.5",
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Composition.Core": "1.1.6",
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
@@ -9573,10 +9538,10 @@
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Client/1.1.5": {
+      "Solid.Practices.Composition.Client/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Core": "1.1.5"
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Core": "1.1.6"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
@@ -9585,9 +9550,9 @@
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Core/1.1.5": {
+      "Solid.Practices.Composition.Core/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.dll": {},
@@ -11093,7 +11058,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "JetBrains.Annotations/10.1.4": {
+      "JetBrains.Annotations/10.1.5": {
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
@@ -11104,10 +11069,11 @@
           "lib/dotnet/JetBrains.Annotations.Dotnet.dll": {}
         }
       },
-      "LogoFX.Bootstrapping/1.5.0": {
+      "LogoFX.Bootstrapping/1.6.0": {
         "dependencies": {
           "Solid.Bootstrapping": "1.1.1",
           "Solid.Extensibility": "1.1.0",
+          "Solid.Practices.Composition.Core": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -11121,16 +11087,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.3": {
+      "LogoFX.Client.Bootstrapping/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -11164,9 +11130,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Core/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Core/1.6.4": {
         "dependencies": {
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1"
         },
@@ -11177,16 +11143,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Testing/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Testing/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -11700,14 +11666,6 @@
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
         }
       },
-      "shim/2.1.0-pre": {
-        "compile": {
-          "lib/uap/Shim.dll": {}
-        },
-        "runtime": {
-          "lib/uap/Shim.dll": {}
-        }
-      },
       "Solid.Bootstrapping/1.1.1": {
         "dependencies": {
           "Solid.Practices.IoC": "1.1.1"
@@ -11730,10 +11688,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
         }
       },
-      "Solid.Practices.Composition/1.1.5": {
+      "Solid.Practices.Composition/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition.Core": "1.1.5",
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Composition.Core": "1.1.6",
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
@@ -11742,10 +11700,10 @@
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Client/1.1.5": {
+      "Solid.Practices.Composition.Client/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Core": "1.1.5"
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Core": "1.1.6"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
@@ -11754,9 +11712,9 @@
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Core/1.1.5": {
+      "Solid.Practices.Composition.Core/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.dll": {},
@@ -13284,7 +13242,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "JetBrains.Annotations/10.1.4": {
+      "JetBrains.Annotations/10.1.5": {
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
@@ -13295,10 +13253,11 @@
           "lib/dotnet/JetBrains.Annotations.Dotnet.dll": {}
         }
       },
-      "LogoFX.Bootstrapping/1.5.0": {
+      "LogoFX.Bootstrapping/1.6.0": {
         "dependencies": {
           "Solid.Bootstrapping": "1.1.1",
           "Solid.Extensibility": "1.1.0",
+          "Solid.Practices.Composition.Core": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -13312,16 +13271,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping/1.6.3": {
+      "LogoFX.Client.Bootstrapping/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -13355,9 +13314,9 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Core/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Core/1.6.4": {
         "dependencies": {
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1"
         },
@@ -13368,16 +13327,16 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll": {}
         }
       },
-      "LogoFX.Client.Bootstrapping.Testing/1.6.3": {
+      "LogoFX.Client.Bootstrapping.Testing/1.6.4": {
         "dependencies": {
           "Caliburn.Micro": "3.0.1",
-          "LogoFX.Bootstrapping": "1.5.0",
+          "LogoFX.Bootstrapping": "1.6.0",
           "LogoFX.Client.Bootstrapping.Adapters.Contracts": "1.0.4",
-          "LogoFX.Client.Bootstrapping.Core": "1.6.3",
+          "LogoFX.Client.Bootstrapping.Core": "1.6.4",
           "LogoFX.Client.Core": "1.0.8",
           "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Client": "1.1.5",
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Client": "1.1.6",
           "Solid.Practices.IoC": "1.1.1",
           "Solid.Practices.Middleware": "1.1.1",
           "Solid.Practices.Modularity": "1.1.3"
@@ -13871,14 +13830,6 @@
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
         }
       },
-      "shim/2.1.0-pre": {
-        "compile": {
-          "lib/uap/Shim.dll": {}
-        },
-        "runtime": {
-          "lib/uap/Shim.dll": {}
-        }
-      },
       "Solid.Bootstrapping/1.1.1": {
         "dependencies": {
           "Solid.Practices.IoC": "1.1.1"
@@ -13901,10 +13852,10 @@
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
         }
       },
-      "Solid.Practices.Composition/1.1.5": {
+      "Solid.Practices.Composition/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition.Core": "1.1.5",
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Composition.Core": "1.1.6",
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
@@ -13913,10 +13864,10 @@
           "lib/uap10.0/Solid.Practices.Composition.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Client/1.1.5": {
+      "Solid.Practices.Composition.Client/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Composition": "1.1.5",
-          "Solid.Practices.Composition.Core": "1.1.5"
+          "Solid.Practices.Composition": "1.1.6",
+          "Solid.Practices.Composition.Core": "1.1.6"
         },
         "compile": {
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
@@ -13925,9 +13876,9 @@
           "lib/uap10.0/Solid.Practices.Composition.Client.Platform.dll": {}
         }
       },
-      "Solid.Practices.Composition.Core/1.1.5": {
+      "Solid.Practices.Composition.Core/1.1.6": {
         "dependencies": {
-          "Solid.Practices.Modularity": "1.1.2"
+          "Solid.Practices.Modularity": "1.1.3"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.dll": {},
@@ -15482,27 +15433,28 @@
         "lib/sl5/Caliburn.Micro.dll"
       ]
     },
-    "JetBrains.Annotations/10.1.4": {
-      "sha512": "5WN2N7ba4yGPShBdIPkqPveu7AjFNeGeLpMIJpFfkjK7MPPNN6hqMCh1ZU8ohaAwdBiWdrWrZ1uEIGYv0Keelg==",
+    "JetBrains.Annotations/10.1.5": {
+      "sha512": "LRyTrsiTWsV4C4cUMfdEkAdd8S0BREvj3hXZ1gGr3GZGFf0q2KW3IFGMPOguAxOrWH44Nw12jqr37B1Jph2E6A==",
       "type": "package",
+      "path": "JetBrains.Annotations/10.1.5",
       "files": [
-        "JetBrains.Annotations.10.1.4.nupkg.sha512",
+        "JetBrains.Annotations.10.1.5.nupkg.sha512",
         "JetBrains.Annotations.nuspec",
         "lib/dotnet/JetBrains.Annotations.Dotnet.dll",
-        "lib/dotnet/JetBrains.Annotations.Dotnet.xml",
-        "lib/net20/JetBrains.Annotations.dll",
-        "lib/net20/JetBrains.Annotations.xml",
+        "lib/net/JetBrains.Annotations.dll",
+        "lib/net/JetBrains.Annotations.xml",
         "lib/portable-net4+sl4+wp7+netcore45/JetBrains.Annotations.PCL1.dll",
         "lib/portable-net4+sl4+wp7+netcore45/JetBrains.Annotations.PCL1.xml",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/JetBrains.Annotations.PCL328.dll",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/JetBrains.Annotations.PCL328.xml"
       ]
     },
-    "LogoFX.Bootstrapping/1.5.0": {
-      "sha512": "woGvgLA4rMP43t9E57u5x4psrY7RKVuU1jifix9kgfnpZ5/0C/OY7SPOAxUQrWAAYZMKbBcLoayhM1SdILWCcw==",
+    "LogoFX.Bootstrapping/1.6.0": {
+      "sha512": "3ifAT3U3YE92s805mfQgjaqDmQVoFamrT9vis5+FUHU1sJpZmT6MhztapzlQardNzXFpwRG94m6iGsMVLvi5vA==",
       "type": "package",
+      "path": "LogoFX.Bootstrapping/1.6.0",
       "files": [
-        "LogoFX.Bootstrapping.1.5.0.nupkg.sha512",
+        "LogoFX.Bootstrapping.1.6.0.nupkg.sha512",
         "LogoFX.Bootstrapping.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.Middleware.XML",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.Middleware.dll",
@@ -15510,12 +15462,12 @@
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Bootstrapping.dll"
       ]
     },
-    "LogoFX.Client.Bootstrapping/1.6.3": {
-      "sha512": "iWesd+iMJRapn5mitmm5InOXZVhhtHDIs60OyMZ5ncJTvSCUDbuLXh9DA26QVrmh43iKkJGbnVgMXWP4e7B9Mw==",
+    "LogoFX.Client.Bootstrapping/1.6.4": {
+      "sha512": "Wt/9Yp1LC1F6KI6cvfLkMYt7gl/xOYtv9Tps19mrB9Z8IQy/AlArInHe8YZ0p4YUI7229Znz7AO6qN3dFrbmgA==",
       "type": "package",
-      "path": "LogoFX.Client.Bootstrapping/1.6.3",
+      "path": "LogoFX.Client.Bootstrapping/1.6.4",
       "files": [
-        "LogoFX.Client.Bootstrapping.1.6.3.nupkg.sha512",
+        "LogoFX.Client.Bootstrapping.1.6.4.nupkg.sha512",
         "LogoFX.Client.Bootstrapping.nuspec",
         "lib/net45/LogoFX.Client.Bootstrapping.Platform.XML",
         "lib/net45/LogoFX.Client.Bootstrapping.Platform.dll",
@@ -15555,23 +15507,23 @@
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll"
       ]
     },
-    "LogoFX.Client.Bootstrapping.Core/1.6.3": {
-      "sha512": "aL9AUK3f7sj+NTLgEFxOhSPNTyQljMtajUecM4KptH2mukraSo72jPj9ptg/GxuMbDimIz3tb0cSS9oa8Uioiw==",
+    "LogoFX.Client.Bootstrapping.Core/1.6.4": {
+      "sha512": "/DvUGFE2Hl6Aa5O7zfgm90GhiKjKnshKMxt2GvplCHxAwrB5tfMomKOSwuiyNyYthPuN1QSyNsVUS9O+bCJG8Q==",
       "type": "package",
-      "path": "LogoFX.Client.Bootstrapping.Core/1.6.3",
+      "path": "LogoFX.Client.Bootstrapping.Core/1.6.4",
       "files": [
-        "LogoFX.Client.Bootstrapping.Core.1.6.3.nupkg.sha512",
+        "LogoFX.Client.Bootstrapping.Core.1.6.4.nupkg.sha512",
         "LogoFX.Client.Bootstrapping.Core.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.XML",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/LogoFX.Client.Bootstrapping.dll"
       ]
     },
-    "LogoFX.Client.Bootstrapping.Testing/1.6.3": {
-      "sha512": "php9GPZPsDQnxx8dgldATQzd5xsRt/QqfFphrncVVD6F6mYDBcLuUt1+39ereEV3dx5oTS5xarkMG+7TcKK8Vg==",
+    "LogoFX.Client.Bootstrapping.Testing/1.6.4": {
+      "sha512": "+1cyuoBEvF8czWQHBnD/QExYvO4U5ke4NOPW3A9sUyW2BLos/c7C51oZbdqnJLGdh1oEFq6OW0v3PMe7g+C0eQ==",
       "type": "package",
-      "path": "LogoFX.Client.Bootstrapping.Testing/1.6.3",
+      "path": "LogoFX.Client.Bootstrapping.Testing/1.6.4",
       "files": [
-        "LogoFX.Client.Bootstrapping.Testing.1.6.3.nupkg.sha512",
+        "LogoFX.Client.Bootstrapping.Testing.1.6.4.nupkg.sha512",
         "LogoFX.Client.Bootstrapping.Testing.nuspec",
         "lib/net45/LogoFX.Client.Bootstrapping.Testing.XML",
         "lib/net45/LogoFX.Client.Bootstrapping.Testing.dll",
@@ -16601,57 +16553,6 @@
         "lib/windowsphone8/System.Reactive.PlatformServices.dll"
       ]
     },
-    "shim/2.1.0-pre": {
-      "sha512": "9G1olUGy9TrVBzz9vg55EXwHj2vNSmzmOpenT0Ha9kcdVHMoEcwEYQc+sgXD75GSEIqNZvBu+fxph3z01nGMHQ==",
-      "type": "package",
-      "files": [
-        "lib/MonoAndroid1/Shim.XML",
-        "lib/MonoAndroid1/Shim.dll",
-        "lib/MonoAndroid1/Shim.pdb",
-        "lib/MonoTouch1/Shim.XML",
-        "lib/MonoTouch1/Shim.dll",
-        "lib/MonoTouch1/Shim.pdb",
-        "lib/Xamarin.iOS10/Shim.XML",
-        "lib/Xamarin.iOS10/Shim.dll",
-        "lib/Xamarin.iOS10/Shim.pdb",
-        "lib/net40/Shim.XML",
-        "lib/net40/Shim.dll",
-        "lib/net40/Shim.pdb",
-        "lib/netcore45/Shim.XML",
-        "lib/netcore45/Shim.dll",
-        "lib/netcore45/Shim.pdb",
-        "lib/netcore45/Shim.pri",
-        "lib/netcore451/Shim.XML",
-        "lib/netcore451/Shim.dll",
-        "lib/netcore451/Shim.pdb",
-        "lib/netcore451/Shim.pri",
-        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Shim.XML",
-        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Shim.dll",
-        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Shim.pdb",
-        "lib/portable-net45+netcore45+wpa81+wp8/Shim.XML",
-        "lib/portable-net45+netcore45+wpa81+wp8/Shim.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8/Shim.pdb",
-        "lib/portable-net45+netcore45+wpa81/Shim.XML",
-        "lib/portable-net45+netcore45+wpa81/Shim.dll",
-        "lib/portable-net45+netcore45+wpa81/Shim.pdb",
-        "lib/portable-win81+wpa81/Shim.XML",
-        "lib/portable-win81+wpa81/Shim.dll",
-        "lib/portable-win81+wpa81/Shim.pdb",
-        "lib/portable-win81+wpa81/Shim.pri",
-        "lib/sl5/Shim.XML",
-        "lib/sl5/Shim.dll",
-        "lib/sl5/Shim.pdb",
-        "lib/uap/Shim.XML",
-        "lib/uap/Shim.dll",
-        "lib/uap/Shim.pdb",
-        "lib/uap/Shim.pri",
-        "lib/wp8/Shim.XML",
-        "lib/wp8/Shim.dll",
-        "lib/wp8/Shim.pdb",
-        "shim.2.1.0-pre.nupkg.sha512",
-        "shim.nuspec"
-      ]
-    },
     "Solid.Bootstrapping/1.1.1": {
       "sha512": "1ZQD0BuPkBmoN7Rrd3zYI+BnpJZ9E/yQDidMGqXANvptX/FHApcUNmuDiTjp37TxuGWrYK2sAGB37hCObN0z6Q==",
       "type": "package",
@@ -16672,11 +16573,12 @@
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll"
       ]
     },
-    "Solid.Practices.Composition/1.1.5": {
-      "sha512": "2nIYPGjIKuQO3U1vEl3jNhpU6fC71FlONPXVZ+55jvSn7uCe+SDLtU4YzpidjE94x+I0n/TtnDjVLrrdyTbZLg==",
+    "Solid.Practices.Composition/1.1.6": {
+      "sha512": "A6H5aK0TGeSQLKyOOmNjoSkGKrcXbrNAL2XII41iGA2YEIIjRPLi6nxks5rNzrcwGGL0ymkTgrzoaHuOMmalJQ==",
       "type": "package",
+      "path": "Solid.Practices.Composition/1.1.6",
       "files": [
-        "Solid.Practices.Composition.1.1.5.nupkg.sha512",
+        "Solid.Practices.Composition.1.1.6.nupkg.sha512",
         "Solid.Practices.Composition.nuspec",
         "lib/net45/Solid.Practices.Composition.Platform.XML",
         "lib/net45/Solid.Practices.Composition.Platform.dll",
@@ -16695,11 +16597,12 @@
         "lib/wpa81/Solid.Practices.Composition.Platform.pri"
       ]
     },
-    "Solid.Practices.Composition.Client/1.1.5": {
-      "sha512": "ZE1jzaJtLsFGtEUFCh+5FNq95xkgYllzLVzVsWxYLGkvCeQc/ZHKJTFWNmx8kGqXmNTjl6cBGgsABPoIAeYmIQ==",
+    "Solid.Practices.Composition.Client/1.1.6": {
+      "sha512": "x/lBuxOREve00VgTA6p6cnPp9Juf8+dm7LiY5gxy5b9QfMaPjzO3w9uDolHowJZODTPD5oM41EzV1oknG5ko7Q==",
       "type": "package",
+      "path": "Solid.Practices.Composition.Client/1.1.6",
       "files": [
-        "Solid.Practices.Composition.Client.1.1.5.nupkg.sha512",
+        "Solid.Practices.Composition.Client.1.1.6.nupkg.sha512",
         "Solid.Practices.Composition.Client.nuspec",
         "lib/net45/Solid.Practices.Composition.Client.Platform.XML",
         "lib/net45/Solid.Practices.Composition.Client.Platform.dll",
@@ -16718,11 +16621,12 @@
         "lib/wpa81/Solid.Practices.Composition.Client.Platform.pri"
       ]
     },
-    "Solid.Practices.Composition.Core/1.1.5": {
-      "sha512": "rwVjMxvDIwh2AIixIs+t4bhuodPYggSaNulAm2KjiVzQBNI5/+Rk5xho0uTLx4qVBpxdjF2/AsDLP+XyJYC5Xw==",
+    "Solid.Practices.Composition.Core/1.1.6": {
+      "sha512": "T0McGj/lMMKMQXTghcOaEwyLVXibeop1JdGU1PM8owRsTW+gmgE9+EyMdCLkumiUKL56Hkzm/tUKScVgQEkl8Q==",
       "type": "package",
+      "path": "Solid.Practices.Composition.Core/1.1.6",
       "files": [
-        "Solid.Practices.Composition.Core.1.1.5.nupkg.sha512",
+        "Solid.Practices.Composition.Core.1.1.6.nupkg.sha512",
         "Solid.Practices.Composition.Core.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.dll",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Practices.Composition.Container.xml",
@@ -19294,12 +19198,11 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "LogoFX.Client.Bootstrapping >= 1.6.3",
-      "LogoFX.Client.Bootstrapping.Testing >= 1.6.3",
+      "LogoFX.Client.Bootstrapping >= 1.6.4",
+      "LogoFX.Client.Bootstrapping.Testing >= 1.6.4",
       "LogoFX.Client.Testing.Integration.xUnit >= 1.2.1",
       "LogoFX.Client.Testing.Integration.xUnit.Core >= 1.2.1",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
-      "shim >= 2.1.0-pre"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0"
     ],
     "UAP,Version=v10.0": []
   }
