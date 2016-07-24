@@ -131,10 +131,6 @@
       <Project>{49724A56-9FA9-44C4-B731-1E414EE598BC}</Project>
       <Name>Samples.Client.Model.Shared</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samples.Client.Tests.Contracts.ScreenObjects\Samples.Client.Tests.Contracts.ScreenObjects.csproj">
-      <Project>{319D9A32-4C4A-41CF-BA5D-B329E07420F8}</Project>
-      <Name>Samples.Client.Tests.Contracts.ScreenObjects</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Samples.Universal.Client.Presentation.Shell\Samples.Universal.Client.Presentation.Shell.csproj">
       <Project>{693D6459-4ABC-4BE9-98C4-BA4A84BB56BF}</Project>
       <Name>Samples.Universal.Client.Presentation.Shell</Name>

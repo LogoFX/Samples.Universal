@@ -8,8 +8,8 @@
     <ProjectGuid>{319D9A32-4C4A-41CF-BA5D-B329E07420F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Samples.Client.Tests.Contracts.ScreenObjects</RootNamespace>
-    <AssemblyName>Samples.Client.Tests.Contracts.ScreenObjects</AssemblyName>
+    <RootNamespace>Samples.Client.Tests.Contracts</RootNamespace>
+    <AssemblyName>Samples.Client.Tests.Contracts</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -46,8 +46,8 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ILoginScreenObject.cs" />
-    <Compile Include="IMainScreenObject.cs" />
+    <Compile Include="ScreenObjects\ILoginScreenObject.cs" />
+    <Compile Include="ScreenObjects\IMainScreenObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

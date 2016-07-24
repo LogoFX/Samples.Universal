@@ -72,9 +72,9 @@
       <Project>{6C0049C1-2EA3-47FB-A223-A92B4CE9A4E9}</Project>
       <Name>Samples.Client.Data.Fake.ProviderBuilders</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samples.Client.Tests.Contracts.ScreenObjects\Samples.Client.Tests.Contracts.ScreenObjects.csproj">
-      <Project>{319d9a32-4c4a-41cf-ba5d-b329e07420f8}</Project>
-      <Name>Samples.Client.Tests.Contracts.ScreenObjects</Name>
+    <ProjectReference Include="..\Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj">
+      <Project>{319D9A32-4C4A-41CF-BA5D-B329E07420F8}</Project>
+      <Name>Samples.Client.Tests.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

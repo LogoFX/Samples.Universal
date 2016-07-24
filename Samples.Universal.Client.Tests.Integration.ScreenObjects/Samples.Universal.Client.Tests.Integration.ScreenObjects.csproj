@@ -115,9 +115,9 @@
     <EmbeddedResource Include="Properties\Samples.Universal.Client.Tests.Integration.ScreenObjects.rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samples.Client.Tests.Contracts.ScreenObjects\Samples.Client.Tests.Contracts.ScreenObjects.csproj">
+    <ProjectReference Include="..\Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj">
       <Project>{319D9A32-4C4A-41CF-BA5D-B329E07420F8}</Project>
-      <Name>Samples.Client.Tests.Contracts.ScreenObjects</Name>
+      <Name>Samples.Client.Tests.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Universal.Client.Presentation.Shell\Samples.Universal.Client.Presentation.Shell.csproj">
       <Project>{693D6459-4ABC-4BE9-98C4-BA4A84BB56BF}</Project>
