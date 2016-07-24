@@ -19,7 +19,8 @@ namespace Samples.Universal.Client.Tests
         [Fact]
         public void NavigateToTheMainScreenWheTheLoginIsSuccessful()
         {
-            var userName = "Admin";           
+            var GivenLoginSteps = Resolver.Resolve<GivenLoginSteps>();
+            var userName = "Admin";            
             GivenLoginSteps.SetupAuthenticatedUserWithUsername(userName);
             GivenLoginSteps.SetupLoginSuccessfullyWithUsername(userName);
 
@@ -29,6 +30,7 @@ namespace Samples.Universal.Client.Tests
             LoginSteps.WhenISetTheUsernameTo(userName);
             LoginSteps.WhenILogInToTheSystem();
 
+            var MainSteps = Resolver.Resolve<MainSteps>();
             MainSteps.ThenApplicationNavigatesToTheMainScreen();
         }
     }

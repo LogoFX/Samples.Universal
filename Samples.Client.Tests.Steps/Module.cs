@@ -9,6 +9,8 @@ namespace Samples.Client.Tests.Steps
         {
             iocContainer.RegisterSingleton<GeneralSteps, GeneralSteps>();
             iocContainer.RegisterSingleton<LoginSteps, LoginSteps>();
+            iocContainer.RegisterSingleton<GivenLoginSteps, GivenLoginSteps>();
+            iocContainer.RegisterSingleton<MainSteps, MainSteps>();
         }
     }
 }

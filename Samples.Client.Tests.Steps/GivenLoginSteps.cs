@@ -1,8 +1,6 @@
 ﻿#if FAKE
-using Attest.Testing.Core;
 using LogoFX.Client.Testing.Contracts;
 using Samples.Client.Data.Fake.ProviderBuilders;
-
 #endif
 
 #if REAL
@@ -10,14 +8,24 @@ using Samples.Client.Data.Fake.ProviderBuilders;
 
 namespace Samples.Client.Tests.Steps
 {
-    public static class GivenLoginSteps
+    public class GivenLoginSteps
     {
-        public static void SetupAuthenticatedUserWithUsername(string username)
+        private readonly IBuilderRegistrationService _builderRegistrationService;
+        private readonly LoginProviderBuilder _loginProviderBuilder;
+
+        public GivenLoginSteps(
+            IBuilderRegistrationService builderRegistrationService, 
+            LoginProviderBuilder loginProviderBuilder)
         {
-#if FAKE
-            var loginProviderBuilder = ScenarioHelper.GetOrCreate(LoginProviderBuilder.CreateBuilder);
-            loginProviderBuilder.WithUser(username, string.Empty);
-            ScenarioHelper.Get<IBuilderRegistrationService>().RegisterBuilder(loginProviderBuilder);
+            _builderRegistrationService = builderRegistrationService;
+            _loginProviderBuilder = loginProviderBuilder;
+        }
+
+        public void SetupAuthenticatedUserWithUsername(string username)
+        {
+#if FAKE            
+            _loginProviderBuilder.WithUser(username, string.Empty);
+            _builderRegistrationService.RegisterBuilder(_loginProviderBuilder);
 #endif
 
 #if REAL
@@ -25,12 +33,11 @@ namespace Samples.Client.Tests.Steps
 #endif
         }        
 
-        public static void SetupLoginSuccessfullyWithUsername(string username)
+        public void SetupLoginSuccessfullyWithUsername(string username)
         {
 #if FAKE
-            var loginProviderBuilder = ScenarioHelper.GetOrCreate(LoginProviderBuilder.CreateBuilder);
-            loginProviderBuilder.WithSuccessfulLogin(username);
-            ScenarioHelper.Get<IBuilderRegistrationService>().RegisterBuilder(loginProviderBuilder);
+            _loginProviderBuilder.WithSuccessfulLogin(username);
+            _builderRegistrationService.RegisterBuilder(_loginProviderBuilder);
 #endif
 
 #if REAL
