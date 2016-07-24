@@ -46,6 +46,7 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IStartClientApplicationService.cs" />
     <Compile Include="ScreenObjects\ILoginScreenObject.cs" />
     <Compile Include="ScreenObjects\IMainScreenObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

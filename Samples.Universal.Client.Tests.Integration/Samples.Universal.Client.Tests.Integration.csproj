@@ -112,6 +112,7 @@
     <Compile Include="ScreenObjects\MainScreenObject.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartClientApplicationService.cs" />
     <EmbeddedResource Include="Properties\Samples.Universal.Client.Tests.Integration.ScreenObjects.rd.xml" />
   </ItemGroup>
   <ItemGroup>

@@ -1,20 +1,19 @@
-﻿using LogoFX.Client.Testing.Contracts;
+﻿using Samples.Client.Tests.Contracts;
 
 namespace Samples.Client.Tests.Steps
 {
     public class GeneralSteps
     {
-        private readonly IStartApplicationService _startApplicationService;
+        private readonly IStartClientApplicationService _startClientApplicationService;
 
-        public GeneralSteps(IStartApplicationService startApplicationService)
+        public GeneralSteps(IStartClientApplicationService startClientApplicationService)
         {
-            _startApplicationService = startApplicationService;
+            _startClientApplicationService = startClientApplicationService;
         }
 
         public void WhenIOpenTheApplication()
-        {            
-            //TODO: add support for E2E if needed
-            _startApplicationService.StartApplication(string.Empty);
+        {                        
+            _startClientApplicationService.StartApplication();
         }
     }
 }
