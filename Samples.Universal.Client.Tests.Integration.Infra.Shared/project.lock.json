@@ -3,45 +3,45 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
-      "Attest.Fake.Builders/1.1.2": {
+      "Attest.Fake.Builders/1.1.0": {
         "dependencies": {
-          "Attest.Fake.Core": "1.0.9"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        }
-      },
-      "Attest.Fake.Core/1.0.9": {
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        }
-      },
-      "Attest.Fake.Registration/1.1.1": {
-        "dependencies": {
-          "Attest.Fake.Builders": "1.1.1",
           "Attest.Fake.Core": "1.0.8",
-          "Solid.Practices.IoC": "1.1.1"
+          "shim": "1.0.2.50909"
         },
         "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         }
       },
-      "Attest.Tests.Core/1.3.1": {
+      "Attest.Fake.Core/1.0.8": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        }
+      },
+      "Attest.Fake.Registration/1.0.9": {
         "dependencies": {
-          "Attest.Fake.Builders": "1.1.2",
-          "Attest.Fake.Core": "1.0.9",
-          "Attest.Fake.Registration": "1.1.1",
-          "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.IoC": "1.1.1"
+          "Attest.Fake.Builders": "1.0.9",
+          "Attest.Fake.Core": "1.0.8",
+          "Solid.Practices.IoC": "1.0.8"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        }
+      },
+      "Attest.Tests.Core/1.1.2": {
+        "dependencies": {
+          "Attest.Fake.Builders": "1.1.0",
+          "Attest.Fake.Core": "1.0.8",
+          "Attest.Fake.Registration": "1.0.9",
+          "Solid.Practices.IoC": "1.0.8"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.dll": {}
@@ -616,6 +616,14 @@
         },
         "runtime": {
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "shim/1.0.2.50909": {
+        "compile": {
+          "lib/netcore45/Shim.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Shim.dll": {}
         }
       },
       "Solid.Bootstrapping/1.1.1": {
@@ -2242,45 +2250,45 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "Attest.Fake.Builders/1.1.2": {
+      "Attest.Fake.Builders/1.1.0": {
         "dependencies": {
-          "Attest.Fake.Core": "1.0.9"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        }
-      },
-      "Attest.Fake.Core/1.0.9": {
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        }
-      },
-      "Attest.Fake.Registration/1.1.1": {
-        "dependencies": {
-          "Attest.Fake.Builders": "1.1.1",
           "Attest.Fake.Core": "1.0.8",
-          "Solid.Practices.IoC": "1.1.1"
+          "shim": "1.0.2.50909"
         },
         "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         }
       },
-      "Attest.Tests.Core/1.3.1": {
+      "Attest.Fake.Core/1.0.8": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        }
+      },
+      "Attest.Fake.Registration/1.0.9": {
         "dependencies": {
-          "Attest.Fake.Builders": "1.1.2",
-          "Attest.Fake.Core": "1.0.9",
-          "Attest.Fake.Registration": "1.1.1",
-          "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.IoC": "1.1.1"
+          "Attest.Fake.Builders": "1.0.9",
+          "Attest.Fake.Core": "1.0.8",
+          "Solid.Practices.IoC": "1.0.8"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        }
+      },
+      "Attest.Tests.Core/1.1.2": {
+        "dependencies": {
+          "Attest.Fake.Builders": "1.1.0",
+          "Attest.Fake.Core": "1.0.8",
+          "Attest.Fake.Registration": "1.0.9",
+          "Solid.Practices.IoC": "1.0.8"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.dll": {}
@@ -2848,6 +2856,14 @@
         },
         "runtime": {
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "shim/1.0.2.50909": {
+        "compile": {
+          "lib/netcore45/Shim.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Shim.dll": {}
         }
       },
       "Solid.Bootstrapping/1.1.1": {
@@ -4334,45 +4350,45 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "Attest.Fake.Builders/1.1.2": {
+      "Attest.Fake.Builders/1.1.0": {
         "dependencies": {
-          "Attest.Fake.Core": "1.0.9"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        }
-      },
-      "Attest.Fake.Core/1.0.9": {
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        }
-      },
-      "Attest.Fake.Registration/1.1.1": {
-        "dependencies": {
-          "Attest.Fake.Builders": "1.1.1",
           "Attest.Fake.Core": "1.0.8",
-          "Solid.Practices.IoC": "1.1.1"
+          "shim": "1.0.2.50909"
         },
         "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         }
       },
-      "Attest.Tests.Core/1.3.1": {
+      "Attest.Fake.Core/1.0.8": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        }
+      },
+      "Attest.Fake.Registration/1.0.9": {
         "dependencies": {
-          "Attest.Fake.Builders": "1.1.2",
-          "Attest.Fake.Core": "1.0.9",
-          "Attest.Fake.Registration": "1.1.1",
-          "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.IoC": "1.1.1"
+          "Attest.Fake.Builders": "1.0.9",
+          "Attest.Fake.Core": "1.0.8",
+          "Solid.Practices.IoC": "1.0.8"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        }
+      },
+      "Attest.Tests.Core/1.1.2": {
+        "dependencies": {
+          "Attest.Fake.Builders": "1.1.0",
+          "Attest.Fake.Core": "1.0.8",
+          "Attest.Fake.Registration": "1.0.9",
+          "Solid.Practices.IoC": "1.0.8"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.dll": {}
@@ -4926,6 +4942,14 @@
         },
         "runtime": {
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "shim/1.0.2.50909": {
+        "compile": {
+          "lib/netcore45/Shim.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Shim.dll": {}
         }
       },
       "Solid.Bootstrapping/1.1.1": {
@@ -6390,45 +6414,45 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "Attest.Fake.Builders/1.1.2": {
+      "Attest.Fake.Builders/1.1.0": {
         "dependencies": {
-          "Attest.Fake.Core": "1.0.9"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        }
-      },
-      "Attest.Fake.Core/1.0.9": {
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        }
-      },
-      "Attest.Fake.Registration/1.1.1": {
-        "dependencies": {
-          "Attest.Fake.Builders": "1.1.1",
           "Attest.Fake.Core": "1.0.8",
-          "Solid.Practices.IoC": "1.1.1"
+          "shim": "1.0.2.50909"
         },
         "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         }
       },
-      "Attest.Tests.Core/1.3.1": {
+      "Attest.Fake.Core/1.0.8": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        }
+      },
+      "Attest.Fake.Registration/1.0.9": {
         "dependencies": {
-          "Attest.Fake.Builders": "1.1.2",
-          "Attest.Fake.Core": "1.0.9",
-          "Attest.Fake.Registration": "1.1.1",
-          "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.IoC": "1.1.1"
+          "Attest.Fake.Builders": "1.0.9",
+          "Attest.Fake.Core": "1.0.8",
+          "Solid.Practices.IoC": "1.0.8"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        }
+      },
+      "Attest.Tests.Core/1.1.2": {
+        "dependencies": {
+          "Attest.Fake.Builders": "1.1.0",
+          "Attest.Fake.Core": "1.0.8",
+          "Attest.Fake.Registration": "1.0.9",
+          "Solid.Practices.IoC": "1.0.8"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.dll": {}
@@ -7002,6 +7026,14 @@
         },
         "runtime": {
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "shim/1.0.2.50909": {
+        "compile": {
+          "lib/netcore45/Shim.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Shim.dll": {}
         }
       },
       "Solid.Bootstrapping/1.1.1": {
@@ -8488,45 +8520,45 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "Attest.Fake.Builders/1.1.2": {
+      "Attest.Fake.Builders/1.1.0": {
         "dependencies": {
-          "Attest.Fake.Core": "1.0.9"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        }
-      },
-      "Attest.Fake.Core/1.0.9": {
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        }
-      },
-      "Attest.Fake.Registration/1.1.1": {
-        "dependencies": {
-          "Attest.Fake.Builders": "1.1.1",
           "Attest.Fake.Core": "1.0.8",
-          "Solid.Practices.IoC": "1.1.1"
+          "shim": "1.0.2.50909"
         },
         "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         }
       },
-      "Attest.Tests.Core/1.3.1": {
+      "Attest.Fake.Core/1.0.8": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        }
+      },
+      "Attest.Fake.Registration/1.0.9": {
         "dependencies": {
-          "Attest.Fake.Builders": "1.1.2",
-          "Attest.Fake.Core": "1.0.9",
-          "Attest.Fake.Registration": "1.1.1",
-          "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.IoC": "1.1.1"
+          "Attest.Fake.Builders": "1.0.9",
+          "Attest.Fake.Core": "1.0.8",
+          "Solid.Practices.IoC": "1.0.8"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        }
+      },
+      "Attest.Tests.Core/1.1.2": {
+        "dependencies": {
+          "Attest.Fake.Builders": "1.1.0",
+          "Attest.Fake.Core": "1.0.8",
+          "Attest.Fake.Registration": "1.0.9",
+          "Solid.Practices.IoC": "1.0.8"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.dll": {}
@@ -9080,6 +9112,14 @@
         },
         "runtime": {
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "shim/1.0.2.50909": {
+        "compile": {
+          "lib/netcore45/Shim.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Shim.dll": {}
         }
       },
       "Solid.Bootstrapping/1.1.1": {
@@ -10544,45 +10584,45 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "Attest.Fake.Builders/1.1.2": {
+      "Attest.Fake.Builders/1.1.0": {
         "dependencies": {
-          "Attest.Fake.Core": "1.0.9"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        }
-      },
-      "Attest.Fake.Core/1.0.9": {
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        }
-      },
-      "Attest.Fake.Registration/1.1.1": {
-        "dependencies": {
-          "Attest.Fake.Builders": "1.1.1",
           "Attest.Fake.Core": "1.0.8",
-          "Solid.Practices.IoC": "1.1.1"
+          "shim": "1.0.2.50909"
         },
         "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         }
       },
-      "Attest.Tests.Core/1.3.1": {
+      "Attest.Fake.Core/1.0.8": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        }
+      },
+      "Attest.Fake.Registration/1.0.9": {
         "dependencies": {
-          "Attest.Fake.Builders": "1.1.2",
-          "Attest.Fake.Core": "1.0.9",
-          "Attest.Fake.Registration": "1.1.1",
-          "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.IoC": "1.1.1"
+          "Attest.Fake.Builders": "1.0.9",
+          "Attest.Fake.Core": "1.0.8",
+          "Solid.Practices.IoC": "1.0.8"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        }
+      },
+      "Attest.Tests.Core/1.1.2": {
+        "dependencies": {
+          "Attest.Fake.Builders": "1.1.0",
+          "Attest.Fake.Core": "1.0.8",
+          "Attest.Fake.Registration": "1.0.9",
+          "Solid.Practices.IoC": "1.0.8"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.dll": {}
@@ -11156,6 +11196,14 @@
         },
         "runtime": {
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "shim/1.0.2.50909": {
+        "compile": {
+          "lib/netcore45/Shim.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Shim.dll": {}
         }
       },
       "Solid.Bootstrapping/1.1.1": {
@@ -12642,45 +12690,45 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "Attest.Fake.Builders/1.1.2": {
+      "Attest.Fake.Builders/1.1.0": {
         "dependencies": {
-          "Attest.Fake.Core": "1.0.9"
-        },
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
-        }
-      },
-      "Attest.Fake.Core/1.0.9": {
-        "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll": {}
-        }
-      },
-      "Attest.Fake.Registration/1.1.1": {
-        "dependencies": {
-          "Attest.Fake.Builders": "1.1.1",
           "Attest.Fake.Core": "1.0.8",
-          "Solid.Practices.IoC": "1.1.1"
+          "shim": "1.0.2.50909"
         },
         "compile": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll": {}
+          "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll": {}
         }
       },
-      "Attest.Tests.Core/1.3.1": {
+      "Attest.Fake.Core/1.0.8": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll": {}
+        }
+      },
+      "Attest.Fake.Registration/1.0.9": {
         "dependencies": {
-          "Attest.Fake.Builders": "1.1.2",
-          "Attest.Fake.Core": "1.0.9",
-          "Attest.Fake.Registration": "1.1.1",
-          "Solid.Bootstrapping": "1.1.1",
-          "Solid.Practices.IoC": "1.1.1"
+          "Attest.Fake.Builders": "1.0.9",
+          "Attest.Fake.Core": "1.0.8",
+          "Solid.Practices.IoC": "1.0.8"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll": {}
+        }
+      },
+      "Attest.Tests.Core/1.1.2": {
+        "dependencies": {
+          "Attest.Fake.Builders": "1.1.0",
+          "Attest.Fake.Core": "1.0.8",
+          "Attest.Fake.Registration": "1.0.9",
+          "Solid.Practices.IoC": "1.0.8"
         },
         "compile": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.dll": {}
@@ -13234,6 +13282,14 @@
         },
         "runtime": {
           "lib/windows8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "shim/1.0.2.50909": {
+        "compile": {
+          "lib/netcore45/Shim.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Shim.dll": {}
         }
       },
       "Solid.Bootstrapping/1.1.1": {
@@ -14699,44 +14755,53 @@
     }
   },
   "libraries": {
-    "Attest.Fake.Builders/1.1.2": {
-      "sha512": "lpera4wqHiJsW5oVq48RaVblS7i6FiXr9lM2OzhNgqDK0cSgoCYtChVdhGwhiOdZ2VAM8zbEgS+hC7yTd5xT8Q==",
+    "Attest.Fake.Builders/1.1.0": {
+      "sha512": "tP3QBfkiusuyiaD9YRe7QB2hzMqf3fNBf6Y3GCCu8tp9Tkk5HLDnBv5X9yxErPPwCQurg3I6+4UmqxdXuCb5Og==",
       "type": "package",
-      "path": "Attest.Fake.Builders/1.1.2",
+      "path": "Attest.Fake.Builders/1.1.0",
       "files": [
-        "Attest.Fake.Builders.1.1.2.nupkg.sha512",
+        "Attest.Fake.Builders.1.1.0.nupkg.sha512",
         "Attest.Fake.Builders.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.XML",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Builders.dll"
       ]
     },
-    "Attest.Fake.Core/1.0.9": {
-      "sha512": "6hplBNS4KOaoj3StMRP8+ogcMkhFRmCKyTMVf6Wp/NbZmIcJw0gTFJlE3gNnzPxBt3D+dxrgegP89Hvbt/2+CQ==",
+    "Attest.Fake.Core/1.0.8": {
+      "sha512": "znlc9eZqNrayZRJLkqX7J2ImmBCrsqv3bE02peNF6aMBEFxcShZaMVDTxGs9LGNLUKkdWqKVAnKL8qARLassNA==",
       "type": "package",
-      "path": "Attest.Fake.Core/1.0.9",
+      "path": "Attest.Fake.Core/1.0.8",
       "files": [
-        "Attest.Fake.Core.1.0.9.nupkg.sha512",
+        "Attest.Fake.Core.1.0.8.nupkg.sha512",
         "Attest.Fake.Core.nuspec",
-        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.dll",
-        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Core.xml"
+        "lib/MonoAndroid/Attest.Fake.Core.XML",
+        "lib/MonoAndroid/Attest.Fake.Core.dll",
+        "lib/MonoTouch/Attest.Fake.Core.XML",
+        "lib/MonoTouch/Attest.Fake.Core.dll",
+        "lib/portable-net45+wpa8+win8/Attest.Fake.Core.XML",
+        "lib/portable-net45+wpa8+win8/Attest.Fake.Core.dll"
       ]
     },
-    "Attest.Fake.Registration/1.1.1": {
-      "sha512": "ebfqRNnmXXfzCmafyu4rAYCOTLb6E1bpZ/KloGLXTH8u7ix5kEuMty7GjQrRKWGKnaDbbmePO/5N2bvTYJvsww==",
+    "Attest.Fake.Registration/1.0.9": {
+      "sha512": "39DwEPicm8F934dG/cXycFC464CPZ/Ia66xCX3lUDcT1dK3qTN5dJMZ60ziiKahRftJjIX+Tq7d2upLJkMs6/g==",
       "type": "package",
+      "path": "Attest.Fake.Registration/1.0.9",
       "files": [
-        "Attest.Fake.Registration.1.1.1.nupkg.sha512",
+        "Attest.Fake.Registration.1.0.9.nupkg.sha512",
         "Attest.Fake.Registration.nuspec",
-        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.XML",
-        "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Fake.Registration.dll"
+        "lib/MonoAndroid/Attest.Fake.Registration.XML",
+        "lib/MonoAndroid/Attest.Fake.Registration.dll",
+        "lib/MonoTouch/Attest.Fake.Registration.XML",
+        "lib/MonoTouch/Attest.Fake.Registration.dll",
+        "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.XML",
+        "lib/portable-net45+wpa8+win8/Attest.Fake.Registration.dll"
       ]
     },
-    "Attest.Tests.Core/1.3.1": {
-      "sha512": "4YfqmCPQWn0PZ1jKHpFXNeBJt0DlDg8QeTfyirSrmnMeFNIF5YAiLGihoLu6+1DrX4Hb5LW5bI5MNLLsjk5LWg==",
+    "Attest.Tests.Core/1.1.2": {
+      "sha512": "zeDNXmjgxf3/T31Nx+IZhbyztVXiukLuz14o6tUJus/8ndmq16znmlxA8J02ewiUt0DI0IMM2fxyDNcmOx+NZA==",
       "type": "package",
-      "path": "Attest.Tests.Core/1.3.1",
+      "path": "Attest.Tests.Core/1.1.2",
       "files": [
-        "Attest.Tests.Core.1.3.1.nupkg.sha512",
+        "Attest.Tests.Core.1.1.2.nupkg.sha512",
         "Attest.Tests.Core.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.XML",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Attest.Testing.Core.dll"
@@ -15853,6 +15918,51 @@
         "lib/windowsphone71/System.Reactive.PlatformServices.dll",
         "lib/windowsphone8/System.Reactive.PlatformServices.XML",
         "lib/windowsphone8/System.Reactive.PlatformServices.dll"
+      ]
+    },
+    "shim/1.0.2.50909": {
+      "sha512": "ueWNo89811VQllhRtDRhJPCPockiHZJJpAG7fjrm2HyjMQUTRte/a2nf+Yl5wkDfNO627Two3k8nvJe14HXn3Q==",
+      "type": "package",
+      "path": "shim/1.0.2.50909",
+      "files": [
+        "lib/@netcore451@Renamed/Shim.XML",
+        "lib/@netcore451@Renamed/Shim.dll",
+        "lib/@netcore451@Renamed/Shim.pdb",
+        "lib/@netcore451@Renamed/Shim.pri",
+        "lib/@netcore451@Renamed/portable/Shim.dll",
+        "lib/@netcore451@Renamed/portable/Shim.pdb",
+        "lib/@netcore451@Renamed/portable/Shim.xml",
+        "lib/MonoAndroid1/Shim.XML",
+        "lib/MonoAndroid1/Shim.dll",
+        "lib/MonoAndroid1/Shim.pdb",
+        "lib/MonoTouch1/Shim.XML",
+        "lib/MonoTouch1/Shim.dll",
+        "lib/MonoTouch1/Shim.pdb",
+        "lib/Xamarin.iOS10/Shim.XML",
+        "lib/Xamarin.iOS10/Shim.dll",
+        "lib/Xamarin.iOS10/Shim.pdb",
+        "lib/net45/Shim.XML",
+        "lib/net45/Shim.dll",
+        "lib/net45/Shim.pdb",
+        "lib/netcore45/Shim.XML",
+        "lib/netcore45/Shim.dll",
+        "lib/netcore45/Shim.pdb",
+        "lib/netcore45/Shim.pri",
+        "lib/portable-net45+netcore45+wpa81+wp8/Shim.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8/Shim.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/Shim.pdb",
+        "lib/portable-net45+netcore45+wpa81/Shim.XML",
+        "lib/portable-net45+netcore45+wpa81/Shim.dll",
+        "lib/portable-net45+netcore45+wpa81/Shim.pdb",
+        "lib/portable-win81+wpa81/Shim.XML",
+        "lib/portable-win81+wpa81/Shim.dll",
+        "lib/portable-win81+wpa81/Shim.pdb",
+        "lib/portable-win81+wpa81/Shim.pri",
+        "lib/wp8/Shim.XML",
+        "lib/wp8/Shim.dll",
+        "lib/wp8/Shim.pdb",
+        "shim.1.0.2.50909.nupkg.sha512",
+        "shim.nuspec"
       ]
     },
     "Solid.Bootstrapping/1.1.1": {
@@ -18486,7 +18596,6 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Attest.Tests.Core >= 1.3.1",
       "LogoFX.Client.Bootstrapping.Adapters.SimpleContainer >= 1.1.1",
       "LogoFX.Client.Bootstrapping.Core >= 1.6.4",
       "LogoFX.Client.Bootstrapping.Testing >= 1.6.4",

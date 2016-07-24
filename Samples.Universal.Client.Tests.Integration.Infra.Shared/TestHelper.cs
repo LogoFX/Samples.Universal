@@ -1,5 +1,4 @@
-﻿using Attest.Testing.Core;
-using Samples.Client.Model.Shared;
+﻿using Samples.Client.Model.Shared;
 
 namespace Samples.Universal.Client.Tests.Integration.Infra.Shared
 {
@@ -12,8 +11,7 @@ namespace Samples.Universal.Client.Tests.Integration.Infra.Shared
 
         public static void AfterTeardown()
         {
-            UserContext.Current = null;            
-            ScenarioContext.Current.Clear();
+            UserContext.Current = null;                        
             LogoFX.Client.Testing.Shared.Caliburn.Micro.TestHelper.Teardown();
         }
     }
