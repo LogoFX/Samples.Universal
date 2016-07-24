@@ -139,10 +139,6 @@
       <Project>{17A48392-5C04-4DDB-966E-1E9B821C2BCF}</Project>
       <Name>Samples.Universal.Client.Tests.Integration.Infra.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samples.Universal.Client.Tests.Integration.ScreenObjects\Samples.Universal.Client.Tests.Integration.ScreenObjects.csproj">
-      <Project>{23740FCC-CF42-47CE-9950-6423E21A8024}</Project>
-      <Name>Samples.Universal.Client.Tests.Integration.ScreenObjects</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

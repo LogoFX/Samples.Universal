@@ -1,8 +1,9 @@
 ﻿using Samples.Client.Tests.Contracts.ScreenObjects;
+using Samples.Universal.Client.Tests.Integration.ScreenObjects;
 using Solid.Practices.IoC;
 using Solid.Practices.Modularity;
 
-namespace Samples.Universal.Client.Tests.Integration.ScreenObjects
+namespace Samples.Universal.Client.Tests.Integration
 {
     class Module : ICompositionModule<IIocContainerRegistrator>
     {

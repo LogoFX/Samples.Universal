@@ -7,8 +7,8 @@
     <ProjectGuid>{23740FCC-CF42-47CE-9950-6423E21A8024}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Samples.Universal.Client.Tests.Integration.ScreenObjects</RootNamespace>
-    <AssemblyName>Samples.Universal.Client.Tests.Integration.ScreenObjects</AssemblyName>
+    <RootNamespace>Samples.Universal.Client.Tests.Integration</RootNamespace>
+    <AssemblyName>Samples.Universal.Client.Tests.Integration</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
@@ -108,8 +108,8 @@
     <None Include="project.lock.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoginScreenObject.cs" />
-    <Compile Include="MainScreenObject.cs" />
+    <Compile Include="ScreenObjects\LoginScreenObject.cs" />
+    <Compile Include="ScreenObjects\MainScreenObject.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Samples.Universal.Client.Tests.Integration.ScreenObjects.rd.xml" />
