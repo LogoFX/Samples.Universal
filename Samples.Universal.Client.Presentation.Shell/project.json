@@ -5,8 +5,7 @@
     "LogoFX.Client.Mvvm.Commanding": "1.0.6",
     "LogoFX.Client.Mvvm.ViewModel": "1.0.5",
     "LogoFX.Client.Mvvm.ViewModel.Extensions.Core": "1.0.7",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Solid.Practices.Composition.Client": "1.1.6"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {
     "uap10.0": {}
