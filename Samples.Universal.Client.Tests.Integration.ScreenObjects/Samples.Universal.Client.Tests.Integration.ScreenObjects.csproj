@@ -110,6 +110,7 @@
   <ItemGroup>
     <Compile Include="LoginScreenObject.cs" />
     <Compile Include="MainScreenObject.cs" />
+    <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Samples.Universal.Client.Tests.Integration.ScreenObjects.rd.xml" />
   </ItemGroup>

@@ -12,6 +12,7 @@ namespace Samples.Universal.Client.Tests
             var GeneralSteps = Resolver.Resolve<GeneralSteps>();
             GeneralSteps.WhenIOpenTheApplication();
 
+            var LoginSteps = Resolver.Resolve<LoginSteps>();
             LoginSteps.ThenTheLoginScreenIsDisplayed();
         }
 
@@ -24,6 +25,7 @@ namespace Samples.Universal.Client.Tests
 
             var GeneralSteps = Resolver.Resolve<GeneralSteps>();
             GeneralSteps.WhenIOpenTheApplication();
+            var LoginSteps = Resolver.Resolve<LoginSteps>();
             LoginSteps.WhenISetTheUsernameTo(userName);
             LoginSteps.WhenILogInToTheSystem();
 
