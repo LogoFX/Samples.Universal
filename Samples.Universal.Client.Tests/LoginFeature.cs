@@ -9,6 +9,7 @@ namespace Samples.Universal.Client.Tests
         [Fact]
         public void LoginScreenIsDisplayedFirst()
         {
+            var GeneralSteps = Resolver.Resolve<GeneralSteps>();
             GeneralSteps.WhenIOpenTheApplication();
 
             LoginSteps.ThenTheLoginScreenIsDisplayed();
@@ -21,6 +22,7 @@ namespace Samples.Universal.Client.Tests
             GivenLoginSteps.SetupAuthenticatedUserWithUsername(userName);
             GivenLoginSteps.SetupLoginSuccessfullyWithUsername(userName);
 
+            var GeneralSteps = Resolver.Resolve<GeneralSteps>();
             GeneralSteps.WhenIOpenTheApplication();
             LoginSteps.WhenISetTheUsernameTo(userName);
             LoginSteps.WhenILogInToTheSystem();

@@ -21,7 +21,7 @@ namespace Samples.Universal.Client.Tests.Integration.Infra.Shared
         {
             get
             {
-                return new[] { "Samples.WinRT.Client.Presentation", "Samples.Client.Model", "Samples.Client.Data" };
+                return new[] { "Samples.Universal.Client.Presentation", "Samples.Client.Model", "Samples.Client.Data", "Samples.Universal.Client.Tests", "Samples.Client.Tests" };
             }
         }
     }

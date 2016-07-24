@@ -1,14 +1,17 @@
-﻿using Attest.Testing.Core;
-using LogoFX.Client.Testing.Contracts;
+﻿using LogoFX.Client.Testing.Contracts;
 
 namespace Samples.Client.Tests.Steps
 {
-    public static class GeneralSteps
+    public class GeneralSteps
     {
-        private static readonly IStartApplicationService _startApplicationService =
-            ScenarioHelper.Get<IStartApplicationService>();
+        private readonly IStartApplicationService _startApplicationService;
 
-        public static void WhenIOpenTheApplication()
+        public GeneralSteps(IStartApplicationService startApplicationService)
+        {
+            _startApplicationService = startApplicationService;
+        }
+
+        public void WhenIOpenTheApplication()
         {            
             //TODO: add support for E2E if needed
             _startApplicationService.StartApplication(string.Empty);
