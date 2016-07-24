@@ -5,6 +5,13 @@ namespace Samples.Universal.Client.Tests.Integration.ScreenObjects
 {
     public class LoginScreenObject : ILoginScreenObject
     {
+        public StructureHelper StructureHelper { get; set; }
+
+        public LoginScreenObject(StructureHelper structureHelper)
+        {
+            StructureHelper = structureHelper;
+        }
+
         public bool IsActive()
         {
             var loginViewModel = StructureHelper.GetLogin();

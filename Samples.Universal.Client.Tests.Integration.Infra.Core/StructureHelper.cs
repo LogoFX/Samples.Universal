@@ -5,15 +5,15 @@ namespace Samples.Universal.Client.Tests.Integration.Infra.Core
     /// <summary>
     /// Represents structure helper which provides easier API for accessing different parts of application
     /// </summary>
-    public static class StructureHelper
+    public class StructureHelper
     {
-        private static ShellViewModel _rootObject;
+        private ShellViewModel _rootObject;
 
         /// <summary>
         /// Sets the root object which is the shell view model.
         /// </summary>
         /// <param name="rootObject">The root object.</param>
-        public static void SetRootObject(ShellViewModel rootObject)
+        public void SetRootObject(ShellViewModel rootObject)
         {
             _rootObject = rootObject;
         }
@@ -22,22 +22,22 @@ namespace Samples.Universal.Client.Tests.Integration.Infra.Core
         /// Gets the shell view model.
         /// </summary>
         /// <returns>Shell view model</returns>
-        public static ShellViewModel GetShell()
+        public ShellViewModel GetShell()
         {
             return GetShellInternal();
         }
 
-        public static LoginViewModel GetLogin()
+        public LoginViewModel GetLogin()
         {
-            return GetShellInternal().LoginViewModel;
+            return GetShellInternal()?.LoginViewModel;
         }
 
-        public static MainViewModel GetMain()
+        public MainViewModel GetMain()
         {
-            return GetShellInternal().MainViewModel;
+            return GetShellInternal()?.MainViewModel;
         }
 
-        private static ShellViewModel GetShellInternal()
+        private ShellViewModel GetShellInternal()
         {
             return _rootObject;
         }

@@ -9,13 +9,16 @@ namespace Samples.Universal.Client.Tests.Integration.Infra.Shared
 {
     public class StartApplicationService : StartApplicationServiceBase
     {
+        public StructureHelper StructureHelper { get; set; }
         private readonly IBuilderRegistrationService _builderRegistrationService;
         private readonly WarehouseProviderBuilder _warehouseProviderBuilder;
 
         public StartApplicationService(
             IBuilderRegistrationService builderRegistrationService, 
-            WarehouseProviderBuilder warehouseProviderBuilder)
+            WarehouseProviderBuilder warehouseProviderBuilder,
+            StructureHelper structureHelper)
         {
+            StructureHelper = structureHelper;
             _builderRegistrationService = builderRegistrationService;
             _warehouseProviderBuilder = warehouseProviderBuilder;
         }

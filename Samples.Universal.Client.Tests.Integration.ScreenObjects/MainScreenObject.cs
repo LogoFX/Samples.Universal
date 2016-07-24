@@ -5,6 +5,13 @@ namespace Samples.Universal.Client.Tests.Integration.ScreenObjects
 {
     public class MainScreenObject : IMainScreenObject
     {
+        public StructureHelper StructureHelper { get; set; }
+
+        public MainScreenObject(StructureHelper structureHelper)
+        {
+            StructureHelper = structureHelper;
+        }
+
         public bool IsActive()
         {
             var main = StructureHelper.GetMain();
