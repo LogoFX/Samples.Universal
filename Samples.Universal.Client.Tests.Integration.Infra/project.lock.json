@@ -228,6 +228,21 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Core.Platform.dll": {}
         }
       },
+      "LogoFX.Client.Mvvm.Model/1.0.10": {
+        "dependencies": {
+          "LogoFX.Client.Core.Core": "1.0.7",
+          "LogoFX.Core": "1.0.7",
+          "Solid.Patterns.Memento": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        }
+      },
       "LogoFX.Client.Mvvm.ViewModel/1.0.5": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -695,6 +710,14 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
+        }
+      },
+      "Solid.Patterns.Memento/1.0.5": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
         }
       },
       "Solid.Practices.Composition/1.1.6": {
@@ -2532,6 +2555,21 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Core.Platform.dll": {}
         }
       },
+      "LogoFX.Client.Mvvm.Model/1.0.10": {
+        "dependencies": {
+          "LogoFX.Client.Core.Core": "1.0.7",
+          "LogoFX.Core": "1.0.7",
+          "Solid.Patterns.Memento": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        }
+      },
       "LogoFX.Client.Mvvm.ViewModel/1.0.5": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -2992,6 +3030,14 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
+        }
+      },
+      "Solid.Patterns.Memento/1.0.5": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
         }
       },
       "Solid.Practices.Composition/1.1.6": {
@@ -4689,6 +4735,21 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Core.Platform.dll": {}
         }
       },
+      "LogoFX.Client.Mvvm.Model/1.0.10": {
+        "dependencies": {
+          "LogoFX.Client.Core.Core": "1.0.7",
+          "LogoFX.Core": "1.0.7",
+          "Solid.Patterns.Memento": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        }
+      },
       "LogoFX.Client.Mvvm.ViewModel/1.0.5": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -5135,6 +5196,14 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
+        }
+      },
+      "Solid.Patterns.Memento/1.0.5": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
         }
       },
       "Solid.Practices.Composition/1.1.6": {
@@ -6810,6 +6879,21 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Core.Platform.dll": {}
         }
       },
+      "LogoFX.Client.Mvvm.Model/1.0.10": {
+        "dependencies": {
+          "LogoFX.Client.Core.Core": "1.0.7",
+          "LogoFX.Core": "1.0.7",
+          "Solid.Patterns.Memento": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        }
+      },
       "LogoFX.Client.Mvvm.ViewModel/1.0.5": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -7276,6 +7360,14 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
+        }
+      },
+      "Solid.Patterns.Memento/1.0.5": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
         }
       },
       "Solid.Practices.Composition/1.1.6": {
@@ -8973,6 +9065,21 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Core.Platform.dll": {}
         }
       },
+      "LogoFX.Client.Mvvm.Model/1.0.10": {
+        "dependencies": {
+          "LogoFX.Client.Core.Core": "1.0.7",
+          "LogoFX.Core": "1.0.7",
+          "Solid.Patterns.Memento": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        }
+      },
       "LogoFX.Client.Mvvm.ViewModel/1.0.5": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -9419,6 +9526,14 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
+        }
+      },
+      "Solid.Patterns.Memento/1.0.5": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
         }
       },
       "Solid.Practices.Composition/1.1.6": {
@@ -11094,6 +11209,21 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Core.Platform.dll": {}
         }
       },
+      "LogoFX.Client.Mvvm.Model/1.0.10": {
+        "dependencies": {
+          "LogoFX.Client.Core.Core": "1.0.7",
+          "LogoFX.Core": "1.0.7",
+          "Solid.Patterns.Memento": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        }
+      },
       "LogoFX.Client.Mvvm.ViewModel/1.0.5": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -11560,6 +11690,14 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
+        }
+      },
+      "Solid.Patterns.Memento/1.0.5": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
         }
       },
       "Solid.Practices.Composition/1.1.6": {
@@ -13257,6 +13395,21 @@
           "lib/uap10.0/LogoFX.Client.Mvvm.Core.Platform.dll": {}
         }
       },
+      "LogoFX.Client.Mvvm.Model/1.0.10": {
+        "dependencies": {
+          "LogoFX.Client.Core.Core": "1.0.7",
+          "LogoFX.Core": "1.0.7",
+          "Solid.Patterns.Memento": "1.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll": {},
+          "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll": {}
+        }
+      },
       "LogoFX.Client.Mvvm.ViewModel/1.0.5": {
         "dependencies": {
           "LogoFX.Client.Core": "1.0.8",
@@ -13703,6 +13856,14 @@
         },
         "runtime": {
           "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll": {}
+        }
+      },
+      "Solid.Patterns.Memento/1.0.5": {
+        "compile": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll": {}
         }
       },
       "Solid.Practices.Composition/1.1.6": {
@@ -15463,6 +15624,23 @@
         "lib/wpa81/LogoFX.Client.Mvvm.Core.Platform.xml"
       ]
     },
+    "LogoFX.Client.Mvvm.Model/1.0.10": {
+      "sha512": "WwXz1wFDo1vJALq2yp6NcjDHOVNiDmJsFHmlDB0PJNixnqtfDXL20ywY69ASvForOU0D/R1AxXjylAH4yC2vbQ==",
+      "type": "package",
+      "path": "LogoFX.Client.Mvvm.Model/1.0.10",
+      "files": [
+        "LogoFX.Client.Mvvm.Model.1.0.10.nupkg.sha512",
+        "LogoFX.Client.Mvvm.Model.nuspec",
+        "lib/net45/LogoFX.Client.Mvvm.Model.Contracts.XML",
+        "lib/net45/LogoFX.Client.Mvvm.Model.Contracts.dll",
+        "lib/net45/LogoFX.Client.Mvvm.Model.XML",
+        "lib/net45/LogoFX.Client.Mvvm.Model.dll",
+        "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.XML",
+        "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.Contracts.dll",
+        "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.XML",
+        "lib/portable-net45+wpa8+win8+uap10.0+MonoAndroid+MonoTouch/LogoFX.Client.Mvvm.Model.dll"
+      ]
+    },
     "LogoFX.Client.Mvvm.ViewModel/1.0.5": {
       "sha512": "ejZMj2DCn2vEISniy2pP8x9cwSknkh21hdjBLHW7bGqU8yuzB4VLql7/wTAvMMUgG4KcvKlg1iAHCsD+5oSnjg==",
       "type": "package",
@@ -15782,8 +15960,9 @@
       ]
     },
     "Microsoft.NETCore.Runtime.CoreCLR-arm/1.0.0": {
-      "sha512": "vUQyaKbHCa7BJAAzdfCP2FfBYOSt0YnDw7VMJLmD1/k68HIJgw1QO7GAfHhqoa39zkkvimC47QBH27wG4C5OGQ==",
+      "sha512": "hoJfIl981eXwn9Tz8onO/J1xaYApIfp/YrhjSh9rRhml1U5Wj80LBgyp/6n+KI3VlvcAraThhnHnCTp+M3Uh+w==",
       "type": "package",
+      "path": "Microsoft.NETCore.Runtime.CoreCLR-arm/1.0.0",
       "files": [
         "Microsoft.NETCore.Runtime.CoreCLR-arm.1.0.0.nupkg.sha512",
         "Microsoft.NETCore.Runtime.CoreCLR-arm.nuspec",
@@ -16403,6 +16582,21 @@
         "Solid.Extensibility.nuspec",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.XML",
         "lib/portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0/Solid.Extensibility.dll"
+      ]
+    },
+    "Solid.Patterns.Memento/1.0.5": {
+      "sha512": "Bi7lY6qN1uswQVmka3uJQ/bmscBV6t2GhC0vAgCeEHvP/9XXLBUGIEILVPtYoUpIYAG7FubEvinxyjjFmZp+zg==",
+      "type": "package",
+      "path": "Solid.Patterns.Memento/1.0.5",
+      "files": [
+        "Solid.Patterns.Memento.1.0.5.nupkg.sha512",
+        "Solid.Patterns.Memento.nuspec",
+        "lib/MonoAndroid/Solid.Patterns.Memento.XML",
+        "lib/MonoAndroid/Solid.Patterns.Memento.dll",
+        "lib/MonoTouch/Solid.Patterns.Memento.XML",
+        "lib/MonoTouch/Solid.Patterns.Memento.dll",
+        "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.XML",
+        "lib/portable-net45+wpa8+win8/Solid.Patterns.Memento.dll"
       ]
     },
     "Solid.Practices.Composition/1.1.6": {
