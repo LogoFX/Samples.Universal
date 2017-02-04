@@ -147,11 +147,10 @@
       <Project>{625A9D65-DC7A-443D-96E6-4CA9EF763810}</Project>
       <Name>Samples.Universal.Client.Tests.Integration.Infra</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="LogoFX.Client.Bootstrapping.Testing">
-      <HintPath>..\..\logofx-project\cl-bs\src\Bin\uwp\Release\LogoFX.Client.Bootstrapping.Testing.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Samples.Universal.Client.Tests.Integration\Samples.Universal.Client.Tests.Integration.csproj">
+      <Project>{23740fcc-cf42-47ce-9950-6423e21a8024}</Project>
+      <Name>Samples.Universal.Client.Tests.Integration</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
