@@ -13,27 +13,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Universal.Client.Pr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{16F8AE28-5630-45CD-95FE-9374380C3110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Model.Contracts", "Samples.Client.Model.Contracts\Samples.Client.Model.Contracts.csproj", "{A1E6F0DE-FD0E-47FE-BC8A-308D5852DDFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Model.Contracts", "Samples.Client.Model.Contracts\Samples.Client.Model.Contracts.csproj", "{A1E6F0DE-FD0E-47FE-BC8A-308D5852DDFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Model.Shared", "Samples.Client.Model.Shared\Samples.Client.Model.Shared.csproj", "{9F78BD29-D21D-4A2C-9BA9-A115E0DA7D60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Model.Shared", "Samples.Client.Model.Shared\Samples.Client.Model.Shared.csproj", "{9F78BD29-D21D-4A2C-9BA9-A115E0DA7D60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Model", "Samples.Client.Model\Samples.Client.Model.csproj", "{7B58BB6A-4AD6-408C-9BA9-9E719F32FA6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Model", "Samples.Client.Model\Samples.Client.Model.csproj", "{7B58BB6A-4AD6-408C-9BA9-9E719F32FA6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{481AB6F4-158D-4A42-AC5E-BDCF1646B944}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{18966265-A0DD-4BE0-A94B-6C557D8E6C3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Data.Contracts.Dto", "Samples.Client.Data.Contracts.Dto\Samples.Client.Data.Contracts.Dto.csproj", "{74F8BCC6-44E7-451F-994C-1B76D1B7F3CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Data.Contracts.Dto", "Samples.Client.Data.Contracts.Dto\Samples.Client.Data.Contracts.Dto.csproj", "{74F8BCC6-44E7-451F-994C-1B76D1B7F3CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Data.Contracts.Providers", "Samples.Client.Data.Contracts.Providers\Samples.Client.Data.Contracts.Providers.csproj", "{FF7E7DDE-4E80-4377-B1EC-307E4FAA49CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Data.Contracts.Providers", "Samples.Client.Data.Contracts.Providers\Samples.Client.Data.Contracts.Providers.csproj", "{FF7E7DDE-4E80-4377-B1EC-307E4FAA49CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fake", "Fake", "{8FD7B589-F105-4D5B-BA50-8C95766BF853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Data.Fake.Containers", "Samples.Client.Data.Fake.Containers\Samples.Client.Data.Fake.Containers.csproj", "{4F0ACEA0-C2BC-4500-B684-3C304DFDEE03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Data.Fake.Containers", "Samples.Client.Data.Fake.Containers\Samples.Client.Data.Fake.Containers.csproj", "{4F0ACEA0-C2BC-4500-B684-3C304DFDEE03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Data.Fake.ProviderBuilders", "Samples.Client.Data.Fake.ProviderBuilders\Samples.Client.Data.Fake.ProviderBuilders.csproj", "{6CB51411-FDC4-4342-991E-6C5E1CAB190D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Data.Fake.ProviderBuilders", "Samples.Client.Data.Fake.ProviderBuilders\Samples.Client.Data.Fake.ProviderBuilders.csproj", "{6CB51411-FDC4-4342-991E-6C5E1CAB190D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Data.Fake.Providers", "Samples.Client.Data.Fake.Providers\Samples.Client.Data.Fake.Providers.csproj", "{4DDC43D6-FE08-45CD-BEE5-AC74A813431C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Data.Fake.Providers", "Samples.Client.Data.Fake.Providers\Samples.Client.Data.Fake.Providers.csproj", "{4DDC43D6-FE08-45CD-BEE5-AC74A813431C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C6BFC49D-B321-4792-8290-E4147CCA7D96}"
 EndProject
@@ -41,19 +41,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.Specs"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.Steps.Adapters", "Samples.Client.Tests.Steps.Adapters\Samples.Client.Tests.Steps.Adapters.csproj", "{C36681E1-11AF-4A19-B6E8-DD263F931331}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.Steps", "Samples.Client.Tests.Steps\Samples.Client.Tests.Steps.csproj", "{2EBA86EF-8843-4DBD-A903-5C8FE4B0FF76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Tests.Steps", "Samples.Client.Tests.Steps\Samples.Client.Tests.Steps.csproj", "{2EBA86EF-8843-4DBD-A903-5C8FE4B0FF76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.Contracts", "Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj", "{25043863-DD5D-4904-98D1-840D60AA5593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Tests.Contracts", "Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj", "{25043863-DD5D-4904-98D1-840D60AA5593}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.EndToEnd.Infra.Launcher", "Samples.Client.Tests.EndToEnd.Infra.Launcher\Samples.Client.Tests.EndToEnd.Infra.Launcher.csproj", "{FDB5210A-C5D2-4BC6-8AF6-E6F209549EE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Tests.EndToEnd.Infra.Launcher", "Samples.Client.Tests.EndToEnd.Infra.Launcher\Samples.Client.Tests.EndToEnd.Infra.Launcher.csproj", "{FDB5210A-C5D2-4BC6-8AF6-E6F209549EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.EndToEnd.Infra.Fake", "Samples.Client.Tests.EndToEnd.Infra.Fake\Samples.Client.Tests.EndToEnd.Infra.Fake.csproj", "{712CAEA3-6C41-4F37-872C-68D8D9085847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Tests.EndToEnd.Infra.Fake", "Samples.Client.Tests.EndToEnd.Infra.Fake\Samples.Client.Tests.EndToEnd.Infra.Fake.csproj", "{712CAEA3-6C41-4F37-872C-68D8D9085847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Data.Fake.Shared", "Samples.Client.Data.Fake.Shared\Samples.Client.Data.Fake.Shared.csproj", "{4F2F3BA6-1EE9-4C40-8FDC-81A8267B8265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Data.Fake.Shared", "Samples.Client.Data.Fake.Shared\Samples.Client.Data.Fake.Shared.csproj", "{4F2F3BA6-1EE9-4C40-8FDC-81A8267B8265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.EndToEnd.Infra.Providers", "Samples.Client.Tests.EndToEnd.Infra.Providers\Samples.Client.Tests.EndToEnd.Infra.Providers.csproj", "{170560C7-ADEF-4ABC-B919-8893DBF3EDB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Client.Tests.EndToEnd.Infra.Providers", "Samples.Client.Tests.EndToEnd.Infra.Providers\Samples.Client.Tests.EndToEnd.Infra.Providers.csproj", "{170560C7-ADEF-4ABC-B919-8893DBF3EDB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.EndToEnd", "Samples.Client.Tests.EndToEnd\Samples.Client.Tests.EndToEnd.csproj", "{C93774D9-B685-4DD0-8F32-69DEF6ABB883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Client.Tests.EndToEnd.Infra.Launcher.Bridge", "Samples.Client.Tests.EndToEnd.Infra.Launcher.Bridge\Samples.Client.Tests.EndToEnd.Infra.Launcher.Bridge.csproj", "{337CE138-0926-49DD-B9DA-93C4DC0447D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -375,6 +377,22 @@ Global
 		{C93774D9-B685-4DD0-8F32-69DEF6ABB883}.Release|x64.Build.0 = Release|Any CPU
 		{C93774D9-B685-4DD0-8F32-69DEF6ABB883}.Release|x86.ActiveCfg = Release|Any CPU
 		{C93774D9-B685-4DD0-8F32-69DEF6ABB883}.Release|x86.Build.0 = Release|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Debug|ARM.Build.0 = Debug|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Debug|x64.Build.0 = Debug|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Debug|x86.Build.0 = Debug|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Release|ARM.ActiveCfg = Release|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Release|ARM.Build.0 = Release|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Release|x64.ActiveCfg = Release|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Release|x64.Build.0 = Release|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Release|x86.ActiveCfg = Release|Any CPU
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -404,6 +422,7 @@ Global
 		{4F2F3BA6-1EE9-4C40-8FDC-81A8267B8265} = {8FD7B589-F105-4D5B-BA50-8C95766BF853}
 		{170560C7-ADEF-4ABC-B919-8893DBF3EDB3} = {C6BFC49D-B321-4792-8290-E4147CCA7D96}
 		{C93774D9-B685-4DD0-8F32-69DEF6ABB883} = {C6BFC49D-B321-4792-8290-E4147CCA7D96}
+		{337CE138-0926-49DD-B9DA-93C4DC0447D3} = {C6BFC49D-B321-4792-8290-E4147CCA7D96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {045BD384-7BC0-44BD-9F07-4F27DE08492F}

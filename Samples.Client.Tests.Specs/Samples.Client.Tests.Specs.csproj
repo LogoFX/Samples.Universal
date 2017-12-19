@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -30,8 +30,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LogoFX.Bootstrapping, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Bootstrapping.1.7.1-rc3\lib\netstandard2.0\LogoFX.Bootstrapping.dll</HintPath>
+    </Reference>
+    <Reference Include="LogoFX.Bootstrapping.Middleware, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Bootstrapping.1.7.1-rc3\lib\netstandard2.0\LogoFX.Bootstrapping.Middleware.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Solid.Bootstrapping, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Bootstrapping.1.2.1-rc3\lib\netstandard2.0\Solid.Bootstrapping.dll</HintPath>
+    </Reference>
+    <Reference Include="Solid.Extensibility, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Extensibility.1.2.1-rc2\lib\netstandard2.0\Solid.Extensibility.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Practices.Composition, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Solid.Practices.Composition.Core.1.2.1-rc3\lib\netstandard2.0\Solid.Practices.Composition.dll</HintPath>
@@ -93,6 +105,10 @@
     <ProjectReference Include="..\Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj">
       <Project>{25043863-dd5d-4904-98d1-840d60aa5593}</Project>
       <Name>Samples.Client.Tests.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Client.Tests.EndToEnd.Infra.Launcher.Bridge\Samples.Client.Tests.EndToEnd.Infra.Launcher.Bridge.csproj">
+      <Project>{337ce138-0926-49dd-b9da-93c4dc0447d3}</Project>
+      <Name>Samples.Client.Tests.EndToEnd.Infra.Launcher.Bridge</Name>
     </ProjectReference>
     <ProjectReference Include="..\Samples.Client.Tests.EndToEnd.Infra.Launcher\Samples.Client.Tests.EndToEnd.Infra.Launcher.csproj">
       <Project>{fdb5210a-c5d2-4bc6-8af6-e6f209549ee2}</Project>
