@@ -3,7 +3,7 @@
 namespace Samples.Client.Tests.Steps.Adapters
 {
     [Binding]
-    class GeneralStepsAdapter
+    public class GeneralStepsAdapter
     {
         public GeneralSteps GeneralSteps { get; set; }
 
