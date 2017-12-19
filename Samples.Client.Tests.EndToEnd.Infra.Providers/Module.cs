@@ -8,7 +8,7 @@ using Samples.Client.Data.Fake.Shared;
 using Solid.Patterns.Builder;
 using Solid.Practices.IoC;
 
-namespace Samples.Specifications.Tests.EndToEnd.Infra.Providers
+namespace Samples.Client.Tests.EndToEnd.Infra.Providers
 {
     [UsedImplicitly]
     public class Module : ProvidersModuleBase

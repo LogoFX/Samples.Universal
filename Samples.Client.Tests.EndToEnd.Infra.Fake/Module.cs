@@ -5,7 +5,7 @@ using Samples.Client.Data.Fake.Shared;
 using Solid.Practices.IoC;
 using Solid.Practices.Modularity;
 
-namespace Samples.Specifications.Tests.EndToEnd.Infra.Fake
+namespace Samples.Client.Tests.EndToEnd.Infra.Fake
 {
     class Module : ICompositionModule<IDependencyRegistrator>
     {                
