@@ -2,7 +2,7 @@
 using Caliburn.Micro;
 using LogoFX.Client.Bootstrapping;
 using LogoFX.Client.Bootstrapping.Adapters.SimpleContainer;
-using Sample.Universal.Client.Presentation.Shell.ViewModels;
+using Samples.Universal.Client.Presentation.Shell.ViewModels;
 
 namespace HelloUniversal
 {
