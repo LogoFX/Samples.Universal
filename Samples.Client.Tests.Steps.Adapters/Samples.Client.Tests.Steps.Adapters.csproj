@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples.Client.Tests.Steps\Samples.Client.Tests.Steps.csproj">
-      <Project>{2eba86ef-8843-4dbd-a903-5c8fe4b0ff76}</Project>
+      <Project>{88515806-7d25-4a29-abac-118dd2a53cf4}</Project>
       <Name>Samples.Client.Tests.Steps</Name>
     </ProjectReference>
   </ItemGroup>

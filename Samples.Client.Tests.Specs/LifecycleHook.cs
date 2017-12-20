@@ -1,5 +1,4 @@
 ﻿using BoDi;
-using LogoFX.Client.Bootstrapping.Adapters.SimpleContainer;
 using Samples.Client.Tests.Contracts;
 using Samples.Client.Tests.EndToEnd.Infra.Launcher;
 using Solid.IoC.Adapters.ObjectContainer;
@@ -16,7 +15,7 @@ namespace Samples.Client.Tests.Specs
 
         public LifecycleHook(ObjectContainer objectContainer)
         {
-            _iocContainer = new ExtendedSimpleContainerAdapter();
+            _iocContainer = new ObjectContainerAdapter(objectContainer);
         }
 
         [BeforeTestRun]

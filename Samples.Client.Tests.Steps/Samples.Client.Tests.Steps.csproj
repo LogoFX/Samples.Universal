@@ -1,24 +1,98 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88515806-7D25-4A29-ABAC-118DD2A53CF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Samples.Client.Tests.Steps</RootNamespace>
+    <AssemblyName>Samples.Client.Tests.Steps</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0;FAKE</DefineConstants>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
     <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FAKE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="4.19.4" />
-    <PackageReference Include="LogoFX.Client.Tests.Contracts" Version="1.1.1-rc2" />
-    <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc2" />
+    <Reference Include="Attest.Fake.Builders, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Attest.Fake.Builders.1.2.1-rc2\lib\netstandard2.0\Attest.Fake.Builders.dll</HintPath>
+    </Reference>
+    <Reference Include="Attest.Fake.Core, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Attest.Fake.Core.1.2.1-rc2\lib\netstandard2.0\Attest.Fake.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions, Version=4.19.4.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.19.4\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions.Core, Version=4.19.4.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.19.4\lib\net45\FluentAssertions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="LogoFX.Client.Testing.Contracts, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Tests.Contracts.1.1.1-rc2\lib\netstandard2.0\LogoFX.Client.Testing.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Solid.Patterns.Builder, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Patterns.Builder.1.2.1-rc2\lib\netstandard2.0\Solid.Patterns.Builder.dll</HintPath>
+    </Reference>
+    <Reference Include="Solid.Practices.IoC, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Practices.IoC.1.2.1-rc2\lib\netstandard2.0\Solid.Practices.IoC.dll</HintPath>
+    </Reference>
+    <Reference Include="Solid.Practices.Middleware, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Practices.Middleware.1.2.1-rc2\lib\netstandard2.0\Solid.Practices.Middleware.dll</HintPath>
+    </Reference>
+    <Reference Include="Solid.Practices.Modularity, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Practices.Modularity.1.2.1-rc2\lib\netstandard2.0\Solid.Practices.Modularity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\Samples.Client.Data.Fake.ProviderBuilders\Samples.Client.Data.Fake.ProviderBuilders.csproj" />
-    <ProjectReference Include="..\Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj" />
+    <Compile Include="GeneralSteps.cs" />
+    <Compile Include="GivenLoginSteps.cs" />
+    <Compile Include="LoginSteps.cs" />
+    <Compile Include="MainSteps.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\Samples.Client.Data.Contracts.Dto\Samples.Client.Data.Contracts.Dto.csproj">
+      <Project>{74f8bcc6-44e7-451f-994c-1b76d1b7f3ce}</Project>
+      <Name>Samples.Client.Data.Contracts.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Client.Data.Contracts.Providers\Samples.Client.Data.Contracts.Providers.csproj">
+      <Project>{ff7e7dde-4e80-4377-b1ec-307e4faa49ce}</Project>
+      <Name>Samples.Client.Data.Contracts.Providers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Client.Data.Fake.ProviderBuilders\Samples.Client.Data.Fake.ProviderBuilders.csproj">
+      <Project>{6cb51411-fdc4-4342-991e-6c5e1cab190d}</Project>
+      <Name>Samples.Client.Data.Fake.ProviderBuilders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj">
+      <Project>{B9417284-A96F-413D-AF16-201D25FCBFE6}</Project>
+      <Name>Samples.Client.Tests.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

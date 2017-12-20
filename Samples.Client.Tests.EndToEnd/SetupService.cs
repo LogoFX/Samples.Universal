@@ -1,4 +1,4 @@
-﻿using LogoFX.Client.Testing.Contracts;
+﻿using Samples.Client.Tests.Contracts;
 
 namespace Samples.Client.Tests.EndToEnd
 {

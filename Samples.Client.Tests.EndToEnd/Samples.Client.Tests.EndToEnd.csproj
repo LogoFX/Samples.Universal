@@ -85,13 +85,13 @@
     <Compile Include="StructureHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj">
-      <Project>{25043863-dd5d-4904-98d1-840d60aa5593}</Project>
-      <Name>Samples.Client.Tests.Contracts</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Samples.Client.Tests.Contracts\Samples.Client.Tests.Contracts.csproj">
+      <Project>{B9417284-A96F-413D-AF16-201D25FCBFE6}</Project>
+      <Name>Samples.Client.Tests.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

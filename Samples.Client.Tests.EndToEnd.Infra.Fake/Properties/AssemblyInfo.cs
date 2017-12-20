@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Samples.Client.Tests.EndToEnd.Infra.Launcher.Bridge")]
+[assembly: AssemblyTitle("Samples.Client.Tests.EndToEnd.Infra.Fake")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Samples.Client.Tests.EndToEnd.Infra.Launcher.Bridge")]
+[assembly: AssemblyProduct("Samples.Client.Tests.EndToEnd.Infra.Fake")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("337ce138-0926-49dd-b9da-93c4dc0447d3")]
+[assembly: Guid("bc360ac8-a54a-4dc1-a144-217ef840977e")]
 
 // Version information for an assembly consists of the following four values:
 //
