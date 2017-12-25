@@ -1,5 +1,4 @@
-﻿using System.IO;
-using LogoFX.Client.Testing.Contracts;
+﻿using LogoFX.Client.Testing.Contracts;
 using Samples.Client.Tests.Contracts;
 
 namespace Samples.Client.Tests.EndToEnd
@@ -7,25 +6,16 @@ namespace Samples.Client.Tests.EndToEnd
     class StartClientApplicationService : IStartClientApplicationService
     {        
         private readonly IStartApplicationService _startApplicationService;
-        private readonly IExecutableContainer _executableContainer;
 
         public StartClientApplicationService(
-            IStartApplicationService startApplicationService,
-            IExecutableContainer executableContainer)
+            IStartApplicationService startApplicationService)
         {
             _startApplicationService = startApplicationService;
-            _executableContainer = executableContainer;
         }
 
         public void StartApplication()
-        {
-            var testDirectory = Directory.GetCurrentDirectory();
-            var applicationDirectory = Directory.GetParent(testDirectory).FullName;
-            var applicationPath = Path.Combine(applicationDirectory, _executableContainer.Path);
-            Directory.SetCurrentDirectory(applicationDirectory);
-            //TODO: replace with app Id
-            _startApplicationService.StartApplication(applicationPath);
-            Directory.SetCurrentDirectory(testDirectory);
+        {                        
+            _startApplicationService.StartApplication("27a966ff-8069-4e40-898a-b715cd3fc922_00zbzmmrpqfhc!App");            
         }
     }    
 }

@@ -15,7 +15,7 @@ namespace Samples.Client.Tests.EndToEnd
 
         public void Stop()
         {
-            throw new System.NotImplementedException();
+            ApplicationContext.Application.Kill();
         }
     }
 }

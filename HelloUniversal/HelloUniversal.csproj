@@ -146,10 +146,6 @@
       <Project>{7b58bb6a-4ad6-408c-9ba9-9e719f32fa6b}</Project>
       <Name>Samples.Client.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samples.Client.Tests.EndToEnd.Infra.Providers\Samples.Client.Tests.EndToEnd.Infra.Providers.csproj">
-      <Project>{9775cbc9-6214-4610-95aa-3bfa2bd4a749}</Project>
-      <Name>Samples.Client.Tests.EndToEnd.Infra.Providers</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Samples.Universal.Client.Presentation.Shell\Samples.Universal.Client.Presentation.Shell.csproj">
       <Project>{e500baa3-8827-4948-864e-948057d66fcd}</Project>
       <Name>Samples.Universal.Client.Presentation.Shell</Name>
