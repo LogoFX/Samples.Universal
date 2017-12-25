@@ -23,6 +23,7 @@ namespace Samples.Client.Tests.EndToEnd
             var applicationDirectory = Directory.GetParent(testDirectory).FullName;
             var applicationPath = Path.Combine(applicationDirectory, _executableContainer.Path);
             Directory.SetCurrentDirectory(applicationDirectory);
+            //TODO: replace with app Id
             _startApplicationService.StartApplication(applicationPath);
             Directory.SetCurrentDirectory(testDirectory);
         }

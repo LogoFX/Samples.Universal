@@ -9,7 +9,7 @@ namespace Samples.Client.Tests.EndToEnd
         /// <param name="startupPath">The startup path.</param>
         public void Start(string startupPath)
         {
-            ApplicationContext.Application = Application.Launch(startupPath);
+            ApplicationContext.Application = Application.LaunchStoreApp(startupPath);
             ApplicationContext.Application.WaitWhileBusy();
         }
 
