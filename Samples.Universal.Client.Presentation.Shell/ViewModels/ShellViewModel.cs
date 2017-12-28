@@ -9,12 +9,12 @@ using Samples.Client.Model.Shared;
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {
     [UsedImplicitly]
-    public class ShellViewModel : Conductor<INotifyPropertyChanged>.Collection.OneActive     
+    public class ShellViewModel : Conductor<INotifyPropertyChanged>.Collection.OneActive
     {
         private readonly ILoginService _loginService;
         private readonly IDataService _dataService;
 
-        public ShellViewModel(            
+        public ShellViewModel(
             ILoginService loginService,
             IDataService dataService)
         {
@@ -43,7 +43,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         public bool IsLoggedIn
         {
             get { return UserContext.Current != null; }
-        }        
+        }
 
         private LoginViewModel _loginViewModel;
         public LoginViewModel LoginViewModel
@@ -75,8 +75,8 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         protected override async void OnViewLoaded(object view)
         {
-            ActivateItem(LoginViewModel);            
-        }       
+            ActivateItem(LoginViewModel);
+        }
 
         private void OnLoggedInSuccessfully(object sender, EventArgs eventArgs)
         {

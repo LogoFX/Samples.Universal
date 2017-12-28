@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Input;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.Commanding;
@@ -6,7 +6,7 @@ using LogoFX.Client.Mvvm.ViewModel.Extensions;
 using Samples.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
-{   
+{
     [UsedImplicitly]
     public sealed class LoginViewModel : BusyScreen
     {
@@ -44,14 +44,14 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                                catch (Exception ex)
                                {
                                    LoginFailureCause = "Failed to log in";
-                               }                               
+                               }
 
                                finally
                                {
                                    Password = string.Empty;
                                    //IsBusy = false;
                                }
-                           })                           
+                           })
                            .RequeryOnPropertyChanged(this, () => Password));
             }
         }
@@ -91,7 +91,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         {
             get { return string.IsNullOrWhiteSpace(LoginFailureCause) == false; }
         }
-        
+
         private bool _isUserAuthenticated;
 
         public bool IsUserAuthenticated
@@ -105,7 +105,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 _isUserAuthenticated = value;
                 NotifyOfPropertyChange();
             }
-        }              
+        }
 
         public string CurrentDomain
         {
@@ -124,7 +124,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 NotifyOfPropertyChange();
             }
         }
-       
+
         private string _password = string.Empty;
 
         public string Password
@@ -138,8 +138,8 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 _password = value;
                 NotifyOfPropertyChange();
             }
-        }        
-                
+        }
+
         private void OnLoginSuccess()
         {
             TryClose(true);
@@ -148,6 +148,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             {
                 LoggedInSuccessfully(this, new EventArgs());
             }
-        }        
+        }
     }
 }

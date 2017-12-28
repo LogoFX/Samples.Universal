@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Attest.Fake.Registration" Version="1.2.1-rc2" />
+    <PackageReference Include="JetBrains.Annotations" Version="11.0.0" />
+    <PackageReference Include="LogoFX.Client.Tests.EndToEnd" Version="1.2.1-rc3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Samples.Client.Data.Fake.Shared\Samples.Client.Data.Fake.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

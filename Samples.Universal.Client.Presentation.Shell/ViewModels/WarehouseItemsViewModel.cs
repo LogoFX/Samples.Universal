@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel;
@@ -9,12 +9,12 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     [UsedImplicitly]
     public class WarehouseItemsViewModel : PropertyChangedBase
     {
-        private readonly IDataService _dataService;        
+        private readonly IDataService _dataService;
 
         public WarehouseItemsViewModel(
             IDataService dataService)
         {
-            _dataService = dataService;            
+            _dataService = dataService;
         }
 
         private IEnumerable _warehouseItems;

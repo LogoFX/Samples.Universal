@@ -1,4 +1,4 @@
-﻿using JetBrains.Annotations;
+using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel;
 using Samples.Client.Model.Contracts;
 
@@ -9,7 +9,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     {
         public WarehouseItemViewModel(IWarehouseItem model) : base(model)
         {
-            
+
         }
 
         public string Kind

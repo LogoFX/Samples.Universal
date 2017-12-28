@@ -3,14 +3,14 @@ using Solid.Practices.Modularity;
 
 namespace Samples.Client.Tests.Steps
 {
-    class Module : ICompositionModule<IIocContainerRegistrator>
+    class Module : ICompositionModule<IDependencyRegistrator>
     {
-        public void RegisterModule(IIocContainerRegistrator iocContainer)
+        public void RegisterModule(IDependencyRegistrator dependencyRegistrator)
         {
-            iocContainer.RegisterSingleton<GeneralSteps, GeneralSteps>();
-            iocContainer.RegisterSingleton<LoginSteps, LoginSteps>();
-            iocContainer.RegisterSingleton<GivenLoginSteps, GivenLoginSteps>();
-            iocContainer.RegisterSingleton<MainSteps, MainSteps>();
+            dependencyRegistrator.RegisterSingleton<GeneralSteps, GeneralSteps>();
+            dependencyRegistrator.RegisterSingleton<LoginSteps, LoginSteps>();
+            dependencyRegistrator.RegisterSingleton<GivenLoginSteps, GivenLoginSteps>();
+            dependencyRegistrator.RegisterSingleton<MainSteps, MainSteps>();
         }
     }
 }

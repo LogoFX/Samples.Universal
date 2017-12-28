@@ -1,5 +1,4 @@
-﻿#if FAKE
-using System;
+﻿using System;
 using JetBrains.Annotations;
 using Samples.Client.Data.Contracts.Dto;
 using Samples.Client.Data.Contracts.Providers;
@@ -11,21 +10,21 @@ using Solid.Practices.Modularity;
 namespace Samples.Client.Data.Fake.Providers
 {
     [UsedImplicitly]
-    class Module : ICompositionModule<IIocContainerRegistrator>
+    class Module : ICompositionModule<IDependencyRegistrator>
     {
-        public void RegisterModule(IIocContainerRegistrator iocContainer)
+        public void RegisterModule(IDependencyRegistrator dependencyRegistrator)
         {
-            RegisterDataContainers(iocContainer);
-            RegisterBuilders(iocContainer);
-            RegisterProviders(iocContainer);            
+            RegisterDataContainers(dependencyRegistrator);
+            RegisterBuilders(dependencyRegistrator);
+            RegisterProviders(dependencyRegistrator);            
         }
 
-        private static void RegisterDataContainers(IIocContainerRegistrator iocContainer)
+        private static void RegisterDataContainers(IDependencyRegistrator dependencyRegistrator)
         {
             var warehouseContainer = InitializeWarehouseContainer();
             var userContainer = InitializeUserContainer();
-            iocContainer.RegisterInstance(warehouseContainer);
-            iocContainer.RegisterInstance(userContainer);
+            dependencyRegistrator.RegisterInstance(warehouseContainer);
+            dependencyRegistrator.RegisterInstance(userContainer);
         }
 
         private static IWarehouseContainer InitializeWarehouseContainer()
@@ -53,17 +52,16 @@ namespace Samples.Client.Data.Fake.Providers
             return userContainer;
         }
 
-        private static void RegisterBuilders(IIocContainerRegistrator iocContainer)
+        private static void RegisterBuilders(IDependencyRegistrator dependencyRegistrator)
         {
-            iocContainer.RegisterInstance(WarehouseProviderBuilder.CreateBuilder());
-            iocContainer.RegisterInstance(LoginProviderBuilder.CreateBuilder());
+            dependencyRegistrator.RegisterInstance(WarehouseProviderBuilder.CreateBuilder());
+            dependencyRegistrator.RegisterInstance(LoginProviderBuilder.CreateBuilder());
         }
 
-        private static void RegisterProviders(IIocContainerRegistrator iocContainer)
+        private static void RegisterProviders(IDependencyRegistrator dependencyRegistrator)
         {
-            iocContainer.RegisterSingleton<IWarehouseProvider, FakeWarehouseProvider>();
-            iocContainer.RegisterSingleton<ILoginProvider, FakeLoginProvider>();
+            dependencyRegistrator.RegisterSingleton<IWarehouseProvider, FakeWarehouseProvider>();
+            dependencyRegistrator.RegisterSingleton<ILoginProvider, FakeLoginProvider>();
         }
     }
 }
-#endif

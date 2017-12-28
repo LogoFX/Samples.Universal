@@ -10,7 +10,7 @@ namespace Samples.Client.Model
     {
         public void RegisterModule()
         {
-            Mapper.Initialize(x => x.AddProfile<MappingProfile>());
+            Mapper.Initialize(MappingProfile.CreateWarehouseMaps);
         }
     }
 }

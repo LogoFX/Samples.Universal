@@ -9,7 +9,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     {
         private readonly IDataService _dataService;
 
-        public MainViewModel(            
+        public MainViewModel(
             IDataService dataService)
         {
             _dataService = dataService;
