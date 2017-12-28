@@ -7,8 +7,8 @@
     <ProjectGuid>{7DFCB724-EB78-4A56-8D09-37522B6D08D0}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloUniversal</RootNamespace>
-    <AssemblyName>HelloUniversal</AssemblyName>
+    <RootNamespace>Samples.Universal.Launcher</RootNamespace>
+    <AssemblyName>Samples.Universal.Launcher</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>

@@ -4,7 +4,7 @@ using LogoFX.Client.Bootstrapping;
 using LogoFX.Client.Bootstrapping.Adapters.SimpleContainer;
 using Samples.Universal.Client.Presentation.Shell.ViewModels;
 
-namespace HelloUniversal
+namespace Samples.Universal.Launcher
 {
     public class AppBootstrapper : BootstrapperContainerBase<ExtendedSimpleContainerAdapter>.WithRootObject<ShellViewModel>
     {

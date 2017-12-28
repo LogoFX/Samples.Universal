@@ -7,6 +7,6 @@ namespace Samples.Client.Tests.EndToEnd
 
     class ExecutableContainer : IExecutableContainer
     {
-        public string Path => "HelloUniversal.exe";
+        public string Path => "Samples.Universal.exe";
     }
 }

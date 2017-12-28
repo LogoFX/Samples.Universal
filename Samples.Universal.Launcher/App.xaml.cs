@@ -1,4 +1,4 @@
-﻿namespace HelloUniversal
+﻿namespace Samples.Universal.Launcher
 {     
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
