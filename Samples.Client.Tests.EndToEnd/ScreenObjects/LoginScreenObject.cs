@@ -36,7 +36,7 @@ namespace Samples.Client.Tests.EndToEnd.ScreenObjects
         private Window GetLoginScreen()
         {
             var application = ApplicationContext.Application;
-            var loginScreen = application.GetWindowEx("Login View");            
+            var loginScreen = application.GetMainWindowEx();            
             return loginScreen;
         }
 
