@@ -9,12 +9,13 @@ using Solid.Patterns.Builder;
 using Solid.Practices.IoC;
 
 namespace Samples.Client.Tests.EndToEnd.Infra.Providers
-{
+{    
     [UsedImplicitly]
     public class Module : ProvidersModuleBase
     {       
         protected override void OnRegisterProviders(IDependencyRegistrator dependencyRegistrator)
         {
+            //TODO: check why there are two instances of the same builder!
             base.OnRegisterProviders(dependencyRegistrator);            
             var typeMatches = Helper.FindProviderMatches();            
             foreach (var typeMatch in typeMatches)

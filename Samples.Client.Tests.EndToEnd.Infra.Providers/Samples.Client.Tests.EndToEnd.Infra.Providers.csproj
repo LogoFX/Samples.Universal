@@ -7,7 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Attest.Fake.Registration" Version="1.2.1-rc2" />
     <PackageReference Include="JetBrains.Annotations" Version="11.0.0" />
-    <PackageReference Include="LogoFX.Client.Tests.EndToEnd" Version="1.2.1-rc2" />
+    <PackageReference Include="LogoFX.Client.Tests.EndToEnd" Version="1.2.1-rc3" />
   </ItemGroup>
 
   <ItemGroup>
