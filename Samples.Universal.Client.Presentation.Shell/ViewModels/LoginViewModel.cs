@@ -16,7 +16,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             ILoginService loginService)
         {
             _loginService = loginService;
-            DisplayName = "Login View";
+            DisplayName = "Login";
         }
 
         public event EventHandler LoggedInSuccessfully;

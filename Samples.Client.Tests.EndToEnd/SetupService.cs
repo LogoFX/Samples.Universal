@@ -29,7 +29,7 @@ namespace Samples.Client.Tests.EndToEnd
     {
         public void Teardown()
         {            
-            ApplicationContext.Application?.Dispose();
+            ApplicationContext.Application?.Kill();            
         }
     }
 }

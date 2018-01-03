@@ -18,7 +18,8 @@ namespace Samples.Client.Tests.EndToEnd.ScreenObjects
             for (int i = 0; i < 3; i++)
             {
                 var userNameTextBox = loginScreen.FindFirstDescendant("Login_UserName").AsTextBox();
-                userNameTextBox.Enter(username);
+                userNameTextBox.Text = username;
+                //userNameTextBox.Enter(username);
                 if (userNameTextBox.Text == username)
                 {
                     break;
@@ -30,7 +31,7 @@ namespace Samples.Client.Tests.EndToEnd.ScreenObjects
         {
             var loginScreen = GetLoginScreen();
             var passwordBox = loginScreen.FindFirstDescendant("Login_Password").AsTextBox();
-            passwordBox.Enter(password);
+            passwordBox.Text = password;
         }
 
         private Window GetLoginScreen()
@@ -49,8 +50,8 @@ namespace Samples.Client.Tests.EndToEnd.ScreenObjects
 
         public bool IsActive()
         {
-            //TODO
-            return true;
+            var shell = ApplicationContext.Application.GetMainWindowEx();
+            return shell.Title.Contains("Login");            
         }
     }
 }

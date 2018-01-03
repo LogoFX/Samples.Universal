@@ -13,6 +13,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             IDataService dataService)
         {
             _dataService = dataService;
+            DisplayName = "Main";
         }
 
         private WarehouseItemsViewModel _warehouseItems;

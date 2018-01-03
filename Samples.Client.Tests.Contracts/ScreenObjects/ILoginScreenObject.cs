@@ -4,6 +4,7 @@
     {
         bool IsActive();
         void SetUsername(string username);
+        void SetPassword(string password);
         void Login();
     }
 }

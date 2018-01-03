@@ -9,7 +9,7 @@ using Samples.Client.Model.Shared;
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {
     [UsedImplicitly]
-    public class ShellViewModel : Conductor<INotifyPropertyChanged>.Collection.OneActive
+    public class ShellViewModel : Conductor<IScreen>.Collection.OneActive
     {
         private readonly ILoginService _loginService;
         private readonly IDataService _dataService;

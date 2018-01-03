@@ -12,5 +12,6 @@ Scenario: Navigate to the main screen when the login is successful
 	Given I am able to log in successfully with username "Admin"	
 	When I open the application
 	And I set the username to "Admin"
+	And I set the password to "pass"
 	And I log in to the system
 	Then Application navigates to the main screen

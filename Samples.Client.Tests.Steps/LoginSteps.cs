@@ -17,6 +17,11 @@ namespace Samples.Client.Tests.Steps
             _loginScreenObject.SetUsername(username);
         }
 
+        public void WhenISetThePasswordTo(string password)
+        {
+            _loginScreenObject.SetPassword(password);
+        }
+
         public void WhenILogInToTheSystem()
         {
             _loginScreenObject.Login();

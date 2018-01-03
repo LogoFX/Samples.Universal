@@ -18,6 +18,12 @@ namespace Samples.Client.Tests.Steps.Adapters
             LoginSteps.WhenISetTheUsernameTo(username);
         }
 
+        [When(@"I set the password to ""(.*)""")]
+        public void WhenISetThePasswordTo(string password)
+        {
+            LoginSteps.WhenISetThePasswordTo(password);
+        }
+
         [When(@"I log in to the system")]
         public void WhenILogInToTheSystem()
         {

@@ -14,7 +14,7 @@ namespace Samples.Client.Tests.EndToEnd
             Func<Window> getWindow = () =>
             {
                 using (var automation = new UIA3Automation())
-                {
+                {                    
                     var mainWindow = app.GetMainWindow(automation);                    
                     if (mainWindow == null ||
                         mainWindow.IsOffscreen ||

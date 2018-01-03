@@ -1,4 +1,3 @@
-using System;
 using Samples.Client.Tests.Contracts.ScreenObjects;
 
 namespace Samples.Client.Tests.EndToEnd.ScreenObjects
@@ -7,7 +6,8 @@ namespace Samples.Client.Tests.EndToEnd.ScreenObjects
     {
         public bool IsActive()
         {
-            throw new NotImplementedException();
+            var shell = ApplicationContext.Application.GetMainWindowEx();
+            return shell.Title.Contains("Main");
         }
     }
 }
