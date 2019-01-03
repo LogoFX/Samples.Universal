@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Core;
