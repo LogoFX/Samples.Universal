@@ -160,6 +160,14 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Samples.Client.Data.Fake.ProviderBuilders\Samples.Client.Data.Fake.ProviderBuilders.csproj">
+      <Project>{6cb51411-fdc4-4342-991e-6c5e1cab190d}</Project>
+      <Name>Samples.Client.Data.Fake.ProviderBuilders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples.Client.Data.Fake.Providers\Samples.Client.Data.Fake.Providers.csproj">
+      <Project>{4ddc43d6-fe08-45cd-bee5-ac74a813431c}</Project>
+      <Name>Samples.Client.Data.Fake.Providers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Samples.Client.Model.Contracts\Samples.Client.Model.Contracts.csproj">
       <Project>{A1E6F0DE-FD0E-47FE-BC8A-308D5852DDFE}</Project>
       <Name>Samples.Client.Model.Contracts</Name>
