@@ -1,6 +1,5 @@
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Microsoft.Xaml.Interactivity;
 
 namespace Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors
 {

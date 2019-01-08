@@ -1,6 +1,4 @@
 ﻿using Windows.UI.Xaml.Controls;
-using Caliburn.Micro;
-using LogoFX.Client.Bootstrapping;
 using LogoFX.Client.Bootstrapping.Adapters.SimpleContainer;
 using Samples.Universal.Client.Presentation.Shell.ViewModels;
 

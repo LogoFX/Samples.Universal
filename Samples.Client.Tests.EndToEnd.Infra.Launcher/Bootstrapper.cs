@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Solid.Bootstrapping;
+using Solid.Core;
 using Solid.Extensibility;
 using Solid.Practices.Composition;
 using Solid.Practices.Composition.Contracts;

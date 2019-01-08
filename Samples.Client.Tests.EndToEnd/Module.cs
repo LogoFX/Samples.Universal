@@ -1,6 +1,5 @@
 ﻿using System.Reflection;
-using LogoFX.Client.Testing.Contracts;
-using Samples.Client.Tests.Contracts;
+using Attest.Testing.Contracts;
 using Solid.Practices.IoC;
 using Solid.Practices.Modularity;
 

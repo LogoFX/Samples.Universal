@@ -1,6 +1,6 @@
-﻿using LogoFX.Client.Testing.Contracts;
-using LogoFX.Client.Testing.EndToEnd;
-using LogoFX.Client.Testing.EndToEnd.FakeData;
+﻿using Attest.Testing.Contracts;
+using Attest.Testing.Core.FakeData;
+using Attest.Testing.EndToEnd;
 using Samples.Client.Data.Fake.Shared;
 using Solid.Practices.IoC;
 using Solid.Practices.Modularity;
@@ -13,7 +13,7 @@ namespace Samples.Client.Tests.EndToEnd.Infra.Fake
         {
             dependencyRegistrator.RegisterSingleton<IStartApplicationService, StartApplicationService.WithFakeProviders>();
             dependencyRegistrator.RegisterSingleton<IBuilderRegistrationService, BuilderRegistrationService>();
-            Helper.RegisterBuilders(dependencyRegistrator);
+            dependencyRegistrator.RegisterBuilders();
         }        
     }
 }

@@ -1,8 +1,8 @@
 ﻿using BoDi;
 using Samples.Client.Tests.Contracts;
 using Samples.Client.Tests.EndToEnd.Infra.Launcher;
+using Solid.Common;
 using Solid.IoC.Adapters.ObjectContainer;
-using Solid.Practices.Composition;
 using Solid.Practices.IoC;
 using TechTalk.SpecFlow;
 

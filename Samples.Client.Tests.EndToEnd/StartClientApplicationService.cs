@@ -1,5 +1,5 @@
 ﻿using System.IO;
-using LogoFX.Client.Testing.Contracts;
+using Attest.Testing.Contracts;
 using Samples.Client.Tests.Contracts;
 
 namespace Samples.Client.Tests.EndToEnd
@@ -22,7 +22,7 @@ namespace Samples.Client.Tests.EndToEnd
             //TODO: Resolve file path dynamically 
             Directory.SetCurrentDirectory(
                 $@"C:\Users\genna\AppData\Local\DevelopmentFiles\{PackageId}VS.Debug_x86.genna");
-            _startApplicationService.StartApplication($"{PackageId}_00zbzmmrpqfhc!App"); 
+            _startApplicationService.Start($"{PackageId}_00zbzmmrpqfhc!App"); 
             Directory.SetCurrentDirectory(currentDirectory);
         }
     }    

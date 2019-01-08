@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Attest.Fake.Builders" Version="1.2.1-rc2" />
-    <PackageReference Include="Attest.Fake.LightMock" Version="1.2.1-rc2" />
-    <PackageReference Include="Attest.Fake.Setup" Version="1.2.1-rc2" />
+    <PackageReference Include="Attest.Fake.Builders" Version="2.0.0-rc1" />
+    <PackageReference Include="Attest.Fake.LightMock" Version="2.0.0-rc1" />
+    <PackageReference Include="Attest.Fake.Setup" Version="2.0.0-rc1" />
   </ItemGroup>
 
   <ItemGroup>
