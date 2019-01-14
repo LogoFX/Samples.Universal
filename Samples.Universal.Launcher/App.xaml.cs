@@ -1,4 +1,6 @@
-﻿namespace Samples.Universal.Launcher
+﻿using Solid.Core;
+
+namespace Samples.Universal.Launcher
 {     
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
@@ -12,7 +14,7 @@
         public App()
         {
             InitializeComponent();
-            Initialize();                      
+            (this as IInitializable).Initialize();                      
         }
     }
 
