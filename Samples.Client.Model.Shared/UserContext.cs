@@ -8,7 +8,7 @@ namespace Samples.Client.Model.Shared
 
         public static IUser Current
         {
-            get { return _currentUser; }
+            get => _currentUser;
             set
             {
                 if (_currentUser == value)

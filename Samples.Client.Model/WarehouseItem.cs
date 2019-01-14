@@ -21,7 +21,7 @@ namespace Samples.Client.Model
         private double _price;
         public double Price
         {
-            get { return _price;}
+            get => _price;
             set
             {
                 if (value == _price)
@@ -37,7 +37,7 @@ namespace Samples.Client.Model
         private int _quantity;
         public int Quantity
         {
-            get { return _quantity; }
+            get => _quantity;
             set
             {
                 if (value == _quantity)
@@ -50,9 +50,6 @@ namespace Samples.Client.Model
             }
         }
 
-        public double TotalCost
-        {
-            get { return _quantity*_price; }
-        }
+        public double TotalCost => _quantity*_price;
     }
 }

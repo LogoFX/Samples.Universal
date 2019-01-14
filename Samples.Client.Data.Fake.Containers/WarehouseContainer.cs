@@ -11,16 +11,12 @@ namespace Samples.Client.Data.Fake.Containers
     public class WarehouseContainer : IWarehouseContainer
     {
         private readonly List<WarehouseItemDto> _warehouseItems = new List<WarehouseItemDto>();
-
-        public IEnumerable<WarehouseItemDto> WarehouseItems
-        {
-            get { return _warehouseItems; }
-        }
+        public IEnumerable<WarehouseItemDto> WarehouseItems => _warehouseItems;
 
         public void UpdateWarehouseItems(IEnumerable<WarehouseItemDto> warehouseItems)
         {
             _warehouseItems.Clear();
             _warehouseItems.AddRange(warehouseItems);
         }
-    }   
+    }
 }

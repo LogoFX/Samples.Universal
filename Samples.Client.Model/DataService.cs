@@ -12,18 +12,16 @@ namespace Samples.Client.Model
     [UsedImplicitly]
     class DataService : IDataService
     {
-        private readonly IWarehouseProvider _warehouseProvider;        
+        private readonly IWarehouseProvider _warehouseProvider;
 
         public DataService(IWarehouseProvider warehouseProvider)
         {
             _warehouseProvider = warehouseProvider;
         }
 
-        private readonly RangeObservableCollection<IWarehouseItem> _warehouseItems = new RangeObservableCollection<IWarehouseItem>();
-        IEnumerable<IWarehouseItem> IDataService.WarehouseItems
-        {
-            get { return _warehouseItems; }
-        }
+        private readonly RangeObservableCollection<IWarehouseItem> _warehouseItems =
+            new RangeObservableCollection<IWarehouseItem>();
+        IEnumerable<IWarehouseItem> IDataService.WarehouseItems => _warehouseItems;
 
         public async Task GetWarehouseItemsAsync()
         {
