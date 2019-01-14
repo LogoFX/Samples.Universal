@@ -31,67 +31,67 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Attest.Fake.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Core.2.0.0-rc1\lib\netstandard2.0\Attest.Fake.Core.dll</HintPath>
+      <HintPath>..\packages\Attest.Fake.Core.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Core.dll</HintPath>
     </Reference>
     <Reference Include="Attest.Fake.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Data.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Data.dll</HintPath>
+      <HintPath>..\packages\Attest.Fake.Data.2.0.0-rc3\lib\netstandard2.0\Attest.Fake.Data.dll</HintPath>
     </Reference>
     <Reference Include="Attest.Fake.Registration, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Registration.2.0.0-rc1\lib\netstandard2.0\Attest.Fake.Registration.dll</HintPath>
+      <HintPath>..\packages\Attest.Fake.Registration.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Attest.Fake.Setup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Setup.2.0.0-rc1\lib\netstandard2.0\Attest.Fake.Setup.dll</HintPath>
+      <HintPath>..\packages\Attest.Fake.Setup.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Setup.dll</HintPath>
     </Reference>
     <Reference Include="Attest.Fake.Setup.Contracts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Setup.2.0.0-rc1\lib\netstandard2.0\Attest.Fake.Setup.Contracts.dll</HintPath>
+      <HintPath>..\packages\Attest.Fake.Setup.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Setup.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="Attest.Testing.Contracts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Testing.Contracts.2.0.0-rc1\lib\netstandard2.0\Attest.Testing.Contracts.dll</HintPath>
+      <HintPath>..\packages\Attest.Testing.Contracts.2.0.0-rc2\lib\netstandard2.0\Attest.Testing.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="Attest.Testing.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Tests.Core.2.0.0-rc4\lib\netstandard2.0\Attest.Testing.Core.dll</HintPath>
+      <HintPath>..\packages\Attest.Tests.Core.2.0.0-rc5\lib\netstandard2.0\Attest.Testing.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Bootstrapping, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Bootstrapping.2.0.0-rc2\lib\netstandard2.0\Solid.Bootstrapping.dll</HintPath>
+      <HintPath>..\packages\Solid.Bootstrapping.2.0.0\lib\netstandard2.0\Solid.Bootstrapping.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Common.Core.2.0.0-rc2\lib\netstandard2.0\Solid.Common.dll</HintPath>
+      <HintPath>..\packages\Solid.Common.Core.2.0.0\lib\netstandard2.0\Solid.Common.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Core.2.0.0-rc1\lib\netstandard2.0\Solid.Core.dll</HintPath>
+      <HintPath>..\packages\Solid.Core.2.0.0\lib\netstandard2.0\Solid.Core.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Extensibility, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Extensibility.2.0.0-rc2\lib\netstandard2.0\Solid.Extensibility.dll</HintPath>
+      <HintPath>..\packages\Solid.Extensibility.2.0.0\lib\netstandard2.0\Solid.Extensibility.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Patterns.Builder, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Patterns.Builder.2.0.0-rc1\lib\netstandard2.0\Solid.Patterns.Builder.dll</HintPath>
+      <HintPath>..\packages\Solid.Patterns.Builder.2.0.0\lib\netstandard2.0\Solid.Patterns.Builder.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Patterns.Visitor, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Patterns.Visitor.2.0.0-rc1\lib\netstandard2.0\Solid.Patterns.Visitor.dll</HintPath>
+      <HintPath>..\packages\Solid.Patterns.Visitor.2.0.0\lib\netstandard2.0\Solid.Patterns.Visitor.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Practices.Composition, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Practices.Composition.Core.2.0.0-rc3\lib\netstandard2.0\Solid.Practices.Composition.dll</HintPath>
+      <HintPath>..\packages\Solid.Practices.Composition.Core.2.0.0\lib\netstandard2.0\Solid.Practices.Composition.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Practices.Composition.Container, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Practices.Composition.Core.2.0.0-rc3\lib\netstandard2.0\Solid.Practices.Composition.Container.dll</HintPath>
+      <HintPath>..\packages\Solid.Practices.Composition.Core.2.0.0\lib\netstandard2.0\Solid.Practices.Composition.Container.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Practices.Composition.Contracts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Practices.Composition.Core.2.0.0-rc3\lib\netstandard2.0\Solid.Practices.Composition.Contracts.dll</HintPath>
+      <HintPath>..\packages\Solid.Practices.Composition.Core.2.0.0\lib\netstandard2.0\Solid.Practices.Composition.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Practices.IoC, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Practices.IoC.2.0.0-rc1\lib\netstandard2.0\Solid.Practices.IoC.dll</HintPath>
+      <HintPath>..\packages\Solid.Practices.IoC.2.0.0\lib\netstandard2.0\Solid.Practices.IoC.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Practices.Middleware, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Practices.Middleware.2.0.0-rc1\lib\netstandard2.0\Solid.Practices.Middleware.dll</HintPath>
+      <HintPath>..\packages\Solid.Practices.Middleware.2.0.0\lib\netstandard2.0\Solid.Practices.Middleware.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Practices.Modularity, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Practices.Modularity.2.0.0-rc1\lib\netstandard2.0\Solid.Practices.Modularity.dll</HintPath>
+      <HintPath>..\packages\Solid.Practices.Modularity.2.0.0\lib\netstandard2.0\Solid.Practices.Modularity.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Practices.Scheduling, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Solid.Practices.Scheduling.2.0.0-rc1\lib\netstandard2.0\Solid.Practices.Scheduling.dll</HintPath>
+      <HintPath>..\packages\Solid.Practices.Scheduling.2.0.0\lib\netstandard2.0\Solid.Practices.Scheduling.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
