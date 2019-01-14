@@ -123,16 +123,16 @@
       <Version>2018.2.1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Commanding">
-      <Version>2.0.0-rc3</Version>
+      <Version>2.0.0-rc4</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel">
       <Version>2.0.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Extensions">
-      <Version>2.0.0-rc2</Version>
+      <Version>2.0.0-rc3</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Extensions.Core">
-      <Version>2.0.0-rc2</Version>
+      <Version>2.0.0-rc3</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.5</Version>
