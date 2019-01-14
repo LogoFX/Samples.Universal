@@ -12,6 +12,8 @@
     local:TitleDependencyProperty.Title="{Binding Path=ActiveItem.DisplayName, Mode=OneWay}"
     mc:Ignorable="d">
     <Grid>
-        <ContentControl cal:View.Model="{Binding ActiveItem}" />
+        <ContentControl HorizontalContentAlignment="Stretch"
+                        VerticalContentAlignment="Stretch"
+                        cal:View.Model="{Binding ActiveItem}" />
     </Grid>
 </Page>

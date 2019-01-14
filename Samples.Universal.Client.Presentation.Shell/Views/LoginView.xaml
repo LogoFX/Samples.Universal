@@ -7,60 +7,97 @@
       xmlns:behaviors="using:Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors"
       xmlns:interactivity="using:Microsoft.Xaml.Interactivity"        
       mc:Ignorable="d"       
-      d:DataContext="{d:DesignInstance viewModels:LoginViewModel}"
-      MaxWidth="600"
-      Height="300" Width="300">
-    <Grid>
+      d:DataContext="{d:DesignInstance viewModels:LoginViewModel}">
+
+    <Grid VerticalAlignment="Center"
+          HorizontalAlignment="Center">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="28" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="32" />
+            <RowDefinition Height="32" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="32" />
-                <RowDefinition Height="32" />
-                <RowDefinition Height="32" />
-            </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="180" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Grid.Column="0"                   
+                   VerticalAlignment="Center"
+                   Text="User Name:" />
+        <TextBox Grid.Row="0"
+                 Grid.Column="1"
+                 Margin="5,0,0,0" 
+                 Height="21"
+                 VerticalAlignment="Center"
+                 AutomationProperties.AutomationId="Login_UserName"
+                 Text="{Binding Path=UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <interactivity:Interaction.Behaviors>
+                <behaviors:UpdateSourceOnChangeBehavior />
+            </interactivity:Interaction.Behaviors>
+        </TextBox>
+
+        <TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   VerticalAlignment="Center"
+                   Text="Password:" />
+        <PasswordBox Grid.Row="1"
+                     Grid.Column="1"
+                     Margin="5,0,0,0" 
+                     Height="21"
+                     VerticalAlignment="Center"
+                     AutomationProperties.AutomationId="Login_Password"
+                     behaviors:PasswordHelper.BindPassword="True"
+                     behaviors:PasswordHelper.BoundPassword="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <interactivity:Interaction.Behaviors>
+                <behaviors:UpdateSourceOnChangeBehavior />
+                <behaviors:SelectTextOnFocusBehavior />
+            </interactivity:Interaction.Behaviors>
+        </PasswordBox>
+
+        <CheckBox Grid.Row="2"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2"
+                  Content="Save Password"
+                  VerticalAlignment="Center"
+                  IsChecked="{Binding Path=SavePassword, Mode=TwoWay}" />
+
+        <TextBlock AutomationProperties.AutomationId="Login_FailureTextBlock"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   VerticalAlignment="Center"
+                   Foreground="Red"
+                   Text="{Binding Path=LoginFailureCause, Mode=OneWay}" />
+
+        <Grid Grid.Row="5" 
+              Grid.Column="0" 
+              Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.3*"/>
-                <ColumnDefinition Width="0.7*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left"
-                       Text="Username" />
-            <TextBox Grid.Row="0" Grid.Column="1" Height="28"
-                     AutomationProperties.AutomationId="Login_UserName"
-                     Text="{Binding Path=UserName,
-                                        Mode=TwoWay}">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:UpdateSourceOnChangeBehavior />
-                </interactivity:Interaction.Behaviors>
-            </TextBox>
-
-            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"
-                       Text="Password"/>
-            <PasswordBox Grid.Row="1" Grid.Column="1" Height="28"
-                         AutomationProperties.AutomationId="Login_Password" behaviors:PasswordHelper.BindPassword="True"
-                         behaviors:PasswordHelper.BoundPassword="{Binding Path=Password,
-                                                                              Mode=TwoWay}">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:UpdateSourceOnChangeBehavior />
-                    <behaviors:SelectTextOnFocusBehavior />
-                </interactivity:Interaction.Behaviors>
-            </PasswordBox>
-        </Grid>
-
-        <StackPanel Grid.Row="3" HorizontalAlignment="Right" Orientation="Horizontal">
-            <Button Margin="16,16" AutomationProperties.AutomationId="Login_SignIn" BorderThickness="0"
+            <Button Grid.Column="0"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
+                    AutomationProperties.AutomationId="Login_SignIn"
                     Command="{Binding Path=LoginCommand}"
-                    Content="Sign in">
+                    Content="Login">
             </Button>
-            <Button AutomationProperties.AutomationId="Login_CancelSignIn" BorderThickness="0"
+
+            <Button Grid.Column="2"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
                     Command="{Binding Path=LoginCancelCommand}"
                     Content="Cancel">
             </Button>
-        </StackPanel>
+        </Grid>
     </Grid>
 </Page>

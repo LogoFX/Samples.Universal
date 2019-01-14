@@ -70,6 +70,15 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             }
         }
 
+        private bool _savePassword;
+
+        //TODO: make 'Save Password' workable
+        public bool SavePassword
+        {
+            get => _savePassword;
+            set => Set(ref _savePassword, value);
+        }
+
         private string _loginFailureCause;
         public string LoginFailureCause
         {
@@ -77,7 +86,9 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             set
             {
                 if (_loginFailureCause == value)
+                {
                     return;
+                }
 
                 _loginFailureCause = value;
                 NotifyOfPropertyChange();
