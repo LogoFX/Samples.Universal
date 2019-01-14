@@ -12,24 +12,12 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         }
 
-        public string Kind
-        {
-            get { return Model.Kind; }
-        }
+        public string Kind => Model.Kind;
 
-        public int Quantity
-        {
-            get { return Model.Quantity; }
-        }
+        public int Quantity => Model.Quantity;
 
-        public double Price
-        {
-            get { return Model.Price; }
-        }
+        public double Price => Model.Price;
 
-        public double TotalCost
-        {
-            get { return Model.TotalCost; }
-        }
+        public double TotalCost => Model.TotalCost;
     }
 }

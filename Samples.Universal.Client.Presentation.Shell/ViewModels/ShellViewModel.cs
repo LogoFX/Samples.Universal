@@ -28,7 +28,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         public bool IsBusy
         {
-            get { return _isBusy; }
+            get => _isBusy;
             set
             {
                 if (_isBusy == value)
@@ -39,16 +39,10 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             }
         }
 
-        public bool IsLoggedIn
-        {
-            get { return UserContext.Current != null; }
-        }
+        public bool IsLoggedIn => UserContext.Current != null;
 
         private LoginViewModel _loginViewModel;
-        public LoginViewModel LoginViewModel
-        {
-            get { return _loginViewModel ?? (_loginViewModel = CreateLoginViewModel()); }
-        }
+        public LoginViewModel LoginViewModel => _loginViewModel ?? (_loginViewModel = CreateLoginViewModel());
 
         private LoginViewModel CreateLoginViewModel()
         {
@@ -56,10 +50,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private MainViewModel _mainViewModel;
-        public MainViewModel MainViewModel
-        {
-            get { return _mainViewModel ?? (_mainViewModel = CreateMainViewModel()); }
-        }
+        public MainViewModel MainViewModel => _mainViewModel ?? (_mainViewModel = CreateMainViewModel());
 
         private MainViewModel CreateMainViewModel()
         {
@@ -68,7 +59,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         public override string DisplayName
         {
-            get { return string.Empty; }
+            get => string.Empty;
             set { }
         }
 

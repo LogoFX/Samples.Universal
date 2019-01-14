@@ -15,11 +15,10 @@ namespace Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors
 
         void AssociatedObjectGotFocus(object sender, RoutedEventArgs e)
         {
-            if (AssociatedObject is TextBox)
-                ((TextBox)AssociatedObject).SelectAll();
-            else if (AssociatedObject is PasswordBox)
-                ((PasswordBox)AssociatedObject).SelectAll();
-
+            if (AssociatedObject is TextBox box)
+                box.SelectAll();
+            else if (AssociatedObject is PasswordBox passwordBox)
+                passwordBox.SelectAll();
         }
 
         protected override void OnDetaching()

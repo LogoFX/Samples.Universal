@@ -18,10 +18,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private IEnumerable _warehouseItems;
-        public IEnumerable WarehouseItems
-        {
-            get { return _warehouseItems ?? (_warehouseItems = CreateWarehouseItems()); }
-        }
+        public IEnumerable WarehouseItems => _warehouseItems ?? (_warehouseItems = CreateWarehouseItems());
 
         private IEnumerable CreateWarehouseItems()
         {

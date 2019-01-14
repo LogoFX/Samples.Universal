@@ -57,7 +57,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private ICommand _cancelCommand;
-
         public ICommand LoginCancelCommand
         {
             get
@@ -72,10 +71,9 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private string _loginFailureCause;
-
         public string LoginFailureCause
         {
-            get { return _loginFailureCause; }
+            get => _loginFailureCause;
             set
             {
                 if (_loginFailureCause == value)
@@ -87,16 +85,12 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             }
         }
 
-        public bool IsLoginFailureTextVisible
-        {
-            get { return string.IsNullOrWhiteSpace(LoginFailureCause) == false; }
-        }
+        public bool IsLoginFailureTextVisible => string.IsNullOrWhiteSpace(LoginFailureCause) == false;
 
         private bool _isUserAuthenticated;
-
         public bool IsUserAuthenticated
         {
-            get { return _isUserAuthenticated; }
+            get => _isUserAuthenticated;
             private set
             {
                 if (_isUserAuthenticated == value)
@@ -114,10 +108,9 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private string _userName;
-
         public string UserName
         {
-            get { return _userName; }
+            get => _userName;
             set
             {
                 _userName = value;
@@ -126,10 +119,9 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private string _password = string.Empty;
-
         public string Password
         {
-            get { return _password; }
+            get => _password;
             set
             {
                 if (_password == value)
@@ -144,10 +136,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         {
             TryClose(true);
 
-            if (LoggedInSuccessfully != null)
-            {
-                LoggedInSuccessfully(this, new EventArgs());
-            }
+            LoggedInSuccessfully?.Invoke(this, new EventArgs());
         }
     }
 }

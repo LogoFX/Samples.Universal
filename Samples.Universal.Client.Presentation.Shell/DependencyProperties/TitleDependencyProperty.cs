@@ -22,7 +22,7 @@ namespace Samples.Universal.Client.Presentation.Shell.DependencyProperties
 
         private static void OnTitlePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            string title = e.NewValue.ToString();
+            var title = e.NewValue.ToString();
             var window = ApplicationView.GetForCurrentView();
             window.Title = title;
         }

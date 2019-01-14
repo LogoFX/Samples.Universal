@@ -17,10 +17,9 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private WarehouseItemsViewModel _warehouseItems;
-        public WarehouseItemsViewModel WarehouseItems
-        {
-            get { return _warehouseItems ?? (_warehouseItems = new WarehouseItemsViewModel(_dataService)); }
-        }
+
+        public WarehouseItemsViewModel WarehouseItems =>
+            _warehouseItems ?? (_warehouseItems = new WarehouseItemsViewModel(_dataService));
 
         protected override async void OnInitialize()
         {
