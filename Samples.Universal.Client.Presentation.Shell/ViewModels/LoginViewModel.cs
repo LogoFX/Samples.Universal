@@ -1,5 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.Windows.Input;
+using Windows.Security.Credentials;
+using Windows.Storage;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.Commanding;
 using LogoFX.Client.Mvvm.ViewModel.Extensions;
@@ -10,6 +13,10 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     [UsedImplicitly]
     public sealed class LoginViewModel : BusyScreen
     {
+        private static readonly string SavePasswordKey = "SavePassword";
+
+        private static readonly string CredentialResourceNameKey = "Samples.Universal.Credentials";
+
         private readonly ILoginService _loginService;
 
         public LoginViewModel(
@@ -17,6 +24,59 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         {
             _loginService = loginService;
             DisplayName = "Login";
+        }
+
+        protected override void OnViewLoaded(object view)
+        {
+            base.OnViewLoaded(view);
+
+            var localSettings = ApplicationData.Current.LocalSettings;
+            if (localSettings.Values.TryGetValue(SavePasswordKey, out var savePassword))
+            {
+                SavePassword = (bool)savePassword;
+            }
+
+            var loginCredential = GetCredentialFromLocker();
+
+            if (loginCredential != null)
+            {
+                // There is a credential stored in the locker.
+                // Populate the Password property of the credential
+                // for automatic login.
+                loginCredential.RetrievePassword();
+                UserName = loginCredential.UserName;
+                Password = loginCredential.Password;
+            }
+        }
+
+        private PasswordCredential GetCredentialFromLocker()
+        {
+            PasswordCredential credential = null;
+
+            var vault = new PasswordVault();
+            IReadOnlyList<PasswordCredential> credentialList;
+            try
+            {
+                credentialList = vault.FindAllByResource(CredentialResourceNameKey);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+            if (credentialList.Count > 0)
+            {
+                if (credentialList.Count == 1)
+                {
+                    credential = credentialList[0];
+                }
+                else
+                {
+                    credential = vault.Retrieve(CredentialResourceNameKey, UserName);
+                }
+            }
+
+            return credential;
         }
 
         public event EventHandler LoggedInSuccessfully;
@@ -36,20 +96,20 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
                                try
                                {
-                                   //IsBusy = true;
+                                   IsBusy = true;
                                    await _loginService.LoginAsync(UserName, Password);
                                    OnLoginSuccess();
                                }
 
                                catch (Exception ex)
                                {
-                                   LoginFailureCause = "Failed to log in";
+                                   LoginFailureCause = $"Failed to log in: {ex.Message}";
                                }
 
                                finally
                                {
                                    Password = string.Empty;
-                                   //IsBusy = false;
+                                   IsBusy = false;
                                }
                            })
                            .RequeryOnPropertyChanged(this, () => Password));
@@ -130,6 +190,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private string _password = string.Empty;
+
         public string Password
         {
             get => _password;
@@ -145,8 +206,21 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private void OnLoginSuccess()
         {
-            TryClose(true);
+            var localSettings = ApplicationData.Current.LocalSettings;
+            localSettings.Values[SavePasswordKey] = SavePassword;
 
+            var vault = new PasswordVault();
+            var passwordCredential = new PasswordCredential(CredentialResourceNameKey, UserName, Password);
+            if (SavePassword)
+            {
+                vault.Add(passwordCredential);
+            }
+            else
+            {
+                vault.Remove(passwordCredential);
+            }
+
+            TryClose(true);
             LoggedInSuccessfully?.Invoke(this, new EventArgs());
         }
     }

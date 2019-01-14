@@ -5,9 +5,14 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:viewModels="using:Samples.Universal.Client.Presentation.Shell.ViewModels"
       xmlns:behaviors="using:Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors"
-      xmlns:interactivity="using:Microsoft.Xaml.Interactivity"        
+      xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:micro="using:Caliburn.Micro"
       mc:Ignorable="d"       
       d:DataContext="{d:DesignInstance viewModels:LoginViewModel}">
+
+    <UserControl.Resources>
+        <micro:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </UserControl.Resources>
 
     <Grid VerticalAlignment="Center"
           HorizontalAlignment="Center">
@@ -98,6 +103,18 @@
                     Command="{Binding Path=LoginCancelCommand}"
                     Content="Cancel">
             </Button>
+        </Grid>
+
+        <Grid Grid.Column="0"
+              Grid.ColumnSpan="3"
+              Grid.Row="0"
+              Grid.RowSpan="6"
+              Visibility="{Binding Path=IsBusy, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <ProgressBar Height="24" 
+                         AutomationProperties.AutomationId="Main_Progress"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center" 
+                         IsIndeterminate="True"/>
         </Grid>
     </Grid>
 </Page>
