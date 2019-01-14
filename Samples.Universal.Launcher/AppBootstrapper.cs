@@ -3,6 +3,7 @@ using Caliburn.Micro;
 using LogoFX.Client.Bootstrapping;
 using LogoFX.Client.Bootstrapping.Adapters.SimpleContainer;
 using Samples.Universal.Client.Presentation.Shell.ViewModels;
+using Solid.Practices.Composition;
 
 namespace Samples.Universal.Launcher
 {
@@ -13,6 +14,11 @@ namespace Samples.Universal.Launcher
         public AppBootstrapper() : base(_iocContainer)
         {
         }
+
+        public override CompositionOptions CompositionOptions => new CompositionOptions
+        {
+            Prefixes = new [] { "Samples.Universal" }
+        };
 
         protected override void PrepareViewFirst(Frame rootFrame)
         {
