@@ -49,5 +49,18 @@ namespace Samples.Client.Model
             _warehouseProvider.DeleteWarehouseItem(item.Id);
             _warehouseItems.Remove(item);
         });
+
+        async Task IDataService.SaveWarehouseItemAsync(IWarehouseItem item)
+        {
+            var dto = WarehouseMapper.MapToWarehouseDto(item);
+            if (item.IsNew)
+            {
+                await ServiceRunner.RunAsync(() => _warehouseProvider.CreateWarehouseItem(dto));
+            }
+            else
+            {
+                await ServiceRunner.RunAsync(() => _warehouseProvider.UpdateWarehouseItem(dto));
+            }
+        }
     }
 }

@@ -7,9 +7,14 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     [UsedImplicitly]
     public class WarehouseItemViewModel : ObjectViewModel<IWarehouseItem>
     {
-        public WarehouseItemViewModel(IWarehouseItem model) : base(model)
-        {
+        private readonly IDataService _dataService;
 
+        public WarehouseItemViewModel(
+            IWarehouseItem model,
+            IDataService dataService) 
+            : base(model)
+        {
+            _dataService = dataService;
         }
 
         public string Kind => Model.Kind;

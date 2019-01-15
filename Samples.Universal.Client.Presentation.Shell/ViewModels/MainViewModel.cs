@@ -1,6 +1,8 @@
+using System;
 using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel.Contracts;
+using LogoFX.Client.Mvvm.ViewModel.Extensions;
 using Samples.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
@@ -54,20 +56,41 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
                 if (_activeWarehouseItem != null)
                 {
-                    //_activeWarehouseItem.Saving -= OnSaving;
-                    //_activeWarehouseItem.Saved -= OnSaved;
+                    _activeWarehouseItem.Saving -= OnSaving;
+                    _activeWarehouseItem.Saved -= OnSaved;
                 }
 
                 _activeWarehouseItem = value;
 
                 if (_activeWarehouseItem != null)
                 {
-                    //_activeWarehouseItem.Saving += OnSaving;
-                    //_activeWarehouseItem.Saved += OnSaved;
+                    _activeWarehouseItem.Saving += OnSaving;
+                    _activeWarehouseItem.Saved += OnSaved;
                 }
 
                 NotifyOfPropertyChange();
             }
+        }
+
+        private async void OnSaved(object sender, ResultEventArgs e)
+        {
+            IsBusy = true;
+            try
+            {
+                await _dataService.GetWarehouseItemsAsync();
+            }
+
+            finally
+            {
+                IsBusy = false;
+            }
+
+            NewWarehouseItemInternal();
+        }
+
+        private void OnSaving(object sender, EventArgs e)
+        {
+            IsBusy = true;
         }
 
         #endregion
@@ -97,7 +120,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
             try
             {
-                await _dataService.DeleteWarehouseItemAsync(ActiveWarehouseItem?.Item.Model);
+                await _dataService.DeleteWarehouseItemAsync(ActiveWarehouseItem?.WarehouseItem.Model);
                 await _dataService.GetWarehouseItemsAsync();
             }
 

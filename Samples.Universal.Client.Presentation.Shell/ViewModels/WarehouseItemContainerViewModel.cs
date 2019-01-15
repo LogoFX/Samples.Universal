@@ -1,9 +1,10 @@
-using LogoFX.Client.Mvvm.ViewModel;
+using System.Threading.Tasks;
+using LogoFX.Client.Mvvm.ViewModel.Extensions;
 using Samples.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {
-    public sealed class WarehouseItemContainerViewModel : ObjectViewModel<IWarehouseItem>
+    public sealed class WarehouseItemContainerViewModel : EditableObjectViewModel<IWarehouseItem>
     {
         private readonly IWarehouseItem _model;
         private readonly IDataService _dataService;
@@ -20,14 +21,20 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             _mainViewModel = mainViewModel;
         }
 
-        public string CommandsContext => Item.Model.IsNew ? "New" : "Existing";
+        public string CommandsContext => WarehouseItem.Model.IsNew ? "New" : "Existing";
 
         private WarehouseItemCommandsViewModel _commands;
         public WarehouseItemCommandsViewModel Commands => _commands ??
                                                           (_commands = new WarehouseItemCommandsViewModel(_mainViewModel));
 
         private WarehouseItemViewModel _item;
-        public WarehouseItemViewModel Item => _item ??
-                                              (_item = new WarehouseItemViewModel(_model));
+        public WarehouseItemViewModel WarehouseItem => _item ??
+                                              (_item = new WarehouseItemViewModel(_model, _dataService));
+
+        protected override async Task<bool> SaveMethod(IWarehouseItem model)
+        {
+            await _dataService.SaveWarehouseItemAsync(Model);
+            return true;
+        }
     }
 }

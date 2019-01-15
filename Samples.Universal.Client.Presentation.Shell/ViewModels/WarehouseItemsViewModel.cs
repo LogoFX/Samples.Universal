@@ -49,7 +49,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             {
                 FactoryMethod =
                     o =>
-                        new WarehouseItemViewModel((IWarehouseItem)o)
+                        new WarehouseItemViewModel((IWarehouseItem)o, _dataService)
             }.WithSource(_dataService.WarehouseItems);
 
             return wc.AsView();

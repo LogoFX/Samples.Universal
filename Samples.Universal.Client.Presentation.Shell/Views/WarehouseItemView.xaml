@@ -10,8 +10,7 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400"
-    d:DataContext="{d:DesignInstance viewModels:WarehouseItemViewModel}"
-    >
+    d:DataContext="{d:DesignInstance viewModels:WarehouseItemViewModel}">
 
     <Grid>
         <Grid.RowDefinitions>

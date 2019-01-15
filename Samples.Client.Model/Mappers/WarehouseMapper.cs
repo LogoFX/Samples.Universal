@@ -10,5 +10,10 @@ namespace Samples.Client.Model.Mappers
         {
             return Mapper.Map<WarehouseItem>(warehouseItemDto);
         }
+
+        internal static WarehouseItemDto MapToWarehouseDto(IWarehouseItem warehouseItem)
+        {
+            return Mapper.Map<WarehouseItemDto>(warehouseItem);
+        }
     }
 }

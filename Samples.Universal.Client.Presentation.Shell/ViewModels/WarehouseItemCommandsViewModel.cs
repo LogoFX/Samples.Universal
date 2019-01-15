@@ -21,7 +21,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         public ICommand DeleteCommand
             => CommandFactory
                 .GetCommand(ref _deleteCommand, _mainViewModel.DeleteSelectedItem,
-                    () => _mainViewModel.ActiveWarehouseItem?.Item.Model.IsNew == false)
+                    () => _mainViewModel.ActiveWarehouseItem?.WarehouseItem.Model.IsNew == false)
                 .RequeryOnPropertyChanged(_mainViewModel, () => _mainViewModel.ActiveWarehouseItem);
     }
 }

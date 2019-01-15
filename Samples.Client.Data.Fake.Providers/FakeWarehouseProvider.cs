@@ -40,5 +40,20 @@ namespace Samples.Client.Data.Fake.Providers
             var retVal = await service.DeleteWarehouseItem(id);
             return retVal;
         }
+
+        async Task<bool> IWarehouseProvider.UpdateWarehouseItem(WarehouseItemDto dto)
+        {
+            await TaskRunner.RunAsync(() => Task.Delay(_random.Next(2000)));
+            var service = GetService(() => _warehouseProviderBuilder, b => b);
+            var retVal = await service.UpdateWarehouseItem(dto);
+            return retVal;
+        }
+
+        async Task IWarehouseProvider.CreateWarehouseItem(WarehouseItemDto dto)
+        {
+            await TaskRunner.RunAsync(() => Task.Delay(_random.Next(2000)));
+            var service = GetService(() => _warehouseProviderBuilder, b => b);
+            await service.CreateWarehouseItem(dto);
+        }
     }
 }

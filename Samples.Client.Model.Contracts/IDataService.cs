@@ -12,5 +12,7 @@ namespace Samples.Client.Model.Contracts
         Task GetWarehouseItemsAsync();
 
         Task DeleteWarehouseItemAsync(IWarehouseItem item);
+
+        Task SaveWarehouseItemAsync(IWarehouseItem item);
     }
 }
