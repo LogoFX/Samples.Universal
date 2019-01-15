@@ -7,12 +7,12 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     {
         private readonly IWarehouseItem _model;
         private readonly IDataService _dataService;
-        private readonly MainViewModel _mainViewModel;
+        private readonly IMainViewModel _mainViewModel;
 
         public WarehouseItemContainerViewModel(
             IWarehouseItem model,
             IDataService dataService,
-            MainViewModel mainViewModel) :
+            IMainViewModel mainViewModel) :
             base(model)
         {
             _model = model;

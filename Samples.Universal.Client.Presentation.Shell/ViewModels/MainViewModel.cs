@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel.Contracts;
@@ -7,41 +6,27 @@ using Samples.Client.Model.Contracts;
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {
     [UsedImplicitly]
-    public class MainViewModel : Screen, ICanBeBusy
+    public class MainViewModel : Screen, ICanBeBusy, IMainViewModel
     {
+        #region Fields
+
         private readonly IDataService _dataService;
+
+        #endregion
+
+        #region Constructors
 
         public MainViewModel(
             IDataService dataService)
         {
             _dataService = dataService;
 
-            NewWarehouseItem();
+            NewWarehouseItemInternal();
         }
 
-        internal async void NewWarehouseItem()
-        {
-            IsBusy = true;
+        #endregion
 
-            try
-            {
-                var warehouseItem = await _dataService.NewWarehouseItemAsync();
-                var newItem = new WarehouseItemContainerViewModel(warehouseItem, _dataService, this);
-                ActiveWarehouseItem = newItem;
-            }
-
-            finally
-            {
-                IsBusy = false;
-            }
-        }
-
-
-        public override string DisplayName
-        {
-            get => "Main";
-            set { }
-        }
+        #region Public Properties
 
         private bool _isBusy;
 
@@ -54,7 +39,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         private WarehouseItemsViewModel _warehouseItems;
 
         public WarehouseItemsViewModel WarehouseItems =>
-            _warehouseItems ?? (_warehouseItems = new WarehouseItemsViewModel(_dataService));
+            _warehouseItems ?? (_warehouseItems = new WarehouseItemsViewModel(_dataService, this));
 
         private WarehouseItemContainerViewModel _activeWarehouseItem;
         public WarehouseItemContainerViewModel ActiveWarehouseItem
@@ -85,7 +70,28 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             }
         }
 
-        internal async void DeleteSelectedItem()
+        #endregion
+
+        #region Private Members
+
+        private async void NewWarehouseItemInternal()
+        {
+            IsBusy = true;
+
+            try
+            {
+                var warehouseItem = await _dataService.NewWarehouseItemAsync();
+                var newItem = new WarehouseItemContainerViewModel(warehouseItem, _dataService, this);
+                ActiveWarehouseItem = newItem;
+            }
+
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        private async void DeleteSelectedItemInternal()
         {
             IsBusy = true;
 
@@ -100,7 +106,23 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 IsBusy = false;
             }
 
-            NewWarehouseItem();
+            NewWarehouseItemInternal();
+        }
+
+        private void WarehouseItemsSelectionChangedInternal(WarehouseItemViewModel selectedItem)
+        {
+            ActiveWarehouseItem = new WarehouseItemContainerViewModel(selectedItem.Model, _dataService, this);
+        }
+
+        #endregion
+
+
+        #region Overrides
+
+        public override string DisplayName
+        {
+            get => "Main";
+            set { }
         }
 
         protected override async void OnInitialize()
@@ -108,5 +130,38 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             base.OnInitialize();
             await _dataService.GetWarehouseItemsAsync();
         }
+
+        #endregion
+
+        #region ICanBeBusy
+
+        bool ICanBeBusy.IsBusy
+        {
+            get => IsBusy;
+            set => IsBusy = value;
+        }
+
+        #endregion
+
+        #region IMainViewModel
+
+        WarehouseItemContainerViewModel IMainViewModel.ActiveWarehouseItem => ActiveWarehouseItem;
+
+        void IMainViewModel.NewWarehouseItem()
+        {
+            NewWarehouseItemInternal();
+        }
+
+        void IMainViewModel.DeleteSelectedItem()
+        {
+            DeleteSelectedItemInternal();
+        }
+
+        void IMainViewModel.WarehouseItemsSelectionChanged(WarehouseItemViewModel selectedItem)
+        {
+            WarehouseItemsSelectionChangedInternal(selectedItem);
+        }
+
+        #endregion
     }
 }

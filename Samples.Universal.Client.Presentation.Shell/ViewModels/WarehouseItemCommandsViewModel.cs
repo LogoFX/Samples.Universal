@@ -6,9 +6,9 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 {
     public sealed class WarehouseItemCommandsViewModel : PropertyChangedBase
     {
-        private readonly MainViewModel _mainViewModel;
+        private readonly IMainViewModel _mainViewModel;
 
-        public WarehouseItemCommandsViewModel(MainViewModel mainViewModel)
+        public WarehouseItemCommandsViewModel(IMainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
         }

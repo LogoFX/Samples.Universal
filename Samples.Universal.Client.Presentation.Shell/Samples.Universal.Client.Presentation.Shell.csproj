@@ -107,10 +107,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DependencyProperties\TitleDependencyProperty.cs" />
+    <Compile Include="Interactivity\Behaviors\DataGridSelectionBehavior.cs" />
     <Compile Include="Interactivity\Behaviors\PasswordHelper.cs" />
     <Compile Include="Interactivity\Behaviors\SelectTextOnFocusBehavior.cs" />
     <Compile Include="Interactivity\Behaviors\UpdateSourceOnChangeBehavior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\IMainViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
