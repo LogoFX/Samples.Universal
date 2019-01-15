@@ -30,16 +30,12 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         {
             base.OnViewLoaded(view);
 
-            var localSettings = ApplicationData.Current.LocalSettings;
-            if (localSettings.Values.TryGetValue(SavePasswordKey, out var savePassword))
-            {
-                SavePassword = (bool)savePassword;
-            }
-
             var loginCredential = GetCredentialFromLocker();
 
             if (loginCredential != null)
             {
+                SavePassword = true;
+
                 // There is a credential stored in the locker.
                 // Populate the Password property of the credential
                 // for automatic login.
@@ -69,10 +65,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 if (credentialList.Count == 1)
                 {
                     credential = credentialList[0];
-                }
-                else
-                {
-                    credential = vault.Retrieve(CredentialResourceNameKey, UserName);
                 }
             }
 
@@ -206,9 +198,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private void OnLoginSuccess()
         {
-            var localSettings = ApplicationData.Current.LocalSettings;
-            localSettings.Values[SavePasswordKey] = SavePassword;
-
             var vault = new PasswordVault();
             var passwordCredential = new PasswordCredential(CredentialResourceNameKey, UserName, Password);
             if (SavePassword)
