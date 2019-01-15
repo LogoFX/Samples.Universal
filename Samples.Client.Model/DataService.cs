@@ -23,6 +23,14 @@ namespace Samples.Client.Model
             new RangeObservableCollection<IWarehouseItem>();
         IEnumerable<IWarehouseItem> IDataService.WarehouseItems => _warehouseItems;
 
+        async Task<IWarehouseItem> IDataService.NewWarehouseItemAsync() =>
+            await ServiceRunner.RunWithResultAsync<IWarehouseItem>(
+                () =>
+                    new WarehouseItem("New Kind", 0d, 1)
+                    {
+                        IsNew = true
+                    });
+
         public async Task GetWarehouseItemsAsync()
         {
             await ServiceRunner.RunAsync(GetWarehouseItemsInternal);
@@ -35,5 +43,11 @@ namespace Samples.Client.Model
             _warehouseItems.Clear();
             _warehouseItems.AddRange(warehouseItems);
         }
+
+        async Task IDataService.DeleteWarehouseItemAsync(IWarehouseItem item) => await ServiceRunner.RunAsync(() =>
+        {
+            _warehouseProvider.DeleteWarehouseItem(item.Id);
+            _warehouseItems.Remove(item);
+        });
     }
 }

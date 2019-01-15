@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Attest.Fake.Builders;
 using Attest.Fake.LightMock;
@@ -21,6 +23,11 @@ namespace Samples.Client.Data.Fake.ProviderBuilders
             public Task<IEnumerable<WarehouseItemDto>> GetWarehouseItems()
             {
                 return Invoke(t => t.GetWarehouseItems());
+            }
+
+            public Task<bool> DeleteWarehouseItem(Guid id)
+            {
+                return Invoke(t => t.DeleteWarehouseItem(id));
             }
         }
 
@@ -49,14 +56,22 @@ namespace Samples.Client.Data.Fake.ProviderBuilders
 
             var setup = initialSetup
                 .AddMethodCallWithResultAsync(t => t.GetWarehouseItems(),
-                    r => r.Complete(GetWarehouseItems)); 
-           
+                    r => r.Complete(GetWarehouseItems))
+                .AddMethodCallWithResultAsync<Guid, bool>(t => t.DeleteWarehouseItem(It.IsAny<Guid>()),
+                    (r, id) => r.Complete(DeleteWarehouseItem(id)));
+
             setup.Build();
         }
 
         private IEnumerable<WarehouseItemDto> GetWarehouseItems()
         {
             return _warehouseItemsStorage;
+        }
+
+        private bool DeleteWarehouseItem(Guid id)
+        {
+            var dto = _warehouseItemsStorage.SingleOrDefault(x => x.Id == id);
+            return dto != null && _warehouseItemsStorage.Remove(dto);
         }
     }
 }

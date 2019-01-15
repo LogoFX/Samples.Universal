@@ -32,5 +32,13 @@ namespace Samples.Client.Data.Fake.Providers
             var warehouseItems = await service.GetWarehouseItems();
             return warehouseItems;
         }
-    }    
+
+        async Task<bool> IWarehouseProvider.DeleteWarehouseItem(Guid id)
+        {
+            await TaskRunner.RunAsync(() => Task.Delay(_random.Next(2000)));
+            var service = GetService(() => _warehouseProviderBuilder, b => b);
+            var retVal = await service.DeleteWarehouseItem(id);
+            return retVal;
+        }
+    }
 }
