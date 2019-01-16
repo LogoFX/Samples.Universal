@@ -33,7 +33,7 @@
             <ContentControl Grid.Row="1"
                             HorizontalContentAlignment="Stretch"
                             VerticalContentAlignment="Stretch"
-                            cal:View.Model="{Binding Path=WarehouseItems, Mode=OneTime}" />
+                            cal:View.Model="{Binding Path=WarehouseItems}" />
         </Grid>
 
         <!--<Grid Grid.Column="2">
@@ -43,6 +43,7 @@
         <Grid Grid.Column="0"
               Grid.ColumnSpan="3"
               Visibility="{Binding Path=IsBusy, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Border Background="Black" Opacity="0.4" />
             <ProgressBar Height="24" 
                          AutomationProperties.AutomationId="Main_Progress"
                          HorizontalAlignment="Stretch"

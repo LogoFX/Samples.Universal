@@ -31,39 +31,45 @@ namespace Samples.Client.Model
                         IsNew = true
                     });
 
-        public Task GetWarehouseItemsAsync()
-        {
-            return ServiceRunner.RunAsync(() => GetWarehouseItemsInternal());
-        }
-
-        private void GetWarehouseItemsInternal()
+        private void GetWarehouseItems()
         {
             var warehouseItems = _warehouseProvider.GetWarehouseItems().Select(WarehouseMapper.MapToWarehouseItem);
             _warehouseItems.Clear();
             _warehouseItems.AddRange(warehouseItems);
         }
 
-        Task IDataService.DeleteWarehouseItemAsync(IWarehouseItem item) => ServiceRunner.RunAsync(() =>
+        private bool DeleteWarehouseItem(IWarehouseItem item)
         {
             var retVal = _warehouseProvider.DeleteWarehouseItem(item.Id);
+            return retVal;
+        }
 
-            if (retVal)
-            {
-                _warehouseItems.Remove(item);
-            }
-        });
-
-        async Task IDataService.SaveWarehouseItemAsync(IWarehouseItem item)
+        private void SaveWarehouseItem(IWarehouseItem item)
         {
             var dto = WarehouseMapper.MapToWarehouseDto(item);
             if (item.IsNew)
             {
-                await ServiceRunner.RunAsync(() => _warehouseProvider.CreateWarehouseItem(dto));
+                _warehouseProvider.CreateWarehouseItem(dto);
             }
             else
             {
-                await ServiceRunner.RunAsync(() => _warehouseProvider.UpdateWarehouseItem(dto));
+                _warehouseProvider.UpdateWarehouseItem(dto);
             }
+        }
+
+        Task IDataService.GetWarehouseItemsAsync()
+        {
+            return ServiceRunner.RunAsync(() => GetWarehouseItems());
+        }
+
+        Task<bool> IDataService.DeleteWarehouseItemAsync(IWarehouseItem item)
+        {
+            return ServiceRunner.RunWithResultAsync(() => DeleteWarehouseItem(item));
+        }
+
+        Task IDataService.SaveWarehouseItemAsync(IWarehouseItem item)
+        {
+            return ServiceRunner.RunAsync(() => SaveWarehouseItem(item));
         }
     }
 }

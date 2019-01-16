@@ -54,5 +54,17 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
             return wc.AsView();
         }
+
+        internal void BeginUpdate()
+        {
+            _warehouseItems = Enumerable.Empty<WarehouseItemViewModel>();
+            NotifyOfPropertyChange(() => WarehouseItems);
+        }
+
+        internal void EndUpdate()
+        {
+            _warehouseItems = CreateWarehouseItems();
+            NotifyOfPropertyChange(() => WarehouseItems);
+        }
     }
 }

@@ -23,13 +23,15 @@ namespace Samples.Client.Data.Fake.Providers
 
         IEnumerable<WarehouseItemDto> IWarehouseProvider.GetWarehouseItems() => GetService(r =>
         {
-            Task.Delay(_random.Next(2000));
+            var delayTask = Task.Delay(_random.Next(2000));
+            delayTask.Wait();
             return r;
         }).GetWarehouseItems();
 
         bool IWarehouseProvider.DeleteWarehouseItem(int id) => GetService(r =>
         {
-            Task.Delay(_random.Next(2000));
+            var delayTask = Task.Delay(_random.Next(2000));
+            delayTask.Wait();
             return r;
         }).DeleteWarehouseItem(id);
 

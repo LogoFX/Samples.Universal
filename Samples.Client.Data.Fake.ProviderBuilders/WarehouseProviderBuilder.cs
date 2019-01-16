@@ -50,7 +50,8 @@ namespace Samples.Client.Data.Fake.ProviderBuilders
         private bool DeleteWarehouseItem(int id)
         {
             var dto = _warehouseItemsStorage.SingleOrDefault(x => x.Id == id);
-            return dto != null && _warehouseItemsStorage.Remove(dto);
+            var retVal = dto != null && _warehouseItemsStorage.Remove(dto);
+            return retVal;
         }
 
         private void SaveWarehouseItem(WarehouseItemDto dto)

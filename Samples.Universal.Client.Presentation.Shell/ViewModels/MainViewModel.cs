@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel.Contracts;
@@ -120,8 +121,20 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
             try
             {
+                WarehouseItems.BeginUpdate();
+
                 await _dataService.DeleteWarehouseItemAsync(ActiveWarehouseItem?.WarehouseItem.Model);
                 await _dataService.GetWarehouseItemsAsync();
+
+                await Task.Delay(1000);
+
+                WarehouseItems.EndUpdate();
+            }
+
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                throw;
             }
 
             finally
@@ -134,11 +147,16 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private void WarehouseItemsSelectionChangedInternal(WarehouseItemViewModel selectedItem)
         {
+            if (selectedItem == null)
+            {
+                ActiveWarehouseItem = null;
+                return;
+            }
+
             ActiveWarehouseItem = new WarehouseItemContainerViewModel(selectedItem.Model, _dataService, this);
         }
 
         #endregion
-
 
         #region Overrides
 
