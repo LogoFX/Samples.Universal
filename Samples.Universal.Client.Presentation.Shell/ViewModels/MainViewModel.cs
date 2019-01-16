@@ -126,8 +126,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 await _dataService.DeleteWarehouseItemAsync(ActiveWarehouseItem?.WarehouseItem.Model);
                 await _dataService.GetWarehouseItemsAsync();
 
-                await Task.Delay(1000);
-
                 WarehouseItems.EndUpdate();
             }
 
