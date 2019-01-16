@@ -8,9 +8,10 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     {
         private readonly IMainViewModel _mainViewModel;
 
-        public WarehouseItemCommandsViewModel(IMainViewModel mainViewModel)
+        public WarehouseItemCommandsViewModel(IMainViewModel mainViewModel, ICommand applyCommand)
         {
             _mainViewModel = mainViewModel;
+            _applyCommand = applyCommand;
         }
 
         private IActionCommand _newCommand;
@@ -23,5 +24,8 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 .GetCommand(ref _deleteCommand, _mainViewModel.DeleteSelectedItem,
                     () => _mainViewModel.ActiveWarehouseItem?.WarehouseItem.Model.IsNew == false)
                 .RequeryOnPropertyChanged(_mainViewModel, () => _mainViewModel.ActiveWarehouseItem);
+
+        private readonly ICommand _applyCommand;
+        public ICommand ApplyCommand => _applyCommand;
     }
 }

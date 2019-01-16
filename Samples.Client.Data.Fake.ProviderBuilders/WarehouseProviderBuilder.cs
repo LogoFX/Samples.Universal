@@ -59,6 +59,7 @@ namespace Samples.Client.Data.Fake.ProviderBuilders
             var oldDto = _warehouseItemsStorage.SingleOrDefault(x => x.Id == dto.Id);
             if (oldDto == null)
             {
+                dto.Id = _warehouseItemsStorage.Max(x => x.Id) + 1;
                 _warehouseItemsStorage.Add(dto);
                 return;
             }

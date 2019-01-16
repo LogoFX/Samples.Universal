@@ -58,7 +58,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 if (_activeWarehouseItem != null)
                 {
                     _activeWarehouseItem.Saving -= OnSaving;
-                    _activeWarehouseItem.Saved -= OnSaved;
                 }
 
                 _activeWarehouseItem = value;
@@ -66,7 +65,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 if (_activeWarehouseItem != null)
                 {
                     _activeWarehouseItem.Saving += OnSaving;
-                    _activeWarehouseItem.Saved += OnSaved;
                 }
 
                 NotifyOfPropertyChange();
@@ -75,10 +73,14 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private async void OnSaved(object sender, ResultEventArgs e)
         {
+            ((WarehouseItemContainerViewModel)sender).Saved -= OnSaved;
+
             IsBusy = true;
             try
             {
                 await _dataService.GetWarehouseItemsAsync();
+                WarehouseItems.EndUpdate();
+
             }
 
             finally
@@ -91,6 +93,9 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private void OnSaving(object sender, EventArgs e)
         {
+            ((WarehouseItemContainerViewModel)sender).Saved += OnSaved;
+
+            WarehouseItems.BeginUpdate();
             IsBusy = true;
         }
 

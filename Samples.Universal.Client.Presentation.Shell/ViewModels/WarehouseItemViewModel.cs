@@ -7,21 +7,37 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     [UsedImplicitly]
     public class WarehouseItemViewModel : ObjectViewModel<IWarehouseItem>
     {
-        private readonly IDataService _dataService;
-
         public WarehouseItemViewModel(
-            IWarehouseItem model,
-            IDataService dataService) 
+            IWarehouseItem model) 
             : base(model)
         {
-            _dataService = dataService;
         }
 
-        public string Kind => Model.Kind;
+        public string Kind
+        {
+            get => Model.Kind;
+            set => Model.Kind = value;
+        }
 
-        public int Quantity => Model.Quantity;
+        public int Quantity
+        {
+            get => Model.Quantity;
+            set
+            {
+                Model.Quantity = value;
+                NotifyOfPropertyChange(() => TotalCost);
+            }
+        }
 
-        public double Price => Model.Price;
+        public double Price
+        {
+            get => Model.Price;
+            set
+            {
+                Model.Price = value;
+                NotifyOfPropertyChange(() => TotalCost);
+            }
+        }
 
         public double TotalCost => Model.TotalCost;
     }

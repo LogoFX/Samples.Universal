@@ -26,7 +26,7 @@ namespace Samples.Client.Model
         async Task<IWarehouseItem> IDataService.NewWarehouseItemAsync() =>
             await ServiceRunner.RunWithResultAsync<IWarehouseItem>(
                 () =>
-                    new WarehouseItem("New Kind", 0d, 1)
+                    new WarehouseItem(0, "New Kind", 0d, 1)
                     {
                         IsNew = true
                     });

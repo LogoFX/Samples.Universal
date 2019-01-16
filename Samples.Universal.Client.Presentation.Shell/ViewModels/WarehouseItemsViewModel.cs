@@ -47,9 +47,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         {
             var wc = new WrappingCollection
             {
-                FactoryMethod =
-                    o =>
-                        new WarehouseItemViewModel((IWarehouseItem)o, _dataService)
+                FactoryMethod = o => new WarehouseItemViewModel((IWarehouseItem)o)
             }.WithSource(_dataService.WarehouseItems);
 
             return wc.AsView();

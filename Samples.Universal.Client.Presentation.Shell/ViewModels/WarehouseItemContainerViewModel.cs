@@ -25,11 +25,11 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private WarehouseItemCommandsViewModel _commands;
         public WarehouseItemCommandsViewModel Commands => _commands ??
-                                                          (_commands = new WarehouseItemCommandsViewModel(_mainViewModel));
+                                                          (_commands = new WarehouseItemCommandsViewModel(_mainViewModel, ApplyCommand));
 
         private WarehouseItemViewModel _item;
         public WarehouseItemViewModel WarehouseItem => _item ??
-                                              (_item = new WarehouseItemViewModel(_model, _dataService));
+                                              (_item = new WarehouseItemViewModel(_model));
 
         protected override async Task<bool> SaveMethod(IWarehouseItem model)
         {

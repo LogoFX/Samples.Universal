@@ -7,16 +7,23 @@ namespace Samples.Client.Model
     class WarehouseItem : AppModel, IWarehouseItem
     {
         public WarehouseItem(
+            int id,
             string kind, 
             double price, 
             int quantity)
         {
+            Id = id;
             Kind = kind;
             Price = price;
             Quantity = quantity;            
         }
 
-        public string Kind { get; }
+        private string _kind;
+        public string Kind
+        {
+            get => _kind;
+            set => SetProperty(ref _kind, value);
+        }
 
         private double _price;
         public double Price
@@ -24,12 +31,7 @@ namespace Samples.Client.Model
             get => _price;
             set
             {
-                if (value == _price)
-                {
-                    return;
-                }
-                _price = value;
-                NotifyOfPropertyChange();
+                SetProperty(ref _price, value);
                 NotifyOfPropertyChange(() => TotalCost);
             }
         }
@@ -40,12 +42,7 @@ namespace Samples.Client.Model
             get => _quantity;
             set
             {
-                if (value == _quantity)
-                {
-                    return;
-                }
-                _quantity = value;
-                NotifyOfPropertyChange();
+                SetProperty(ref _quantity, value);
                 NotifyOfPropertyChange(() => TotalCost);
             }
         }
