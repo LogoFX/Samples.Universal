@@ -39,9 +39,6 @@
     <Reference Include="Attest.Fake.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Attest.Fake.Core.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Attest.Fake.LightMock, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.LightMock.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.LightMock.dll</HintPath>
-    </Reference>
     <Reference Include="Attest.Fake.Registration, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Attest.Fake.Registration.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Registration.dll</HintPath>
     </Reference>
@@ -53,9 +50,6 @@
     </Reference>
     <Reference Include="Attest.Testing.Contracts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Attest.Testing.Contracts.2.0.0-rc2\lib\netstandard2.0\Attest.Testing.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="LightMock, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.LightMock.2.0.0-rc2\lib\netstandard2.0\LightMock.dll</HintPath>
     </Reference>
     <Reference Include="LogoFX.Client.Bootstrapping.Adapters.Contracts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LogoFX.Client.Bootstrapping.Adapters.Contracts.2.0.0-rc1\lib\netstandard2.0\LogoFX.Client.Bootstrapping.Adapters.Contracts.dll</HintPath>
