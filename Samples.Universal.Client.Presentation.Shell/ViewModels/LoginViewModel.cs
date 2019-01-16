@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Input;
 using Windows.Security.Credentials;
 using JetBrains.Annotations;
@@ -203,7 +204,8 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             }
             else
             {
-                vault.Remove(passwordCredential);
+                var passwords = vault.RetrieveAll().ToList();
+                passwords.ForEach(p => vault.Remove(p));
             }
 
             TryClose(true);
