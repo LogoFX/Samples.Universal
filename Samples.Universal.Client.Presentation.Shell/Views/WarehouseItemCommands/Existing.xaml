@@ -32,7 +32,8 @@
                     Content="Apply"
                     Width="100"
                     Margin="5,0,0,0"
-                    VerticalAlignment="Center">
+                    VerticalAlignment="Center"
+                    Command="{Binding ApplyCommand}">
         </Button>
 
         <Button Grid.Column="2"
@@ -40,7 +41,8 @@
                     Margin="5,0,0,0"
                     Content="Discard"
                     Width="100"
-                    VerticalAlignment="Center">
+                    VerticalAlignment="Center"
+                    Command="{Binding CancelChangesCommand}">
         </Button>
 
         <Button AutomationProperties.AutomationId="WarehouseItemDeleteButton" 

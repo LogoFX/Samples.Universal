@@ -8,10 +8,11 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     {
         private readonly IMainViewModel _mainViewModel;
 
-        public WarehouseItemCommandsViewModel(IMainViewModel mainViewModel, ICommand applyCommand)
+        public WarehouseItemCommandsViewModel(IMainViewModel mainViewModel, ICommand applyCommand, ICommand cancelChangesCommand)
         {
             _mainViewModel = mainViewModel;
-            _applyCommand = applyCommand;
+            ApplyCommand = applyCommand;
+            CancelChangesCommand = cancelChangesCommand;
         }
 
         private IActionCommand _newCommand;
@@ -25,7 +26,8 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                     () => _mainViewModel.ActiveWarehouseItem?.WarehouseItem.Model.IsNew == false)
                 .RequeryOnPropertyChanged(_mainViewModel, () => _mainViewModel.ActiveWarehouseItem);
 
-        private readonly ICommand _applyCommand;
-        public ICommand ApplyCommand => _applyCommand;
+        public ICommand ApplyCommand { get; }
+
+        public ICommand CancelChangesCommand { get; }
     }
 }

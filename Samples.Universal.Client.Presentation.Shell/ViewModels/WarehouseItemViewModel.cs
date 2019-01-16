@@ -1,5 +1,7 @@
+using System.ComponentModel;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel;
+using LogoFX.Core;
 using Samples.Client.Model.Contracts;
 
 namespace Samples.Universal.Client.Presentation.Shell.ViewModels
@@ -11,6 +13,12 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             IWarehouseItem model) 
             : base(model)
         {
+
+        }
+
+        protected override void OnModelPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            NotifyOfPropertyChange(e.PropertyName);
         }
 
         public string Kind
@@ -22,21 +30,13 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         public int Quantity
         {
             get => Model.Quantity;
-            set
-            {
-                Model.Quantity = value;
-                NotifyOfPropertyChange(() => TotalCost);
-            }
+            set => Model.Quantity = value;
         }
 
         public double Price
         {
             get => Model.Price;
-            set
-            {
-                Model.Price = value;
-                NotifyOfPropertyChange(() => TotalCost);
-            }
+            set => Model.Price = value;
         }
 
         public double TotalCost => Model.TotalCost;

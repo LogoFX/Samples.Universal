@@ -93,10 +93,13 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private void OnSaving(object sender, EventArgs e)
         {
-            ((WarehouseItemContainerViewModel)sender).Saved += OnSaved;
-
-            WarehouseItems.BeginUpdate();
-            IsBusy = true;
+            var itemContainerViewModel = ((WarehouseItemContainerViewModel)sender);
+            if (itemContainerViewModel.Model.IsNew)
+            {
+                itemContainerViewModel.Saved += OnSaved;
+                WarehouseItems.BeginUpdate();
+                IsBusy = true;
+            }
         }
 
         #endregion

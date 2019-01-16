@@ -25,7 +25,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private WarehouseItemCommandsViewModel _commands;
         public WarehouseItemCommandsViewModel Commands => _commands ??
-                                                          (_commands = new WarehouseItemCommandsViewModel(_mainViewModel, ApplyCommand));
+                                                          (_commands = new WarehouseItemCommandsViewModel(_mainViewModel, ApplyCommand, CancelChangesCommand));
 
         private WarehouseItemViewModel _item;
         public WarehouseItemViewModel WarehouseItem => _item ??
