@@ -1,6 +1,6 @@
 ﻿using System.Linq;
+using Attest.Testing.Contracts;
 using FlaUI.Core;
-using LogoFX.Client.Testing.Contracts;
 
 namespace Samples.Client.Tests.EndToEnd
 {

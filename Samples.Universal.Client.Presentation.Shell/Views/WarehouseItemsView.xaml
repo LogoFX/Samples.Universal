@@ -4,27 +4,33 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"             
              xmlns:viewModels="using:Samples.Universal.Client.Presentation.Shell.ViewModels"
+             xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+             xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+             xmlns:behaviors="using:Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors"
              mc:Ignorable="d" 
              d:DataContext="{d:DesignInstance viewModels:WarehouseItemsViewModel}"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <ItemsControl AutomationProperties.AutomationId="WarehouseItemsDataGrid" 
-                      ItemsSource="{Binding Path=WarehouseItems, Mode=OneWay}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <!--Composed Properties are not supported in the binding path-->
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Kind:" />
-                        <TextBlock Text="{Binding Kind}" />
-                        <TextBlock Text="Price:" />
-                        <TextBlock Text="{Binding Price}" />
-                        <TextBlock Text="Quantity:" />
-                        <TextBlock Text="{Binding Quantity}" />
-                        <TextBlock Text="Total cost:" />
-                        <TextBlock Text="{Binding TotalCost}" />
-                    </StackPanel>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
+
+        <controls:DataGrid AutomationProperties.AutomationId="WarehouseItemsDataGrid" 
+                           ItemsSource="{Binding Path=WarehouseItems, Mode=OneWay}"
+                           SelectionMode="Single"
+                           IsReadOnly="True"
+                           GridLinesVisibility="All"
+                           AutoGenerateColumns="False">
+
+            <controls:DataGrid.Columns>
+                <!-- ReSharper disable Xaml.BindingWithContextNotResolved -->
+                <controls:DataGridTextColumn Header="Kind" Width="*" Binding="{Binding Path=Kind}" />
+                <controls:DataGridTextColumn Header="Price" Binding="{Binding Path=Price}" />
+                <controls:DataGridTextColumn Header="Quantity" Binding="{Binding Path=Quantity}" />
+                <controls:DataGridTextColumn Header="Total cost" Binding="{Binding Path=TotalCost}" />
+                <!-- ReSharper restore Xaml.BindingWithContextNotResolved -->
+            </controls:DataGrid.Columns>
+
+            <interactivity:Interaction.Behaviors>
+                <behaviors:DataGridSelectionBehavior Command="{Binding SelectionChangedCommand}"/>
+            </interactivity:Interaction.Behaviors>
+        </controls:DataGrid>
     </Grid>
 </UserControl>

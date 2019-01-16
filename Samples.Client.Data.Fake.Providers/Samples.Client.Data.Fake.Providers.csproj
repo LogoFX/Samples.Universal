@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="11.0.0" />
-    <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc2" />
+    <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>

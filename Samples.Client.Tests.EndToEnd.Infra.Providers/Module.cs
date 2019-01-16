@@ -1,45 +1,23 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
+using Attest.Fake.Data;
+using Attest.Fake.Data.Modularity;
 using Attest.Fake.Registration;
 using JetBrains.Annotations;
-using LogoFX.Client.Testing.EndToEnd.FakeData.Modularity;
-using LogoFX.Client.Testing.EndToEnd.FakeData.Shared;
 using Samples.Client.Data.Fake.Shared;
-using Solid.Patterns.Builder;
 using Solid.Practices.IoC;
 
 namespace Samples.Client.Tests.EndToEnd.Infra.Providers
 {    
-    [UsedImplicitly]
-    public class Module : ProvidersModuleBase
-    {       
-        protected override void OnRegisterProviders(IDependencyRegistrator dependencyRegistrator)
+    [UsedImplicitly]    
+    internal sealed class Module : ProvidersModuleBase<IDependencyRegistrator>
+    {
+        protected override void RegisterProviders(IDependencyRegistrator dependencyRegistrator)
         {
-            //TODO: check why there are two instances of the same builder!
-            base.OnRegisterProviders(dependencyRegistrator);            
-            var typeMatches = Helper.FindProviderMatches();            
-            foreach (var typeMatch in typeMatches)
-            {
-                var instance = Helper.CreateInstance(typeMatch.Key);
-                RegisterAllBuildersInternal(dependencyRegistrator, (IBuilder)instance, typeMatch.Key, typeMatch.Value);
-            }            
+            var builders = BuildersCollectionHelper.FillMissingBuilders(
+                ConventionsHelper.FindContractToBuilderMatches().Values.ToArray(),
+                BuilderFactory.CreateBuilderInstance);
+            dependencyRegistrator.RegisterBuilders(RegistrationHelper.RegisterBuilderProduct,
+                ConventionsHelper.FindContractToBuilderMatches(), builders);
         }
-
-        private void RegisterAllBuildersInternal(IDependencyRegistrator dependencyRegistrator,
-            IBuilder builderInstance, Type builderType, Type providerType)
-        {
-            var builders = BuildersCollectionContext.GetBuilders(builderType).OfType<IBuilder>().ToArray();
-            if (builders.Length == 0)
-            {
-                RegistrationHelper.RegisterBuilder(dependencyRegistrator,providerType, builderInstance);                
-            }
-            else
-            {
-                foreach (var builder in builders)
-                {
-                    RegistrationHelper.RegisterBuilder(dependencyRegistrator, providerType, builder);
-                }
-            }
-        }        
-    }    
+    }
 }

@@ -34,9 +34,31 @@ namespace Samples.Client.Data.Fake.Providers
             {
                 new WarehouseItemDto
                 {
+                    Id = 1,
                     Kind = "PC",
                     Price = 25.43,
                     Quantity = 8
+                },
+                new WarehouseItemDto
+                {
+                    Id = 2,
+                    Kind = "PC 2",
+                    Price = 25.3,
+                    Quantity = 4
+                },
+                new WarehouseItemDto
+                {
+                    Id = 3,
+                    Kind = "PC 3",
+                    Price = 254.3,
+                    Quantity = 6
+                },
+                new WarehouseItemDto
+                {
+                    Id = 4,
+                    Kind = "PC 4",
+                    Price = 15.67,
+                    Quantity = 9
                 }
             });
             return warehouseContainer;

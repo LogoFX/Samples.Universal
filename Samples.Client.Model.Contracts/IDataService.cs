@@ -7,6 +7,12 @@ namespace Samples.Client.Model.Contracts
     {
         IEnumerable<IWarehouseItem> WarehouseItems { get; }
 
+        Task<IWarehouseItem> NewWarehouseItemAsync();
+
         Task GetWarehouseItemsAsync();
+
+        Task<bool> DeleteWarehouseItemAsync(IWarehouseItem item);
+
+        Task SaveWarehouseItemAsync(IWarehouseItem item);
     }
 }

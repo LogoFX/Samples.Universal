@@ -21,9 +21,9 @@ namespace Samples.Client.Model
             await ServiceRunner.RunAsync(() => LoginInternal(username, password));
         }
 
-        private async Task LoginInternal(string username, string password)
+        private void LoginInternal(string username, string password)
         {
-            await _loginProvider.Login(username, password);
+            _loginProvider.Login(username, password);
             UserContext.Current = new User(username);
         }
     }

@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
 using Samples.Client.Data.Contracts.Dto;
 
 namespace Samples.Client.Data.Contracts.Providers
 {
     public interface IWarehouseProvider
     {
-        Task<IEnumerable<WarehouseItemDto>> GetWarehouseItems();
+        IEnumerable<WarehouseItemDto> GetWarehouseItems();
+        bool DeleteWarehouseItem(int id);
+        bool UpdateWarehouseItem(WarehouseItemDto dto);
+        void CreateWarehouseItem(WarehouseItemDto dto);
     }
 }

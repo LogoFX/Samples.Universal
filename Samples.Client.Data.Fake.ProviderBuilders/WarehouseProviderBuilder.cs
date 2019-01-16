@@ -1,41 +1,24 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Attest.Fake.Builders;
-using Attest.Fake.LightMock;
-using Attest.Fake.Setup;
-using LightMock;
+using Attest.Fake.Moq;
+using Attest.Fake.Setup.Contracts;
 using Samples.Client.Data.Contracts.Dto;
 using Samples.Client.Data.Contracts.Providers;
 
 namespace Samples.Client.Data.Fake.ProviderBuilders
-{            
-    public class WarehouseProviderBuilder : FakeBuilderBase<IWarehouseProvider>
+{
+    public sealed class WarehouseProviderBuilder : FakeBuilderBase<IWarehouseProvider>.WithInitialSetup
     {
-        class WarehouseProviderProxy : ProviderProxyBase<IWarehouseProvider>, IWarehouseProvider
-        {
-            public WarehouseProviderProxy(IInvocationContext<IWarehouseProvider> context)
-                : base(context)
-            {
-            }
-
-            public Task<IEnumerable<WarehouseItemDto>> GetWarehouseItems()
-            {
-                return Invoke(t => t.GetWarehouseItems());
-            }
-        }
-
         private readonly List<WarehouseItemDto> _warehouseItemsStorage = new List<WarehouseItemDto>();
 
-        private WarehouseProviderBuilder() :
-            base(FakeFactoryHelper.CreateFake<IWarehouseProvider>(c => new WarehouseProviderProxy(c)))
+        private WarehouseProviderBuilder()
         {
-            
+
         }
 
-        public static WarehouseProviderBuilder CreateBuilder()
-        {
-            return new WarehouseProviderBuilder();
-        }
+        public static WarehouseProviderBuilder CreateBuilder() => new WarehouseProviderBuilder();
 
         public void WithWarehouseItems(IEnumerable<WarehouseItemDto> warehouseItems)
         {
@@ -43,20 +26,47 @@ namespace Samples.Client.Data.Fake.ProviderBuilders
             _warehouseItemsStorage.AddRange(warehouseItems);
         }
 
-        protected override void SetupFake()
+        protected override IServiceCall<IWarehouseProvider> CreateServiceCall(
+            IHaveNoMethods<IWarehouseProvider> serviceCallTemplate)
         {
-            var initialSetup = ServiceCallFactory.CreateServiceCall(FakeService);
-
-            var setup = initialSetup
-                .AddMethodCallWithResultAsync(t => t.GetWarehouseItems(),
-                    r => r.Complete(GetWarehouseItems)); 
-           
-            setup.Build();
+            return serviceCallTemplate
+                .AddMethodCallWithResult(t => t.GetWarehouseItems(),
+                    r => r.Complete(GetWarehouseItems))
+                .AddMethodCallWithResult<int, bool>(t => t.DeleteWarehouseItem(It.IsAny<int>()),
+                    (r, id) => r.Complete(DeleteWarehouseItem(id)))
+                .AddMethodCallWithResult<WarehouseItemDto, bool>(
+                    t => t.UpdateWarehouseItem(It.IsAny<WarehouseItemDto>()),
+                    (r, dto) => r.Complete(k =>
+                    {
+                        SaveWarehouseItem(k);
+                        return true;
+                    }))
+                .AddMethodCall<WarehouseItemDto>(t => t.CreateWarehouseItem(It.IsAny<WarehouseItemDto>()),
+                    (r, dto) => r.Complete(SaveWarehouseItem));
         }
 
-        private IEnumerable<WarehouseItemDto> GetWarehouseItems()
+        private IEnumerable<WarehouseItemDto> GetWarehouseItems() => _warehouseItemsStorage;
+
+        private bool DeleteWarehouseItem(int id)
         {
-            return _warehouseItemsStorage;
+            var dto = _warehouseItemsStorage.SingleOrDefault(x => x.Id == id);
+            var retVal = dto != null && _warehouseItemsStorage.Remove(dto);
+            return retVal;
+        }
+
+        private void SaveWarehouseItem(WarehouseItemDto dto)
+        {
+            var oldDto = _warehouseItemsStorage.SingleOrDefault(x => x.Id == dto.Id);
+            if (oldDto == null)
+            {
+                dto.Id = _warehouseItemsStorage.Max(x => x.Id) + 1;
+                _warehouseItemsStorage.Add(dto);
+                return;
+            }
+
+            oldDto.Kind = dto.Kind;
+            oldDto.Price = dto.Price;
+            oldDto.Quantity = dto.Quantity;
         }
     }
 }

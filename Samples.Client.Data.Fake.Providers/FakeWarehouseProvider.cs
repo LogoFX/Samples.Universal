@@ -7,30 +7,46 @@ using Samples.Client.Data.Contracts.Dto;
 using Samples.Client.Data.Contracts.Providers;
 using Samples.Client.Data.Fake.Containers;
 using Samples.Client.Data.Fake.ProviderBuilders;
-using Solid.Practices.Scheduling;
 
 namespace Samples.Client.Data.Fake.Providers
 {
     [UsedImplicitly]
-    class FakeWarehouseProvider : FakeProviderBase<WarehouseProviderBuilder, IWarehouseProvider>, IWarehouseProvider
+    internal sealed class FakeWarehouseProvider : FakeProviderBase<WarehouseProviderBuilder, IWarehouseProvider>,
+        IWarehouseProvider
     {
-        private readonly WarehouseProviderBuilder _warehouseProviderBuilder;
         private readonly Random _random = new Random();
 
         public FakeWarehouseProvider(
             WarehouseProviderBuilder warehouseProviderBuilder,
             IWarehouseContainer warehouseContainer)
-        {
-            _warehouseProviderBuilder = warehouseProviderBuilder;
-            _warehouseProviderBuilder.WithWarehouseItems(warehouseContainer.WarehouseItems);
-        }
+            : base(warehouseProviderBuilder) => warehouseProviderBuilder.WithWarehouseItems(warehouseContainer.WarehouseItems);
 
-        async Task<IEnumerable<WarehouseItemDto>> IWarehouseProvider.GetWarehouseItems()
+        IEnumerable<WarehouseItemDto> IWarehouseProvider.GetWarehouseItems() => GetService(r =>
         {
-            await TaskRunner.RunAsync(() => Task.Delay(_random.Next(2000)));
-            var service = GetService(() => _warehouseProviderBuilder, b => b);
-            var warehouseItems = await service.GetWarehouseItems();
-            return warehouseItems;
-        }
-    }    
+            var delayTask = Task.Delay(_random.Next(2000));
+            delayTask.Wait();
+            return r;
+        }).GetWarehouseItems();
+
+        bool IWarehouseProvider.DeleteWarehouseItem(int id) => GetService(r =>
+        {
+            var delayTask = Task.Delay(_random.Next(2000));
+            delayTask.Wait();
+            return r;
+        }).DeleteWarehouseItem(id);
+
+        bool IWarehouseProvider.UpdateWarehouseItem(WarehouseItemDto dto) => GetService(r =>
+        {
+            var delayTask = Task.Delay(_random.Next(2000));
+            delayTask.Wait();
+            return r;
+        }).UpdateWarehouseItem(dto);
+
+        void IWarehouseProvider.CreateWarehouseItem(WarehouseItemDto dto) => GetService(r =>
+        {
+            var delayTask = Task.Delay(_random.Next(2000));
+            delayTask.Wait();
+            return r;
+        }).CreateWarehouseItem(dto);
+    }
 }

@@ -4,6 +4,6 @@ namespace Samples.Client.Data.Contracts.Providers
 {
     public interface ILoginProvider
     {
-        Task Login(string username, string password);
+        void Login(string username, string password);
     }
 }

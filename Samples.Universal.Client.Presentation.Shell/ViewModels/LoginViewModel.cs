@@ -1,5 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.Windows.Input;
+using Windows.Security.Credentials;
+using Windows.Storage;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.Commanding;
 using LogoFX.Client.Mvvm.ViewModel.Extensions;
@@ -10,6 +13,10 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     [UsedImplicitly]
     public sealed class LoginViewModel : BusyScreen
     {
+        private static readonly string SavePasswordKey = "SavePassword";
+
+        private static readonly string CredentialResourceNameKey = "Samples.Universal.Credentials";
+
         private readonly ILoginService _loginService;
 
         public LoginViewModel(
@@ -17,6 +24,51 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         {
             _loginService = loginService;
             DisplayName = "Login";
+        }
+
+        protected override void OnViewLoaded(object view)
+        {
+            base.OnViewLoaded(view);
+
+            var loginCredential = GetCredentialFromLocker();
+
+            if (loginCredential != null)
+            {
+                SavePassword = true;
+
+                // There is a credential stored in the locker.
+                // Populate the Password property of the credential
+                // for automatic login.
+                loginCredential.RetrievePassword();
+                UserName = loginCredential.UserName;
+                Password = loginCredential.Password;
+            }
+        }
+
+        private PasswordCredential GetCredentialFromLocker()
+        {
+            PasswordCredential credential = null;
+
+            var vault = new PasswordVault();
+            IReadOnlyList<PasswordCredential> credentialList;
+            try
+            {
+                credentialList = vault.FindAllByResource(CredentialResourceNameKey);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+            if (credentialList.Count > 0)
+            {
+                if (credentialList.Count == 1)
+                {
+                    credential = credentialList[0];
+                }
+            }
+
+            return credential;
         }
 
         public event EventHandler LoggedInSuccessfully;
@@ -36,20 +88,20 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
                                try
                                {
-                                   //IsBusy = true;
+                                   IsBusy = true;
                                    await _loginService.LoginAsync(UserName, Password);
                                    OnLoginSuccess();
                                }
 
                                catch (Exception ex)
                                {
-                                   LoginFailureCause = "Failed to log in";
+                                   LoginFailureCause = $"Failed to log in: {ex.Message}";
                                }
 
                                finally
                                {
                                    Password = string.Empty;
-                                   //IsBusy = false;
+                                   IsBusy = false;
                                }
                            })
                            .RequeryOnPropertyChanged(this, () => Password));
@@ -57,7 +109,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private ICommand _cancelCommand;
-
         public ICommand LoginCancelCommand
         {
             get
@@ -71,15 +122,25 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             }
         }
 
-        private string _loginFailureCause;
+        private bool _savePassword;
 
+        //TODO: make 'Save Password' workable
+        public bool SavePassword
+        {
+            get => _savePassword;
+            set => Set(ref _savePassword, value);
+        }
+
+        private string _loginFailureCause;
         public string LoginFailureCause
         {
-            get { return _loginFailureCause; }
+            get => _loginFailureCause;
             set
             {
                 if (_loginFailureCause == value)
+                {
                     return;
+                }
 
                 _loginFailureCause = value;
                 NotifyOfPropertyChange();
@@ -87,16 +148,12 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             }
         }
 
-        public bool IsLoginFailureTextVisible
-        {
-            get { return string.IsNullOrWhiteSpace(LoginFailureCause) == false; }
-        }
+        public bool IsLoginFailureTextVisible => string.IsNullOrWhiteSpace(LoginFailureCause) == false;
 
         private bool _isUserAuthenticated;
-
         public bool IsUserAuthenticated
         {
-            get { return _isUserAuthenticated; }
+            get => _isUserAuthenticated;
             private set
             {
                 if (_isUserAuthenticated == value)
@@ -114,10 +171,9 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         }
 
         private string _userName;
-
         public string UserName
         {
-            get { return _userName; }
+            get => _userName;
             set
             {
                 _userName = value;
@@ -129,7 +185,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         public string Password
         {
-            get { return _password; }
+            get => _password;
             set
             {
                 if (_password == value)
@@ -142,12 +198,19 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private void OnLoginSuccess()
         {
-            TryClose(true);
-
-            if (LoggedInSuccessfully != null)
+            var vault = new PasswordVault();
+            var passwordCredential = new PasswordCredential(CredentialResourceNameKey, UserName, Password);
+            if (SavePassword)
             {
-                LoggedInSuccessfully(this, new EventArgs());
+                vault.Add(passwordCredential);
             }
+            else
+            {
+                vault.Remove(passwordCredential);
+            }
+
+            TryClose(true);
+            LoggedInSuccessfully?.Invoke(this, new EventArgs());
         }
     }
 }

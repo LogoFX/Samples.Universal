@@ -10,8 +10,7 @@ namespace Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors
         {
             base.OnAttached();
 
-            var txt = AssociatedObject as TextBox;
-            if (txt != null)
+            if (AssociatedObject is TextBox txt)
             {
                 txt.TextChanged += OnTextChanged;
             }
@@ -19,8 +18,7 @@ namespace Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors
 
         protected override void OnDetaching()
         {
-            var txt = AssociatedObject as TextBox;
-            if (txt != null)
+            if (AssociatedObject is TextBox txt)
             {
                 txt.TextChanged -= OnTextChanged;
                 return;
@@ -31,14 +29,10 @@ namespace Samples.Universal.Client.Presentation.Shell.Interactivity.Behaviors
         static void OnTextChanged(object sender,
           TextChangedEventArgs e)
         {
-            var txt = sender as TextBox;
-            if (txt == null)
+            if (!(sender is TextBox txt))
                 return;
             var be = txt.GetBindingExpression(TextBox.TextProperty);
-            if (be != null)
-            {
-                be.UpdateSource();
-            }
+            be?.UpdateSource();
         }
 
     }

@@ -1,4 +1,4 @@
-﻿using LogoFX.Bootstrapping;
+﻿using Solid.Bootstrapping;
 using Solid.Practices.IoC;
 
 namespace Samples.Client.Tests.EndToEnd.Infra.Launcher
