@@ -198,16 +198,17 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private void OnLoginSuccess()
         {
-            var vault = new PasswordVault();
-            var passwordCredential = new PasswordCredential(CredentialResourceNameKey, UserName, Password);
-            if (SavePassword)
-            {
-                vault.Add(passwordCredential);
-            }
-            else
-            {
-                vault.Remove(passwordCredential);
-            }
+            //TODO: Restore when stable
+            var vault = new PasswordVault();            
+            //var passwordCredential = new PasswordCredential(CredentialResourceNameKey, UserName, Password);
+            //if (SavePassword)
+            //{
+            //    vault.Add(passwordCredential);
+            //}
+            //else
+            //{
+            //    vault.Remove(passwordCredential);
+            //}
 
             TryClose(true);
             LoggedInSuccessfully?.Invoke(this, new EventArgs());
