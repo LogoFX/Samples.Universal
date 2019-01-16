@@ -17,19 +17,13 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
 
-        <ContentControl cal:View.Model="{Binding Path=WarehouseItem, Mode=OneWay}" 
-                        Grid.Row="0"
-                        Grid.Column="0" 
-                        Grid.ColumnSpan="2"/>
+        <ContentControl cal:View.Model="{Binding Path=WarehouseItem, Mode=OneWay}"
+                        Grid.Row="0" 
+                        HorizontalContentAlignment="Stretch"
+                        />
 
         <ContentControl cal:View.Model="{Binding Path=Commands, Mode=OneWay}" 
                         cal:View.Context="{Binding Path=CommandsContext, Mode=OneWay}"
-                        Grid.Row="2" 
-                        Grid.Column="0" 
-                        Grid.ColumnSpan="2"/>
+                        Grid.Row="2" />
     </Grid></UserControl>

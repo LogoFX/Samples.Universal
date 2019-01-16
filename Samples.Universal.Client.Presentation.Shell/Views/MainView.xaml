@@ -28,6 +28,7 @@
             </Grid.RowDefinitions>
 
             <ContentControl Grid.Row="0"
+                            HorizontalContentAlignment="Stretch"
                             cal:View.Model="{Binding Path=ActiveWarehouseItem, Mode=OneWay}"/>
 
             <ContentControl Grid.Row="1"

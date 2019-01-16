@@ -14,10 +14,10 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="32" />
-            <RowDefinition Height="32" />
-            <RowDefinition Height="32" />
-            <RowDefinition Height="32" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="32" />
         </Grid.RowDefinitions>
 
@@ -34,7 +34,7 @@
         <TextBox AutomationProperties.AutomationId="WarehouseItemKindTextBox"
                  Grid.Row="0"
                  Grid.Column="1"
-                 Margin="5,0,0,0"
+                 Margin="5,5,0,0"
                  VerticalAlignment="Center"
                  Text="{Binding Path=Kind, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <interactivity:Interaction.Behaviors>
@@ -51,7 +51,7 @@
         <TextBox AutomationProperties.AutomationId="WarehouseItemPriceTextBox"
                  Grid.Row="1"
                  Grid.Column="1"
-                 Margin="5,0,0,0"
+                 Margin="5,5,0,0"
                  VerticalAlignment="Center"
                  Text="{Binding Path=Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <interactivity:Interaction.Behaviors>
@@ -67,7 +67,7 @@
         <TextBox AutomationProperties.AutomationId="WarehouseItemQuantityTextBox"
                  Grid.Row="2"
                  Grid.Column="1"
-                 Margin="5,0,0,0"
+                 Margin="5,5,0,0"
                  VerticalAlignment="Center"
                  Text="{Binding Path=Quantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <interactivity:Interaction.Behaviors>
@@ -82,7 +82,7 @@
                    Text="Total Cost" />
         <TextBox Grid.Row="3"
                  Grid.Column="1"
-                 Margin="5,0,0,0"
+                 Margin="5,5,0,0"
                  VerticalAlignment="Center"
                  IsReadOnly="True"
                  Text="{Binding Path=TotalCost, Mode=OneWay}" />
