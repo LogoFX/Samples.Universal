@@ -31,23 +31,26 @@ namespace Samples.Client.Model
                         IsNew = true
                     });
 
-        public async Task GetWarehouseItemsAsync()
+        public Task GetWarehouseItemsAsync()
         {
-            await ServiceRunner.RunAsync(GetWarehouseItemsInternal);
+            return ServiceRunner.RunAsync(() => GetWarehouseItemsInternal());
         }
 
-        private async Task GetWarehouseItemsInternal()
+        private void GetWarehouseItemsInternal()
         {
-            var warehouseItems =
-                (await _warehouseProvider.GetWarehouseItems()).Select(WarehouseMapper.MapToWarehouseItem);
+            var warehouseItems = _warehouseProvider.GetWarehouseItems().Select(WarehouseMapper.MapToWarehouseItem);
             _warehouseItems.Clear();
             _warehouseItems.AddRange(warehouseItems);
         }
 
-        async Task IDataService.DeleteWarehouseItemAsync(IWarehouseItem item) => await ServiceRunner.RunAsync(() =>
+        Task IDataService.DeleteWarehouseItemAsync(IWarehouseItem item) => ServiceRunner.RunAsync(() =>
         {
-            _warehouseProvider.DeleteWarehouseItem(item.Id);
-            _warehouseItems.Remove(item);
+            var retVal = _warehouseProvider.DeleteWarehouseItem(item.Id);
+
+            if (retVal)
+            {
+                _warehouseItems.Remove(item);
+            }
         });
 
         async Task IDataService.SaveWarehouseItemAsync(IWarehouseItem item)

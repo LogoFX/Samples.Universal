@@ -4,7 +4,7 @@ using Samples.Client.Model.Contracts;
 
 namespace Samples.Client.Model
 {
-    class AppModel : EditableModel<Guid>, IAppModel
+    class AppModel : EditableModel<int>, IAppModel
     {
         public bool IsNew { get; set; }
     }

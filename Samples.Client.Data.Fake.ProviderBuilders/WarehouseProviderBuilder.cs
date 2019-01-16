@@ -1,58 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Attest.Fake.Builders;
-using Attest.Fake.LightMock;
-using Attest.Fake.Setup;
-using LightMock;
+using Attest.Fake.Moq;
+using Attest.Fake.Setup.Contracts;
 using Samples.Client.Data.Contracts.Dto;
 using Samples.Client.Data.Contracts.Providers;
 
 namespace Samples.Client.Data.Fake.ProviderBuilders
-{            
-    public class WarehouseProviderBuilder : FakeBuilderBase<IWarehouseProvider>
+{
+    public sealed class WarehouseProviderBuilder : FakeBuilderBase<IWarehouseProvider>.WithInitialSetup
     {
-        class WarehouseProviderProxy : ProviderProxyBase<IWarehouseProvider>, IWarehouseProvider
-        {
-            public WarehouseProviderProxy(IInvocationContext<IWarehouseProvider> context)
-                : base(context)
-            {
-            }
-
-            public Task<IEnumerable<WarehouseItemDto>> GetWarehouseItems()
-            {
-                return Invoke(t => t.GetWarehouseItems());
-            }
-
-            public Task<bool> DeleteWarehouseItem(Guid id)
-            {
-                return Invoke(t => t.DeleteWarehouseItem(id));
-            }
-
-            public Task<bool> UpdateWarehouseItem(WarehouseItemDto dto)
-            {
-                return Invoke(t => t.UpdateWarehouseItem(dto));
-            }
-
-            public Task CreateWarehouseItem(WarehouseItemDto dto)
-            {
-                return Invoke(t => t.CreateWarehouseItem(dto));
-            }
-        }
-
         private readonly List<WarehouseItemDto> _warehouseItemsStorage = new List<WarehouseItemDto>();
 
-        private WarehouseProviderBuilder() :
-            base(FakeFactoryHelper.CreateFake<IWarehouseProvider>(c => new WarehouseProviderProxy(c)))
+        private WarehouseProviderBuilder()
         {
-            
+
         }
 
-        public static WarehouseProviderBuilder CreateBuilder()
-        {
-            return new WarehouseProviderBuilder();
-        }
+        public static WarehouseProviderBuilder CreateBuilder() => new WarehouseProviderBuilder();
 
         public void WithWarehouseItems(IEnumerable<WarehouseItemDto> warehouseItems)
         {
@@ -60,33 +26,28 @@ namespace Samples.Client.Data.Fake.ProviderBuilders
             _warehouseItemsStorage.AddRange(warehouseItems);
         }
 
-        protected override void SetupFake()
+        protected override IServiceCall<IWarehouseProvider> CreateServiceCall(
+            IHaveNoMethods<IWarehouseProvider> serviceCallTemplate)
         {
-            var initialSetup = ServiceCallFactory.CreateServiceCall(FakeService);
-
-            var setup = initialSetup
-                .AddMethodCallWithResultAsync(t => t.GetWarehouseItems(),
+            return serviceCallTemplate
+                .AddMethodCallWithResult(t => t.GetWarehouseItems(),
                     r => r.Complete(GetWarehouseItems))
-                .AddMethodCallWithResultAsync<Guid, bool>(t => t.DeleteWarehouseItem(It.IsAny<Guid>()),
+                .AddMethodCallWithResult<int, bool>(t => t.DeleteWarehouseItem(It.IsAny<int>()),
                     (r, id) => r.Complete(DeleteWarehouseItem(id)))
-                .AddMethodCallWithResultAsync<WarehouseItemDto, bool>(t => t.UpdateWarehouseItem(It.IsAny<WarehouseItemDto>()),
+                .AddMethodCallWithResult<WarehouseItemDto, bool>(
+                    t => t.UpdateWarehouseItem(It.IsAny<WarehouseItemDto>()),
                     (r, dto) => r.Complete(k =>
                     {
                         SaveWarehouseItem(k);
                         return true;
                     }))
-                .AddMethodCallAsync<WarehouseItemDto>(t => t.CreateWarehouseItem(It.IsAny<WarehouseItemDto>()),
+                .AddMethodCall<WarehouseItemDto>(t => t.CreateWarehouseItem(It.IsAny<WarehouseItemDto>()),
                     (r, dto) => r.Complete(SaveWarehouseItem));
-
-            setup.Build();
         }
 
-        private IEnumerable<WarehouseItemDto> GetWarehouseItems()
-        {
-            return _warehouseItemsStorage;
-        }
+        private IEnumerable<WarehouseItemDto> GetWarehouseItems() => _warehouseItemsStorage;
 
-        private bool DeleteWarehouseItem(Guid id)
+        private bool DeleteWarehouseItem(int id)
         {
             var dto = _warehouseItemsStorage.SingleOrDefault(x => x.Id == id);
             return dto != null && _warehouseItemsStorage.Remove(dto);
