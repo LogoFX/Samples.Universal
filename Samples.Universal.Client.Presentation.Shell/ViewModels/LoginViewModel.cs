@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Input;
 using Windows.Security.Credentials;
-using Windows.Storage;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.Commanding;
 using LogoFX.Client.Mvvm.ViewModel.Extensions;
@@ -13,8 +12,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     [UsedImplicitly]
     public sealed class LoginViewModel : BusyScreen
     {
-        private static readonly string SavePasswordKey = "SavePassword";
-
         private static readonly string CredentialResourceNameKey = "Samples.Universal.Credentials";
 
         private readonly ILoginService _loginService;
