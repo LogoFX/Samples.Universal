@@ -50,7 +50,10 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 FactoryMethod = o => new WarehouseItemViewModel((IWarehouseItem)o)
             }.WithSource(_dataService.WarehouseItems);
 
-            return wc.AsView();
+            //TODO: Workaround due to DataGrid/ListCollectionView issue. Do not use .AsView() -> not use ListCollectionView.
+            //return wc.AsView();
+
+            return wc;
         }
 
         //***********************************
