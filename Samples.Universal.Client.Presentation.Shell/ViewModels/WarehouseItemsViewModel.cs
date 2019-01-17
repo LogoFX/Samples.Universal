@@ -53,12 +53,19 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             return wc.AsView();
         }
 
+        //***********************************
+        // Workaround due to DataGrid not properly uses ListCollectionView.VectorChanged event.
+        // In the event handler the DataGrid request just deleted item.
+        //***********************************
+
+        //TODO: remove this Workaround, when ListCollectionView (package LogoFX.Client.Mvvm.ViewModel) will fix.
         internal void BeginUpdate()
         {
             _warehouseItems = Enumerable.Empty<WarehouseItemViewModel>();
             NotifyOfPropertyChange(() => WarehouseItems);
         }
 
+        //TODO: remove this Workaround, when ListCollectionView (package LogoFX.Client.Mvvm.ViewModel) will fix.
         internal void EndUpdate()
         {
             _warehouseItems = CreateWarehouseItems();
