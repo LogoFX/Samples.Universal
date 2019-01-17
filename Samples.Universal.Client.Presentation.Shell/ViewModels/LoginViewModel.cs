@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Input;
 using Windows.Security.Credentials;
-using Windows.Storage;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.Commanding;
 using LogoFX.Client.Mvvm.ViewModel.Extensions;
@@ -13,8 +13,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
     [UsedImplicitly]
     public sealed class LoginViewModel : BusyScreen
     {
-        private static readonly string SavePasswordKey = "SavePassword";
-
         private static readonly string CredentialResourceNameKey = "Samples.Universal.Credentials";
 
         private readonly ILoginService _loginService;
@@ -198,17 +196,17 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
         private void OnLoginSuccess()
         {
-            //TODO: Restore when stable
-            //var vault = new PasswordVault();            
-            //var passwordCredential = new PasswordCredential(CredentialResourceNameKey, UserName, Password);
-            //if (SavePassword)
-            //{
-            //    vault.Add(passwordCredential);
-            //}
-            //else
-            //{
-            //    vault.Remove(passwordCredential);
-            //}
+            var vault = new PasswordVault();
+            var passwordCredential = new PasswordCredential(CredentialResourceNameKey, UserName, Password);
+            if (SavePassword)
+            {
+                vault.Add(passwordCredential);
+            }
+            else
+            {
+                var passwords = vault.RetrieveAll().ToList();
+                passwords.ForEach(p => vault.Remove(p));
+            }
 
             TryClose(true);
             LoggedInSuccessfully?.Invoke(this, new EventArgs());
