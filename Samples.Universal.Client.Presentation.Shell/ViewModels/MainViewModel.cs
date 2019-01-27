@@ -78,7 +78,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             try
             {
                 await _dataService.GetWarehouseItemsAsync();
-                WarehouseItems.EndUpdate();
 
             }
 
@@ -96,7 +95,6 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             if (itemContainerViewModel.Model.IsNew)
             {
                 itemContainerViewModel.Saved += OnSaved;
-                WarehouseItems.BeginUpdate();
                 IsBusy = true;
             }
         }
@@ -128,12 +126,12 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
 
             try
             {
-                WarehouseItems.BeginUpdate();
+                //WarehouseItems.BeginUpdate();
 
                 await _dataService.DeleteWarehouseItemAsync(ActiveWarehouseItem?.WarehouseItem.Model);
                 await _dataService.GetWarehouseItemsAsync();
 
-                WarehouseItems.EndUpdate();
+                //WarehouseItems.EndUpdate();
             }
 
             catch (Exception err)

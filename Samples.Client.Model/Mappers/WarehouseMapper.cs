@@ -8,7 +8,9 @@ namespace Samples.Client.Model.Mappers
     {
         internal static IWarehouseItem MapToWarehouseItem(WarehouseItemDto warehouseItemDto)
         {
-            return Mapper.Map<WarehouseItem>(warehouseItemDto);
+            var mapToWarehouseItem = Mapper.Map<WarehouseItem>(warehouseItemDto);
+            mapToWarehouseItem.CommitChanges();
+            return mapToWarehouseItem;
         }
 
         internal static WarehouseItemDto MapToWarehouseDto(IWarehouseItem warehouseItem)
