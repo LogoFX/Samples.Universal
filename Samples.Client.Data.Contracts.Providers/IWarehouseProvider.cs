@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Samples.Client.Data.Contracts.Dto;
 
 namespace Samples.Client.Data.Contracts.Providers

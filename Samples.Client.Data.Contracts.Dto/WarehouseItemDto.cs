@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 
 namespace Samples.Client.Data.Contracts.Dto
 {    

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Input;
 using Windows.Security.Credentials;
-using Windows.Storage;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.Commanding;
 using LogoFX.Client.Mvvm.ViewModel.Extensions;

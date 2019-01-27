@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using Attest.Fake.Builders;
+﻿using Attest.Fake.Builders;
 using JetBrains.Annotations;
 using Samples.Client.Data.Contracts.Providers;
 using Samples.Client.Data.Fake.Containers;

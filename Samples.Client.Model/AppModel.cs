@@ -1,5 +1,4 @@
-﻿using System;
-using LogoFX.Client.Mvvm.Model;
+﻿using LogoFX.Client.Mvvm.Model;
 using Samples.Client.Model.Contracts;
 
 namespace Samples.Client.Model

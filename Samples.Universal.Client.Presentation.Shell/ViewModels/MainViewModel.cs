@@ -1,5 +1,4 @@
 using System;
-using System.Threading.Tasks;
 using Caliburn.Micro;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel.Contracts;
