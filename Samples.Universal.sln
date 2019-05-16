@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{6C471188-6D80-40C2-A44C-5F95218FD046}"
 EndProject
@@ -355,6 +355,8 @@ Global
 		{9775CBC9-6214-4610-95AA-3BFA2BD4A749}.Release|x86.ActiveCfg = Release|Any CPU
 		{9775CBC9-6214-4610-95AA-3BFA2BD4A749}.Release|x86.Build.0 = Release|Any CPU
 		{7DFCB724-EB78-4A56-8D09-37522B6D08D0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7DFCB724-EB78-4A56-8D09-37522B6D08D0}.Debug|Any CPU.Build.0 = Debug|x86
+		{7DFCB724-EB78-4A56-8D09-37522B6D08D0}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{7DFCB724-EB78-4A56-8D09-37522B6D08D0}.Debug|ARM.ActiveCfg = Debug|ARM
 		{7DFCB724-EB78-4A56-8D09-37522B6D08D0}.Debug|ARM.Build.0 = Debug|ARM
 		{7DFCB724-EB78-4A56-8D09-37522B6D08D0}.Debug|ARM.Deploy.0 = Debug|ARM

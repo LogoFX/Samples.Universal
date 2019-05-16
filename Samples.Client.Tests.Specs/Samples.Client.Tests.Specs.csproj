@@ -37,7 +37,7 @@
       <HintPath>..\packages\Attest.Fake.Builders.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Builders.dll</HintPath>
     </Reference>
     <Reference Include="Attest.Fake.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Attest.Fake.Core.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Core.dll</HintPath>
+      <HintPath>..\packages\Attest.Fake.Core.2.0.0-rc4\lib\netstandard2.0\Attest.Fake.Core.dll</HintPath>
     </Reference>
     <Reference Include="Attest.Fake.Registration, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Attest.Fake.Registration.2.0.0-rc2\lib\netstandard2.0\Attest.Fake.Registration.dll</HintPath>

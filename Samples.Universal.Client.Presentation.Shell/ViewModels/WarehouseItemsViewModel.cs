@@ -50,7 +50,8 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
                 FactoryMethod = o => new WarehouseItemViewModel((IWarehouseItem)o)
             }.WithSource(_dataService.WarehouseItems);
 
-            return wc.AsView();
+            return wc;
+            //return wc.AsView();
         }
     }
 }
