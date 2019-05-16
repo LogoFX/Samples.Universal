@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Attest.Testing.Contracts;
 using Samples.Client.Tests.Contracts;
 
@@ -19,9 +20,12 @@ namespace Samples.Client.Tests.EndToEnd
         public void StartApplication()
         {                       
             var currentDirectory = Directory.GetCurrentDirectory();
-            //TODO: Resolve file path dynamically 
-            Directory.SetCurrentDirectory(
-                $@"C:\Users\genna\AppData\Local\DevelopmentFiles\{PackageId}VS.Debug_x86.genna");
+            //TODO: Resolve file path dynamically
+            var localApplicationDataPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var userName = Environment.UserName;
+            var developmentPath = $@"{localApplicationDataPath}\DevelopmentFiles\{PackageId}VS.Debug_x86.{userName}";
+            //$@"C:\Users\genna\AppData\Local\DevelopmentFiles\{PackageId}VS.Debug_x86.genna"
+            Directory.SetCurrentDirectory(developmentPath);
             _startApplicationService.Start($"{PackageId}_00zbzmmrpqfhc!App"); 
             Directory.SetCurrentDirectory(currentDirectory);
         }
