@@ -121,10 +121,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="LogoFX.Client.Bootstrapping">
-      <Version>2.0.0-rc4</Version>
+      <Version>2.0.0-rc6</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Bootstrapping.Adapters.SimpleContainer">
-      <Version>2.0.0-rc2</Version>
+      <Version>2.0.0-rc4</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.8</Version>

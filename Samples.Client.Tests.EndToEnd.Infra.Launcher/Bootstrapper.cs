@@ -39,7 +39,8 @@ namespace Samples.Client.Tests.EndToEnd.Infra.Launcher
         private void InitializeCompositionModules()
         {
             var compositionManager = new CompositionManager();
-            compositionManager.Initialize(".", new string[] {});
+            //TODO: use CompositionManager.Initialize(...)
+            //compositionManager.Initialize(".", new string[] {});
             Modules = compositionManager.Modules.ToArray();            
         }
 

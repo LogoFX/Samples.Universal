@@ -63,7 +63,7 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
             set { }
         }
 
-        protected override async void OnViewLoaded(object view)
+        protected override void OnViewLoaded(object view)
         {
             ActivateItem(LoginViewModel);
         }
