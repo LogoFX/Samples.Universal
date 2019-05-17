@@ -1,19 +1,13 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Solid.Bootstrapping;
-using Solid.Core;
 using Solid.Extensibility;
-using Solid.Practices.Composition;
-using Solid.Practices.Composition.Contracts;
 using Solid.Practices.IoC;
 using Solid.Practices.Middleware;
-using Solid.Practices.Modularity;
 
 namespace Samples.Client.Tests.EndToEnd.Infra.Launcher
 {
-    public class Bootstrapper : IInitializable, 
+    public class Bootstrapper : BootstrapperBase,
         IExtensible<Bootstrapper>,         
-        ICompositionModulesProvider,
         IHaveRegistrator        
     {
         private readonly
@@ -26,23 +20,7 @@ namespace Samples.Client.Tests.EndToEnd.Infra.Launcher
             Registrator = dependencyRegistrator;     
         }
 
-        /// <summary>
-        /// Gets the list of modules that were discovered during bootstrapper configuration.
-        /// </summary>
-        /// <value>
-        /// The list of modules.
-        /// </value>
-        public IEnumerable<ICompositionModule> Modules { get; private set; } = new ICompositionModule[] { };
-
         public IDependencyRegistrator Registrator { get; }
-
-        private void InitializeCompositionModules()
-        {
-            var compositionManager = new CompositionManager();
-            //TODO: use CompositionManager.Initialize(...)
-            //compositionManager.Initialize(".", new string[] {});
-            Modules = compositionManager.Modules.ToArray();            
-        }
 
         /// <summary>
         /// Extends the functionality by using the specified middleware.
@@ -55,11 +33,5 @@ namespace Samples.Client.Tests.EndToEnd.Infra.Launcher
             _middlewares.Add(middleware);
             return this;
         }
-
-        public void Initialize()
-        {
-            InitializeCompositionModules();
-            MiddlewareApplier.ApplyMiddlewares(this, _middlewares);
-        }        
     }
 }
