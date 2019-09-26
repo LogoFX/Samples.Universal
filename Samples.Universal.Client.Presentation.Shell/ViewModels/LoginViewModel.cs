@@ -28,19 +28,19 @@ namespace Samples.Universal.Client.Presentation.Shell.ViewModels
         {
             base.OnViewLoaded(view);
 
-            var loginCredential = GetCredentialFromLocker();
+            //var loginCredential = GetCredentialFromLocker();
 
-            if (loginCredential != null)
-            {
-                SavePassword = true;
+            //if (loginCredential != null)
+            //{
+            //    SavePassword = true;
 
-                // There is a credential stored in the locker.
-                // Populate the Password property of the credential
-                // for automatic login.
-                loginCredential.RetrievePassword();
-                UserName = loginCredential.UserName;
-                Password = loginCredential.Password;
-            }
+            //    // There is a credential stored in the locker.
+            //    // Populate the Password property of the credential
+            //    // for automatic login.
+            //    loginCredential.RetrievePassword();
+            //    UserName = loginCredential.UserName;
+            //    Password = loginCredential.Password;
+            //}
         }
 
         private PasswordCredential GetCredentialFromLocker()
